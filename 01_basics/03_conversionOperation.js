@@ -12,14 +12,15 @@
 
  // datatype print
 
- console.log(typeof score);
- console.log(typeof score1);
- console.log(typeof score2);
- console.log(typeof score3);
- console.log(typeof score4);
- console.log(typeof score5);
- console.log(typeof score6);
- console.log(typeof score7);
+ console.log(`Data Type of score :- ${typeof score} and value is ${score}`);
+ console.log(`Data Type of score1 :- ${typeof score1} and value is ${score1}`);
+ console.log(`Data Type of score2 :- ${typeof score2} and value is ${score2}`);
+ console.log(`Data Type of score3 :- ${typeof score3} and value is ${score3}`);
+ console.log(`Data Type of score4 :- ${typeof score4} and value is ${score4}`);
+ console.log(`Data Type of score5 :- ${typeof score5} and value is ${score5}`);
+ console.log(`Data Type of score6 :- ${typeof score6} and value is ${score6}`);
+ console.log(`Data Type of score7 :- ${typeof score7} and value is ${score7}`);
+
 
 // Number conversion
 
@@ -32,17 +33,19 @@
  let valueInNumber6 = Number(score6);  
  let valueInNumber7 = Number(score7);  
 
- console.log(valueInNumber);
- console.log(valueInNumber1);
- console.log(valueInNumber2);
- console.log(valueInNumber3);
- console.log(valueInNumber4);
- console.log(valueInNumber5);
- console.log(valueInNumber6);
- console.log(valueInNumber7);
+ console.log(`Data Type of valueInNumber :- ${typeof valueInNumber} and value is ${valueInNumber}`);
+ console.log(`Data Type of valueInNumber1 :- ${typeof valueInNumber1} and value is ${valueInNumber1}`);
+ console.log(`Data Type of valueInNumber2 :- ${typeof valueInNumber2} and value is ${valueInNumber2}`);
+ console.log(`Data Type of valueInNumber3 :- ${typeof valueInNumber3} and value is ${valueInNumber3}`);
+ console.log(`Data Type of valueInNumber4 :- ${typeof valueInNumber4} and value is ${valueInNumber4}`);
+ console.log(`Data Type of valueInNumber5 :- ${typeof valueInNumber5} and value is ${valueInNumber5}`);
+ console.log(`Data Type of valueInNumber6 :- ${typeof valueInNumber6} and value is ${valueInNumber6}`);
+ console.log(`Data Type of valueInNumber7 :- ${typeof valueInNumber7} and value is ${valueInNumber7}`);
  
 
- // String conversion
+ 
+
+//  // String conversion
 
  let valueInString1 = String(score1);
  let valueInString2 = String(score2);
@@ -52,16 +55,17 @@
  let valueInString6 = String(score6);
  let valueInString7 = String(score7);
 
- console.log(valueInString1);
- console.log(valueInString2);
- console.log(valueInString3);
- console.log(valueInString4);
- console.log(valueInString5);
- console.log(valueInString6);
- console.log(valueInString7);
+console.log(`Data Type of valueInString1 :- ${typeof valueInString1} and value is ${valueInString1}`);
+console.log(`Data Type of valueInString2 :- ${typeof valueInString2} and value is ${valueInString2}`);
+console.log(`Data Type of valueInString3 :- ${typeof valueInString3} and value is ${valueInString3}`);
+console.log(`Data Type of valueInString4 :- ${typeof valueInString4} and value is ${valueInString4}`);
+console.log(`Data Type of valueInString5 :- ${typeof valueInString5} and value is ${valueInString5}`);
+console.log(`Data Type of valueInString6 :- ${typeof valueInString6} and value is ${valueInString6}`);
+console.log(`Data Type of valueInString7 :- ${typeof valueInString7} and value is ${valueInString7}`);
 
 
-//  Boolean conversion
+
+// //  Boolean conversion
 
  let score8 = false;
  let score9 = 0;
@@ -70,13 +74,9 @@
  let score12 = true;
  let score13 = false 
 
- console.log(typeof score8);
- console.log(typeof score9);
- console.log(typeof score10);
- console.log(typeof score11);
- console.log(typeof score12);
- console.log(typeof score13);
 
+ 
+ 
  let valueInBoolean = Boolean(score)
  let valueInBoolean1 = Boolean(score1)
  let valueInBoolean2 = Boolean(score2)
@@ -90,29 +90,32 @@
  let valueInBoolean10 = Boolean(score10)
  let valueInBoolean11 = Boolean(score11)
  let valueInBoolean12 = Boolean(score12)
- let valueInBoolean13 = Boolean(score13)
+ let valueInBoolean13 = Boolean(score13) 
 
- console.log(valueInBoolean);
- console.log(valueInBoolean1);
- console.log(valueInBoolean2);
- console.log(valueInBoolean3);
- console.log(valueInBoolean4);
- console.log(valueInBoolean5);
- console.log(valueInBoolean6);
- console.log(valueInBoolean7);
- console.log(valueInBoolean8);
- console.log(valueInBoolean9);
- console.log(valueInBoolean10);
- console.log(valueInBoolean11);
- console.log(valueInBoolean12);
- console.log(valueInBoolean13);
+
+console.log(`Data Type of valueInBoolean :- ${typeof valueInBoolean} and value is ${valueInBoolean}`);
+console.log(`Data Type of valueInBoolean1 :- ${typeof valueInBoolean1} and value is ${valueInBoolean1}`);
+console.log(`Data Type of valueInBoolean2 :- ${typeof valueInBoolean2} and value is ${valueInBoolean2}`);
+console.log(`Data Type of valueInBoolean3 :- ${typeof valueInBoolean3} and value is ${valueInBoolean3}`);
+console.log(`Data Type of valueInBoolean4 :- ${typeof valueInBoolean4} and value is ${valueInBoolean4}`);
+console.log(`Data Type of valueInBoolean5 :- ${typeof valueInBoolean5} and value is ${valueInBoolean5}`);
+console.log(`Data Type of valueInBoolean6 :- ${typeof valueInBoolean6} and value is ${valueInBoolean6}`);
+console.log(`Data Type of valueInBoolean7 :- ${typeof valueInBoolean7} and value is ${valueInBoolean7}`);
+console.log(`Data Type of valueInBoolean8 :- ${typeof valueInBoolean8} and value is ${valueInBoolean8}`);
+console.log(`Data Type of valueInBoolean9 :- ${typeof valueInBoolean9} and value is ${valueInBoolean9}`);
+console.log(`Data Type of valueInBoolean10 :- ${typeof valueInBoolean10} and value is ${valueInBoolean10}`);
+console.log(`Data Type of valueInBoolean11 :- ${typeof valueInBoolean11} and value is ${valueInBoolean11}`);
+console.log(`Data Type of valueInBoolean12 :- ${typeof valueInBoolean12} and value is ${valueInBoolean12}`);
+console.log(`Data Type of valueInBoolean13 :- ${typeof valueInBoolean13} and value is ${valueInBoolean13}`);
+
+
  
 
-// ################### Operations ##################
+// // ################### Operations ##################
 
 let value = 3
-let negvalue = -value
-console.log(negvalue);
+let negValue = -value
+console.log(`Negation of value is ${negValue}`);
 
 console.log(5 + 2);
 console.log( 5 + (-2));
@@ -125,56 +128,20 @@ console.log(5%2);
 console.log(5/0);
 console.log(0/3);
 
-console.log(5+(+true));
-console.log(5+(-true));
-console.log(5-(+true));
-console.log(5-(-true));
-console.log(5*(true));
-console.log(5*(-true));
-console.log(5/(2*2+true));
-console.log(9/(2*2-true));
-console.log(-25/(2*2+true));
-console.log(5*false);
-console.log(5*-false);
-console.log(5+false);
-console.log(5-false);
-console.log(5/+false);
-console.log(5/-false);
-console.log(+false);
-console.log(-false);
-console.log(+true);
-console.log(-true);
+console.log(`Line::131---> ${5*true} and ${5*(-true)}`);
+console.log(`Line::132---> ${5*false} and ${5*(-false)}`);
+console.log(`Line::133---> ${5+true} and ${5+(-true)}`);
+console.log(`Line::134---> ${5+false} and ${5+(-false)}`);
+console.log(`Line::135---> ${5-true} and ${5-(-true)}`);
+console.log(`Line::136---> ${5-false} and ${5-(-false)}`);
 
 
 
 
 
-console.log("1" + 2);
-console.log(1 + "2");
-console.log("1" + " 2");
-console.log(1 - "2");
-console.log("1" - 2);
-console.log("1"+ ( -5));
-console.log(1 + ("-5"));
-console.log("1" + 5 +2);
-console.log("1" - 5 +2 );
-console.log("2" - 5 +3);
-console.log("1"+ (5) + 2);
-console.log("1"+ (-5) +2);
-console.log(2 + (5) + "3");
-console.log(2 + (-5) + "3");
-console.log(typeof 1 + "" );
-console.log(typeof "" + 2);
-console.log(typeof 1 - "");
-console.log(typeof "" - 2);
 
 
-let gamecounter1 = 100
-let gamecounter2 =200
-++gamecounter1;   // prefix
-console.log(gamecounter1);
-gamecounter2++;   // postfix
-console.log(gamecounter2);
+
 
 // Precendence oprator is diffrent for prefix and postfix In prefix values are increment first and then assigned and postfix values are assigned first and then increment.
 

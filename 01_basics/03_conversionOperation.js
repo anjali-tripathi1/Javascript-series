@@ -140,12 +140,59 @@ console.log(5+false);
 console.log(5-false);
 console.log(5/+false);
 console.log(5/-false);
+console.log(+false);
+console.log(-false);
+console.log(+true);
+console.log(-true);
+
+
+
+
 
 console.log("1" + 2);
 console.log(1 + "2");
 console.log("1" + " 2");
 console.log(1 - "2");
 console.log("1" - 2);
+console.log("1"+ ( -5));
+console.log(1 + ("-5"));
+console.log("1" + 5 +2);
+console.log("1" - 5 +2 );
+console.log("2" - 5 +3);
+console.log("1"+ (5) + 2);
+console.log("1"+ (-5) +2);
+console.log(2 + (5) + "3");
+console.log(2 + (-5) + "3");
+console.log(typeof 1 + "" );
+console.log(typeof "" + 2);
+console.log(typeof 1 - "");
+console.log(typeof "" - 2);
+
+
+let gamecounter1 = 100
+let gamecounter2 =200
+++gamecounter1;   // prefix
+console.log(gamecounter1);
+gamecounter2++;   // postfix
+console.log(gamecounter2);
+
+// Precendence oprator is diffrent for prefix and postfix In prefix values are increment first and then assigned and postfix values are assigned first and then increment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

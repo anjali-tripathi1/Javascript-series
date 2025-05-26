@@ -143,6 +143,8 @@ console.log(5/-false);
 
 console.log("1" + 2);
 console.log(1 + "2");
+console.log("1" + " 2");
+console.log(1 - "2");
 console.log("1" - 2);
 
 

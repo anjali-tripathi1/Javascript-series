@@ -134,6 +134,35 @@ console.log(`Line::133---> ${5+true} and ${5+(-true)}`);
 console.log(`Line::134---> ${5+false} and ${5+(-false)}`);
 console.log(`Line::135---> ${5-true} and ${5-(-true)}`);
 console.log(`Line::136---> ${5-false} and ${5-(-false)}`);
+console.log(`Line::137---> ${"1" + 2} and ${"1"+(-2)}`);
+console.log(`Line::138---> ${"1" - 2} and ${"1"-(-2)}`);
+console.log(`Line::139---> ${"1" + 2 + 3 } and ${"1" + (-2) + 3}`);
+console.log(`Line::140---> ${"1" - 2 +3} and ${"1" - (-2) +3}`);
+console.log(`Line::141---> ${1 + 2 + "3"} and ${1 + (-2) + "3"}`);
+console.log(`Line::142---> ${1 - 2 + "3"} and ${1 - (-2) + "3"}`);
+console.log(`Line::143---> ${+true}`);
+console.log(`Line::144---> ${-true}`);
+console.log(`Line::145---> ${+false}`);
+console.log(`Line::146---> ${-false}`);
+console.log(`Line::147---> ${1 + ""} and ${typeof (1 + "")}`);
+console.log(`Line::148---> ${1 - ""} and ${typeof (1 - "")}`);
+
+
+let gamecounter1 = 100;
+let gamecounter2 = 200;
+console.log(`Line::149---> ${gamecounter1} and ${gamecounter2}`);
+++gamecounter1;  // Prefix
+gamecounter2++;  // Postfix
+console.log(`Line::150---> ${gamecounter1} and ${gamecounter2}`);
+
+// Precedence oprator is diffrent for prefix and postfix, In prefix first increment and then value is assigned 
+// and for postfix first value is assigned after that it's increment. 
+
+
+
+
+
+
 
 
 

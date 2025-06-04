@@ -53,9 +53,52 @@
  
 
  console.log(`Result of number :- ${ 2 > true}`);
- console.log(`Result of number :- ${ 2 > false}`);
+ console.log(`Result of number1 :- ${ 2 > false}`);
+ console.log(`Result of number2:- ${ 2 < true}`);
+ console.log(`Result of number3:- ${ 2 < false}`);
+ console.log(`Result of number4:- ${ 2 >= true}`);
+ console.log(`Result of number5:- ${ 2 >= false}`);
+ console.log(`Result of number6:- ${ 2 <= true}`);
+ console.log(`Result of number7:- ${ 2 <= false}`);
+ console.log(`Result of number8:- ${ 2 == true}`);
+ console.log(`Result of number9:- ${ 2 == false}`);
+ console.log(`Result of number10:- ${ 2 != true}`);
+ console.log(`Result of number11 :- ${ 2 != false}`);
 
  
+ // Some more comparison which creates problem
+
+ console.log(`Result of null :- ${null > 0 }`);
+ console.log(`Result of null1 :- ${null < 0 }`);
+ console.log(`Result of null2:- ${null >= 0}`);
+ console.log(`Result of null3:- ${null <= 0 }`);
+ console.log(`Result of null4:- ${ null == 0 }`);
+ console.log(`Result of null5:- ${null != 0 }`);
+ 
+ // the value inside it is converted, In null equal greater then and less then (>=, <=) has a conversion problem.
+ // it's not like that value is actual grater, less or equal then but here predictable result is not available.
+ // Javascript has diffrent way to work for comparison operators and equailty operator both.
+ // null has converted into 0, just like this some conversion convert into NaN and some 0.
+ // this operation should't happen like this.
+
+ //// The reason is that an equality check == and comparisons > <>= <= work diifrently.
+// Comparisons convert null to a number, treating it as 0.
+// that'swhy (2, 3) null >= 0 is true and (1,0,4) null > 0 is false. 
+
+
+// this same happens with undefined isme sare false aate hai
+
+console.log(`Result of Undefined :- ${undefined > 0}`);
+console.log(`Result of Undefined1 :- ${undefined < 0}`);
+console.log(`Result of Undefined2 :- ${undefined >= 0}`);
+console.log(`Result of Undefined3 :- ${undefined <= 0}`);
+console.log(`Result of Undefined4:- ${undefined == 0}`);
+console.log(`Result of Undefined4:- ${undefined != 0}`);
+
+
+
+
+
  
  
 

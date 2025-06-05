@@ -8,6 +8,11 @@
 
 // In javascript we don't define  language
 const score = 100;
+
+// we are not defined that score is number datatype because in javascript there is no need
+// like Javascript there's one more language named typescript there we need to defined datatype like this.
+// const score:number = 100 
+
 const scorevalue = 100.5;  // this is also number
 
 const isLoggedIn = true;
@@ -19,17 +24,50 @@ let userEmail;
 // symbol => uniqueness
  const id = Symbol('123');
  const anotherId = Symbol('123');
- // Both are looking same but result Id and anotherId is diffrent.
+ // Both are looking same but result Id and anotherId is diffrent. this is the work of the symbol that if you pass the same value weateher it is string or anything then your result Id and anotherId is not same.
  console.log(id === anotherId );
+
+
+ const bignumber = 122545566677788778988n
+
  
 
-
-
-// we are not defined that score is number datatype because in javascript there is no need
-// like Javascript there's one more language named typescript there we need to defined datatype like this.
-// const score:number = 100 
-
-// #Refrence (Non Primitive)
+ // #Refrence (Non Primitive)
 // All values in memory that can be refrenced directly 
 
 // Arrays, Objects, fuctions
+
+ const heros = ["shaktiman", "naagraj", "doga" ];
+ const number = [19, 20, 25];
+ const isMarried = [true];
+ const weather = [null];
+ let state;
+ console.table([heros, number, isMarried, weather, state]);
+ 
+ // Arrays are write in [] square brackets.
+
+
+ let myobj = {
+    name: "Anjali",
+    age: 19,
+    isAdmitted: false,
+    
+ }
+
+ // objects are in {} currlibraces. In curr- we write value in keyvalue pairs. we can declare value like this. if we want we can store this in variable. 
+ // Inside {} whaterver values are object and can be anything like sring, number, boolean, fuction, Array and  another object .
+
+
+ // fuction can be treated like variable
+//  function(){}  this is fuction's defination
+// now we want that this fuction defination is store into varible. 
+const myFunction = function(){
+    console.log("Hello World");
+    
+}
+
+
+// Extracting datatype of any value
+
+console.log(typeof myFunction);
+

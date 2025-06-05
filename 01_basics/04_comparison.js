@@ -97,7 +97,7 @@ console.log(`Result of Undefined5:- ${undefined != 0}`);
 
 
 // In Javascript comparison oprators and equailty operators both are diffrent.
-// double equailty (==) check has a special method and triple equailty check (===) has a bit diggrent syntax
+// double equailty (==) check has a special method and double equailty check(==) and triple equailty check (===) has a bit diffrent syntax
 // and less then equal to has a diffrent syntax.
 
 

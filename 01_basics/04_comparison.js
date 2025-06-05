@@ -118,6 +118,7 @@ console.log(`Result of triple equailty check :- ${ "2" === 2}`);
 // when we do comparison it creates problem.  
 
 // null and undefined codes are creates confusion but most of the cases we avoid this type of comparison.
+// and write clean code.
 
 
 

@@ -75,7 +75,7 @@
  console.log(`Result of null4:- ${ null == 0 }`);
  console.log(`Result of null5:- ${null != 0 }`);
  
- // the value inside it is converted, In null equal greater then and less then (>=, <=) has a conversion problem.
+ // the value inside null it is converted, In null equal greater then and less then (>=, <=) has a conversion problem.
  // it's not like that value is actual grater, less or equal then but here predictable result is not available.
  // Javascript has diffrent way to work for comparison operators and equailty operator both.
  // null has converted into 0, just like this some conversion convert into NaN and some 0.

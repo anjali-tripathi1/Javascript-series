@@ -93,7 +93,7 @@ console.log(`Result of Undefined1 :- ${undefined < 0}`);
 console.log(`Result of Undefined2 :- ${undefined >= 0}`);
 console.log(`Result of Undefined3 :- ${undefined <= 0}`);
 console.log(`Result of Undefined4:- ${undefined == 0}`);
-console.log(`Result of Undefined4:- ${undefined != 0}`);
+console.log(`Result of Undefined5:- ${undefined != 0}`);
 
 
 

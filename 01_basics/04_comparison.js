@@ -96,6 +96,32 @@ console.log(`Result of Undefined4:- ${undefined == 0}`);
 console.log(`Result of Undefined5:- ${undefined != 0}`);
 
 
+// In Javascript comparison oprators and equailty operators both are diffrent.
+// double equailty (==) check has a special method and triple equailty check (===) has a bit diggrent syntax
+// and less then equal to has a diffrent syntax.
+
+
+// Strict check/Triple Equailty check/(===) => it simply means that we are checking with triple equal,  It not
+// only checks the value but also check values strictly that is it checks datatypes too.
+
+console.log(`Result of Double Euailty :- ${ "2" == 2 }`);
+// Here double equ- check is true because it will convert.
+
+
+console.log(`Result of triple equailty check :- ${ "2" === 2}`);
+// doing with (===) it won't be convert now it will check datatype too. it check that one is in string and other one is in number so to convert or not, both are diffrent so Don't do conversion because it's (===) and both are not same and both datatypes are diffrent.
+
+// Summary
+// same datatype basic has no problem, problem is create in same datatype.
+// where one value is in string datatype and other value is number or boolean then it creates problem on changing datatype.
+// In null and undefined when we do the conversion then sometimes value is NaN, sometimes 0 and after that 
+// when we do comparison it creates problem.  
+
+// null and undefined codes are creates confusion but most of the cases we avoid this type of comparison.
+
+
+
+
 
 
 

@@ -64,10 +64,30 @@ let userEmail;
 const myFunction = function(){
     console.log("Hello World");
     
+    
 }
 
 
 // Extracting datatype of any value
 
-console.log(typeof myFunction);
+console.log(`Datatype of score :- ${typeof score}`);                  // number
+console.log(`Datatype of scorevalue :- ${typeof scorevalue}`);       // number
+console.log(`Datatype of isLoggedIn :- ${typeof isLoggedIn}`);      // boolean
+console.log(`Datatype of outsideTemp :- ${typeof outsideTemp}`);   // object
+console.log(`Datatype of userEmail :- ${typeof userEmail}`);      // undefined
+console.log(`Datatype of Id :- ${typeof id}`);                   // symbol
+console.log(`Datatype of anotherId :- ${typeof anotherId}`);    // symbol
+console.log(`Datatype of bignumber :-  ${typeof bignumber}`);    // without comments => bigint
+console.log(`Datatype of bignumber :- ${typeof bignumber}`);    // with comments => undefined
+console.log(`Datatype of heros :- ${typeof heros}`);                   // object
+console.log(`Datatype of number :- ${typeof number}`);                // object
+console.log(`Datatype of isMarried :- ${typeof isMarried}`);         // object
+console.log(`Datatype of weather :- ${typeof weather}`);            // object
+console.log(`Datatype of state :- ${typeof state}`);               // undefined
+console.log(`Datatype of myobj :- ${typeof myobj}`);              // object
+console.log(`Datatype of myFunction :- ${typeof myFunction}`);   // object function
+
+
+
+// All refrence (non-primitive) datatypes are called fuctions, and function's datatype is called object fuction. 
 

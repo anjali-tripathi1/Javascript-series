@@ -91,3 +91,15 @@ console.log(`Datatype of myFunction :- ${typeof myFunction}`);   // object funct
 
 // All refrence (non-primitive) datatypes are called fuctions, and function's datatype is called object fuction. 
 
+
+
+
+
+// ######################################################
+
+// In Javascript How does memory work =>
+// There are two types of memory
+
+// stack (primitive) => stack memory is used with primitive datatypes. whenever stack memory is used then you get copy of whatever you declared.
+// Heap (non-primitive) => Heap memory is used with non-primitive datatypes. whenever memory is define in heap 
+// or object or something inside heap so from there you get refrence of original value.

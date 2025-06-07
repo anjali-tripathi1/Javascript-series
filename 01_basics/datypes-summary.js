@@ -101,5 +101,65 @@ console.log(`Datatype of myFunction :- ${typeof myFunction}`);   // object funct
 // There are two types of memory
 
 // stack (primitive) => stack memory is used with primitive datatypes. whenever stack memory is used then you get copy of whatever you declared.
+
+
 // Heap (non-primitive) => Heap memory is used with non-primitive datatypes. whenever memory is define in heap 
-// or object or something inside heap so from there you get refrence of original value.
+// or object or something inside heap so from there you get refrence of original value or change in original value.
+
+// Ex .
+
+// String datatype
+let  myYoutubename = "AnjaliTripathidotcom" 
+
+let  anothername = myYoutubename
+anothername = "honeyboney"
+
+console.log(`Result of change in string :- ${myYoutubename}`);  
+console.log(`Result of change in string1 :- ${anothername}`);     
+
+
+// number datatype
+let myNumbervalue = 100
+
+let anothervalue = myNumbervalue
+anothervalue = 100.5
+
+console.log(`Result of change in value number :- ${myNumbervalue}`);
+console.log(`Result of change in value number1 :- ${anothervalue}`);
+
+
+// boolean datatype
+let  isSubmitted = true
+
+let  anotherSubmitted = isSubmitted
+anotherSubmitted = false
+
+console.log(`Result of change in boolean :- ${isSubmitted}`);
+console.log(`Result of change in boolean1 :- ${anotherSubmitted}`);
+
+// Inside myYoutubename value is old and anothername's value is change. actually value is not given rather you get a copy so you change in copy that means original value won't change .
+
+
+
+
+// obj
+
+ let userOne = {
+     email: "user@google.com",
+     upi: "user@ybl"
+ }
+
+
+ let userTwo = userOne
+//  Inside object to access variables we use dot (.)
+ userTwo.email = "Anjali@google.com"
+
+console.log(`Result of change in object :- ${userOne.email}`);
+console.log(`Result of change in object :- ${userTwo.email}`);
+
+
+// inside heap anything goes only its refrence is availble, inside heap you get value's refrence, refrence means whatever you change or update that happens in original value. 
+
+
+ 
+

@@ -13,7 +13,7 @@
  // one more way to declare string
 
  const gameName = new String('Anjali')
- // when we write string in console they have position and these are keyvalue pairs 0 is key and A is value. string is object. 
+ // when we write string in console they have position and these are keyvalue pairs 0 is key and A is value. string is object. and they have prototype.
 
 
  // if we want any property we know that we have keyvalue pairs so we will get property easily.

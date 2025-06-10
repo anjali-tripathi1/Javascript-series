@@ -48,8 +48,21 @@ const newString = gameName.substring(0, 5)
 console.log(newString);
 
 //  in slice protype we can also give negative value.
-const anotherString = gameName.slice(-8, 5)
+const anotherString = gameName.slice(-8, 6)
 console.log(anotherString);
+
+// one more method that we use in string that trim or replace.
+
+// inside string we add spaces this type of string is very common where it come, when you create input form in your website then user deliberatily, unknowingly or knowingly add lots of extra charcters or specially spaces sometimes we don't want these spaces in password field we won't do this sometimes it gives email and we don't want spaces so there we should't need these spaces.
+const anotherStringOne =  "   Anjali   "
+console.log(anotherStringOne);
+//  trim removes starting or ending space.
+console.log(anotherStringOne.trim());    // this use for removeing both space.
+console.log(anotherStringOne.trimStart()); // this is used for removing starting space.
+console.log(anotherStringOne.trimEnd());   // this is used for removing ending space.
+
+
+
 
 
  

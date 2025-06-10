@@ -12,7 +12,7 @@
 
  // one more way to declare string
 
- const gameName = new String('Anjali')
+ const gameName = new String('Anjali-Tr')
  // when we write string in console they have position and these are keyvalue pairs 0 is key and A is value. string is object. and they have prototype.
 // here string is object.
 //  0 : "A"
@@ -35,11 +35,28 @@
  // the f next to prototypes is functon or methods that are directly availble.
  console.log(gameName.toUpperCase());
 
- // suppose we want to see any charecter's position.
+ // suppose we want to see any charecter's position. in index which charecter.
  console.log(gameName.charAt(5));
 
-//  t's position 
+//  for knowing charecter's number. 
 console.log(gameName.indexOf("l"));
+
+//  sometimes we have to break string into parts or we have to sanitize it. so we should know about string.
+
+//  we have to slice this we can store this in variable. and In substring we have to give start number and end number and in end number  which value we give is not including. like we give end number 4 but only 3 charecters appared. here we can't give -neg values.
+const newString = gameName.substring(0, 5)
+console.log(newString);
+
+//  in slice protype we can also give negative value.
+const anotherString = gameName.slice(-8, 5)
+console.log(anotherString);
+
+
+ 
+
+
+
+
 
   
  

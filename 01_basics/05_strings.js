@@ -71,6 +71,7 @@ console.log(url.replace('%20', ' ' ));
 console.log(url.replace('%20', '@#' ));
 
 // you can also ask questions with this. like inside url some keywords are like anjali is include here or not
+// whether a given string may be found within this string, returning true or false as appropriate.
 console.log(url.includes('anjali'));
 console.log(url.includes('saroj'));
 
@@ -130,6 +131,30 @@ const value1 = new String("Hello")
 const value2 = new String("Anjali")
 console.log(value1.concat(" ", value2));
 console.log(value2.concat(",  ", value1));
+
+
+// The String() constructor creates String objects. When called as a function, it returns primitive values of type String.
+
+
+
+// The endsWith() method of String values determines whether a string ends with the characters of this string, returning true or false as appropriate.
+
+const  valueName = new String("A Dog is a very faithful animal.")
+console.log(valueName.endsWith("animal."));
+console.log(valueName.endsWith("animal", 31));
+
+const valueName1 = new String("Are you fine?")
+console.log(valueName1.endsWith("fine"));
+console.log(valueName1.endsWith("fine?"));
+console.log(valueName1.endsWith("fine?", 13));
+
+
+
+
+// The isWellFormed() method of String values returns a boolean indicating whether this string contains any lone surrogates.
+
+
+
 
 
 

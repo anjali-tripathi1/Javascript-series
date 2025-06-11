@@ -120,6 +120,18 @@ console.log(`value of charcodeat :- ${indexName} and sentence value is ${atSente
 console.log(atSentence.charCodeAt(0));
 
 
+// The codePointAt() method of String values returns a non-negative integer that is the Unicode code point value of the character starting at the given index. Note that the index is still based on UTF-16 code units, not Unicode code points.
+
+console.log(atSentence.codePointAt(2));
+
+// The concat() method of String values concatenates the string arguments to this string and returns a new string.
+
+const value1 = new String("Hello")
+const value2 = new String("Anjali")
+console.log(value1.concat(" ", value2));
+console.log(value2.concat(",  ", value1));
+
+
 
 
 

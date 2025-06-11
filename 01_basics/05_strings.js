@@ -12,7 +12,7 @@
 
  // one more way to declare string
 
- const gameName = new String('Anjali-Tr')
+ const gameName = new String('Anjali-Tr-com')
  // when we write string in console they have position and these are keyvalue pairs 0 is key and A is value. string is object. and they have prototype.
 // here string is object.
 //  0 : "A"
@@ -60,6 +60,65 @@ console.log(anotherStringOne);
 console.log(anotherStringOne.trim());    // this use for removeing both space.
 console.log(anotherStringOne.trimStart()); // this is used for removing starting space.
 console.log(anotherStringOne.trimEnd());   // this is used for removing ending space.
+
+
+const url = "https://anjali.com/anjali%20tripathi"
+// the problem is that browser doesn't understand spaces like someone add space in webpage so browser directly convert this space in %20 in url coding so in this situation we want to remove this %20 so for this we have some method.
+
+// so in replace we have to write what we want to search and with which replace.
+console.log(url.replace('%20', '-' ));
+console.log(url.replace('%20', ' ' ));
+console.log(url.replace('%20', '@#' ));
+
+// you can also ask questions with this. like inside url some keywords are like anjali is include here or not
+console.log(url.includes('anjali'));
+console.log(url.includes('saroj'));
+
+// now we want to convert that gamename string into array based on (-) this split in diffrent part and based on can be anything like spaces, dashes.
+
+console.log(gameName.split('-'));
+
+const cartoonName = new String("Saroj#@ Tri#@ @@#@")
+console.log(cartoonName.split(' '));
+console.log(cartoonName.split('#@'));
+
+// we use anchor method of string values creates a string that embeds this string is an element with a name.
+
+const contentName = new String("Hello World")
+console.log(contentName.anchor("hello"));   // now it's outdated and we don't use this. in place of this we use directly html. 
+
+ // this at method takes an integer value and returns a new string consisting of the single UTF-16 code unit located at the specified offset. This method allows for positive and negative integers. Negative integers count back from the last string character.
+
+ const atSentence = new String ("A lion is a ferocious animal.")
+ const indexName = new String (5) 
+ 
+//  console.log(`value of at method :- ${indexName} and value of at sentence :- ${atSentence.at(indexName)}`);
+console.log(atSentence.at(-10));
+
+// we also write this.
+ const indexNegName = (-9)
+ console.log(`value of at method :- ${indexNegName} and value of at sentence :- ${atSentence.at(indexNegName)}`);
+
+ 
+
+ // big method  creates a string that embeds this string in a <big> element which causes this string to be displayed in a big font.
+ 
+ const bigName = new String("Anjali")
+ console.log(bigName.big());   // this is outdated in place of this we use directly html and css
+  
+ 
+//  The blink() method of String values creates a string that embeds this string in a <blink> element (<blink>str</blink>), which used to cause a string to blink in old browsers. 
+// this is also outdated.
+
+
+// The bold() method of String values creates a string that embeds this string in a <b> element (<b>str</b>), which causes this string to be displayed as bold.
+// this is also outdated.
+
+// The charCodeAt() method of String values returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
+
+console.log(`value of charcodeat :- ${indexName} and sentence value is ${atSentence.charCodeAt(indexName)}`);
+console.log(atSentence.charCodeAt(0));
+
 
 
 

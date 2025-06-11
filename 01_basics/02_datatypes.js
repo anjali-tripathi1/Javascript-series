@@ -24,7 +24,7 @@
  
 //    one more way to declare datatypes
 
-const sname = new String("Anjali");
+ const sname = new String("Anjali");
  console.log(`value of string :- ${sname} and Datatype is :- ${typeof sname}`);
 
 const nname = new Number(15);

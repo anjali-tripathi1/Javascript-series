@@ -154,6 +154,18 @@ console.log(valueName1.endsWith("fine?", 13));
 // The isWellFormed() method of String values returns a boolean indicating whether this string contains any lone surrogates.
 
 
+// The lastIndexOf() method of String values searches this string and returns the index of the last occurrence of the specified substring. It takes an optional starting position and returns the last occurrence of the specified substring at an index less than or equal to the specified number.
+
+const paragraph = "All things are good."
+const searchterm = "good" 
+console.log(`Index of the last:-  ${searchterm} is :- ${paragraph.lastIndexOf(searchterm)}`);
+
+
+// The localeCompare() method of String values returns a number indicating whether this string comes before, or after, or is the same as the given string in sort order. When comparing large numbers of strings, such as in sorting large arrays.
+
+
+
+
 
 
 

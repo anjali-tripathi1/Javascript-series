@@ -60,6 +60,20 @@ console.log(newdate.getHours());
 console.log(newdate.getMinutes());
 console.log(newdate.getSeconds());
 
+//  one more method that is very important
+
+console.log(newdate.toLocaleString('default', {
+     weekday: "long",
+     day: "numeric",
+     month: "short",
+     year: "numeric",
+     hour: "numeric",
+     minute: "numeric",
+     second: "numeric",
+    
+}))
+// inside this we define object and we can also define lots of parameters first we write interlization so we write here default and after that object and inside this object what do we want we can define here there are many properties with the help of this format we can more coustomize values.
+
 
 
 

@@ -81,12 +81,22 @@ console.log(Math.random());
 // now question will come or problem Statement now in math.random the value will be between some range to some range. like we are making dice game so we know that we want value between 1 to 6 or we are making some other game which value lies between 1 to 10.
 console.log(Math.random()*10 + 1);  // this structure compiles bodmas and becomes problem so exact avoid same first we multiply this Math.random with*10 and then wrap in bracket now that result comes that do +1 so now it's 100% guranted that values are confirm and we don't need to check which one will excute first and which one is excute second.
 console.log((Math.random()*10) + 1);
-Math.floor(Math.random)
+
+// if we want less value. basically floor roundof that in lowest values. if we want one number this is regarding single number.
+console.log(Math.floor(Math.random()*10) + 1 )
 
 // value can be 0 like 0.041 this is also between 0 to 1 so avoid that thing we add +1 so now it's guranted that min value will be 1 not 0. 
 
+// one more trick to define max and min and a small formula.
+
+const min = 10
+const max = 20
+// it's define that we want value between 10 to 20. that same concept which we use top but it becomes junaric syntax. we multiplies math.random that this much value is required.
+
+// here we learn a small formula 
 
 
+// we add + 1 sothat 0 value is not come.this first one is used to avoid 0. 0 is not sufficient we want min value atleast 10 or greater then 10.
 
 
 

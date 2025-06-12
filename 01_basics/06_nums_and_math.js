@@ -94,9 +94,10 @@ const max = 20
 // it's define that we want value between 10 to 20. that same concept which we use top but it becomes junaric syntax. we multiplies math.random that this much value is required.
 
 // here we learn a small formula 
+console.log(Math.floor(Math.random() * (max - min  + 1 )) + min );
 
 
-// we add + 1 sothat 0 value is not come.this first one is used to avoid 0. 0 is not sufficient we want min value atleast 10 or greater then 10.
+// we add + 1 sothat 0 value is not come.this first one is used to avoid 0. 0 is not sufficient we want min value atleast 10 or greater then 10. now add min but we should write all thisin wrap. we want only single value that's why will we do floor so now we will get value between 10 to 20.
 
 
 

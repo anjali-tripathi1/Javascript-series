@@ -30,7 +30,44 @@ console.log(mymorenewcreateddate.toLocaleString());
 let mynewdate = new Date("01-23-2025")
 console.log(mynewdate.toLocaleString());
 
-// you can also have timestamps inside date. this is useful for when we want to check exact timestampvalue especially when we designs quizes in javascript and design poles who gives fastest we want to declare him winner so in these cases we use timestamps
+// you can also have timestamps inside date. this is useful for when we want to check exact timestampvalue especially when we designs quizes in javascript and design poles who gives fastest we want to declare him winner so in these cases we use timestamps.
+
+let myTimeStamp = Date.now()
+// we can also use new keyword.
+console.log(myTimeStamp);
+// so the result is large string and this long digit is millisecond that we read 1st january 1970 from there to now millisecond value. so it becomes difficult to get any value from this millisecond values. suppose we have to get millisecond from this mynewdate when we create hotel apps or poll so many times we have to compare that dates. then that case:
+console.log(mynewdate.getTime());
+// as we print this we get date because this date is object so we will give this gettime this gettime will give that same big millisecond value from 1st january 1970 so now we can compare easily both millisecond value.
+
+
+//we want to convert this in seconds
+console.log(Date.now()/1000);  // so this gives decimal value and we don't want this. so we write this in Math.floor or Math.roundof.
+console.log(Math.floor(Date.now()/1000));
+// so we get seconds and such small value compare easily.
+
+
+
+// some more method that get with date easily
+
+let newdate = new Date()
+console.log(newdate);  
+// because date is a object in itself but if we print this as it is so newdate doesn't give you some important imformation we have to calculate this and convert this if we want to extract some more information form this suppose we don't want to convert all in string we only want to know month or year so we can easily and for this we have some method.
+console.log(newdate.getMonth() + 1 );  // here we +1 because here month is count from 0
+console.log(newdate.getDate());
+console.log(newdate.getDay());
+console.log(newdate.getFullYear());
+console.log(newdate.getHours());
+console.log(newdate.getMinutes());
+console.log(newdate.getSeconds());
+
+
+
+
+
+
+
+
+
 
 
 

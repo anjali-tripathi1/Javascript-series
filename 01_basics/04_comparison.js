@@ -112,7 +112,7 @@ console.log(`Result of triple equailty check :- ${ "2" === 2}`);
 // doing with (===) it won't be convert now it will check datatype too. it check that one is in string and other one is in number so to convert or not, both are diffrent so Don't do conversion because it's (===) and both are not same and both datatypes are diffrent.
 
 // Summary
-// same datatype basic has no problem, problem is create in same datatype.
+// same datatype basic has no problem, problem is not create in same datatype.
 // where one value is in string datatype and other value is number or boolean then it creates problem on changing datatype.
 // In null and undefined when we do the conversion then sometimes value is NaN, sometimes 0 and after that 
 // when we do comparison it creates problem.  

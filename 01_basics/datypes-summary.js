@@ -13,7 +13,7 @@ const score = 100;
 // like Javascript there's one more language named typescript there we need to defined datatype like this.
 // const score:number = 100 
 
-const scorevalue = 100.5;  // this is also number
+const scorevalue = 100.5;  // these float values are also number
 
 const isLoggedIn = true;
 const outsideTemp = null;

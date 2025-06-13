@@ -47,6 +47,7 @@
 
 //  // String conversion
 
+ let valueInString = String(score);
  let valueInString1 = String(score1);
  let valueInString2 = String(score2);
  let valueInString3 = String(score3);
@@ -55,6 +56,7 @@
  let valueInString6 = String(score6);
  let valueInString7 = String(score7);
 
+console.log(`Data Type of valueInString :- ${typeof valueInString} and value is ${valueInString}`);
 console.log(`Data Type of valueInString1 :- ${typeof valueInString1} and value is ${valueInString1}`);
 console.log(`Data Type of valueInString2 :- ${typeof valueInString2} and value is ${valueInString2}`);
 console.log(`Data Type of valueInString3 :- ${typeof valueInString3} and value is ${valueInString3}`);

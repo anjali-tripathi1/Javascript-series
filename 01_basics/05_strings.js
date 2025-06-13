@@ -21,7 +21,15 @@
 //  3 : "a"
 //  4 : "l"
 //  5 : "i"
-// length : 6
+//  6 : "-"
+//  7 : "T"
+//  8 : "r"
+//  9 : "-"
+// 10 : "c"
+// 11 : "o"
+// 12 : "m"
+
+// length : 13
 
  // if we want any property we know that we have keyvalue pairs so we will get property easily.
  console.log(gameName[0]);    // we want to access key.

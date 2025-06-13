@@ -45,9 +45,32 @@
    //  this add values in start.
     
    console.log(myArr);   
-   
+    console.log(myArr.includes(9));
+   console.log(myArr.indexOf(3));   // 9 is not exist in array so it gives -1 whatever value is, if value is exist so it will show in index 4.
+
+   // some fuction in javascript and array that ask questions and they answer in true or false. this ask questions in array and it gives answer in true or false.  
 
   const myArr1 = [0, 1, 2, 3, 4, 5]
   myArr1.shift()          
     //  this is like pop and push inside shift we don't give argument and 0 is despair and here 0 is shift. 
-   console.log(myArr1);                         
+   console.log(myArr1); 
+   
+   const newArr = myArr.join()
+   
+   console.log(myArr);
+   console.log(newArr);
+   console.log(typeof newArr);
+
+   // myArr has come in array form and In newArr values are same but change in type when we run this in type of so we will know that join has binded our array and inside this it has converted in string.   
+   
+   
+  // slice,  splice
+
+  console.log("A ", myArr);
+  
+  const myn1 = myArr.slice(1, 3)
+  // returns section of array
+
+  console.log(myn1);
+   console.log("B ", myArr);
+   

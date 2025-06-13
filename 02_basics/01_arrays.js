@@ -66,11 +66,18 @@
    
   // slice,  splice
 
-  console.log("A ", myArr);
+  console.log("A ", myArr);     // original array
   
-  const myn1 = myArr.slice(1, 3)
+  const myn1 = myArr.slice(1, 3)  // here last range is not print.
   // returns section of array
 
-  console.log(myn1);
+  console.log(myn1);           // slice
    console.log("B ", myArr);
-   
+
+   const myn2 = myArr.splice(1, 3)  // here last range is print.
+   console.log("C ", myArr);
+   console.log(myn2);      // splice    // here original array has been manipulated. 
+      
+
+  // => important > what is diffrence between slice and splice ?
+             ///      the diffrence between slice and splice depends on that which operation manipulates the original array and which don't.

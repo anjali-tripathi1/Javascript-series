@@ -1,6 +1,6 @@
  // Conversion of Datatypes
 
- let score = 33;
+ let score =  33;
  let score1 = "33";
  let score2 = "33abc";
  let score3 = null;
@@ -21,6 +21,23 @@
  console.log(`Data Type of score6 :- ${typeof score6} and value is ${score6}`);
  console.log(`Data Type of score7 :- ${typeof score7} and value is ${score7}`);
 
+
+ //    one more way to declare datatypes
+
+ const sname = new String("Anjali");
+ console.log(`value of string :- ${sname} and Datatype is :- ${typeof sname}`);
+
+const nname = new Number(15);
+console.log(`value of number :- ${nname} and Datatype is :- ${typeof nname}`);
+
+const bisLoggedIn = new Boolean(true);
+console.log(`value of boolean :- ${bisLoggedIn} and Datatype is :- ${typeof bisLoggedIn}`);
+
+const outsideTemp = null;
+console.log(`value of null :- ${outsideTemp} and Datatype is :- ${typeof outsideTemp}`);
+
+const accountCity = undefined
+console.log(`value of undefined :- ${accountCity} and datatype is :- ${typeof accountCity}`);
 
 // Number conversion
 

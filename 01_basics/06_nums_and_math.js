@@ -3,7 +3,7 @@
  console.log(score);
 
  const balance = new Number(100)
- console.log(balance);
+ console.log(`value of number :- ${balance} and datatype is ${typeof balance}`);
 
  // so this is the diffrence between both that score is 500 because it define automatically that it is number type. but in balance number is specifically cast that it is number type so this is the diffrence new is being defineing object and this is number type. 
 
@@ -43,9 +43,9 @@
 console.log(Math);
 // this is object in itself and inside this many properties.
 // here we get less value but in console we get lots of properties. and we can access these values by doing add (.).
-// we can akso access fuctions.
+// we can also access fuctions.
 console.log(Math.abs(-5));
-// abs is absolute value sometimes we have negative values and we have to change the sign and here only _neg values change +positive and this is absolute. and +posit is +Posi that's not change.
+// abs is absolute value sometimes we have negative values and we have to change the sign and here only -neg values change +positive and this is absolute. and +posit is +Posi that's not change.
 
 
 console.log(Math.round(4.3));

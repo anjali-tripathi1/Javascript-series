@@ -13,6 +13,7 @@
   
   const JsUser = {
         name: "Anjali",
+        "full name": "Anjali Tripathi",
         age:  19,
         isLoggedIn: false,
         location: "banda",
@@ -37,5 +38,8 @@ console.log(JsUser.email);
 // we can access like this all with .value that you want to access and then console.log.
 
 // one more way to access objects.
-console.log(JsUser["email"]);    // behind the scence it is taken as in string so we use string.
+console.log(JsUser["email"]);    
+// behind the scence it is taken as in string so we use string. we have to know this if we hae value like this so in this case we have to use this method and you can access this type of string structure with (.)
+console.log(JsUser["full name"]);
+
 

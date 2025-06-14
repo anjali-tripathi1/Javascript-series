@@ -55,7 +55,7 @@ console.log(gameName.indexOf("l"));
 const newString = gameName.substring(0, 5)
 console.log(newString);
 
-//  in slice protype we can also give negative value.
+//  in slice method we can also give negative value.
 const anotherString = gameName.slice(-8, 6)
 console.log(anotherString);
 
@@ -137,7 +137,7 @@ console.log(atSentence.codePointAt(2));
 
 const value1 = new String("Hello")
 const value2 = new String("Anjali")
-console.log(value1.concat(" ", value2));
+console.log(value1.concat("  ", value2));
 console.log(value2.concat(",  ", value1));
 
 

@@ -30,10 +30,16 @@
 // in javascript we get some method with the help of these methods we can easily these 0 repersentation.
 // these are presented with comma and these comma are usually or by default related with US standards. and  in US standrads values are 100, 1000 and 1000, 1000 like this we can also convert this default value so we can use  indian standrads 'en-In' and there are more values that we can check in mdn docs.
 
-// for computing programing or DSA  there a concept that is min and max value that how many max values can we take in number.
-// Number is a datatype and with attach this we get direct properties and there are very fuctions like native code and as we put (.) so we have many values.
-// if we put max value we know that this can be maximum value. just like this we get min value,In max safe integer we can say that just that much can be value and other on.  
+// for computing programing or DSA  there a concept that is min and max value that how can we take maximum value in Number  and here lots of methods.
+// Number is a datatype and attach  with this we get direct properties and there are very fuctions like native code and as we put (.) so we have many values.
+// if we put max value we know that this can be maximum value. just like this we get min value,In max safe integer we can say that just that we can store just much value in javascript.  
 //  Number.maxvalue
+
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+console.log(Number.MAX_SAFE_INTEGER);
+
+
 
 
 // ###################### maths ########################

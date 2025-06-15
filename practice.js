@@ -463,6 +463,68 @@ console.log(numberOne);
 const numberTwo = new Number(300) 
 console.log(numberTwo);
 
+console.log(numberTwo.toString().length);
+// console.log(numberTwo.toString());
+
+
+console.log(numberTwo.toFixed(2));
+console.log(numberTwo.toFixed(3));
+
+
+const otherNumber = 11.8921
+console.log(otherNumber.toPrecision(3));
+
+const hundreads = 100000000
+console.log(hundreads.toLocaleString('en-In'));
+
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+console.log(Number.MAX_SAFE_INTEGER);
+
+console.log(Math);
+console.log(Math.abs(-5));
+
+console.log(Math.round(4.3));
+// when we don't want decimal
+
+
+console.log(Math.ceil(4.3));
+console.log(Math.floor(4.3));
+console.log(Math.round(4.6));
+console.log(Math.sqrt(64));
+console.log(Math.sqrt(81));
+console.log(Math.sqrt(169));
+console.log(Math.pow(5, 3));
+console.log(Math.pow(5, 4));
+
+console.log(Math.max(5, 8, 4, 3, 2, 1, 0, 5));
+console.log(Math.min(5, 8, 4, 3, 2, 1, 0, 5));
+
+console.log(Math.random());
+
+console.log((Math.random()*10)  + 1);
+console.log(Math.floor(Math.random()*10) + 1);
+
+const max = 10
+const min = 20
+console.log(Math.floor(Math.random() * (max- min + 1 ) + min ));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

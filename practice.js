@@ -509,6 +509,17 @@ const max = 10
 const min = 20
 console.log(Math.floor(Math.random() * (max- min + 1 ) + min ));
 
+let mydate = new Date() 
+console.log(mydate);
+console.log(mydate.toString());
+console.log(mydate.toLocaleString());
+console.log(mydate.toLocaleDateString());
+console.log(mydate.toISOString());
+console.log(mydate.toJSON());
+console.log(typeof mydate);
+
+
+
 
 
 

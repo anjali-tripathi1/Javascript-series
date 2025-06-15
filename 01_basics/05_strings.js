@@ -1,4 +1,6 @@
  
+// strings are very powerful in any language. 
+
  const name = "Anjali"
  const repoCount = 10
 
@@ -83,7 +85,7 @@ console.log(url.replace('%20', '@#' ));
 console.log(url.includes('anjali'));
 console.log(url.includes('saroj'));
 
-// now we want to convert that gamename string into array based on (-) this split in diffrent part and based on can be anything like spaces, dashes.
+// now we want to convert that gamename string into array based on what so in (-) that i what whatever values like Anjali-Tr-com this is split on diffrent part based on (-)  and based on anything like spaces, dashes.
 
 console.log(gameName.split('-'));
 

@@ -386,7 +386,7 @@ console.log(userTwo.age);
 const myString = "Anjali"
 console.log(myString);
 
-const myNewString = new String("Saroj Tripathi")
+const myNewString = new String("Saroj-Tripathi")
 console.log(myNewString);
 // 0 : "S"
 // 1 : "a"
@@ -433,6 +433,37 @@ const cartoonName = new String("Saroj-Tr-com")
 console.log(cartoonName.split('-'));
 console.log(cartoonName.split(' '));
 console.log(cartoonName.split('##'));
+
+const atSentence = new String("A fox is a very cunning animal.")
+const atIndex = new String(9)
+const atnewIndex = "animal"
+
+console.log(atSentence.at(atIndex));
+
+const atnegIndex = new String(-11)
+console.log(atSentence.at(atnegIndex));
+
+console.log(atSentence.charCodeAt(0));
+console.log(atSentence.charCodeAt(3));
+console.log(atSentence.codePointAt(0));
+
+const newvalueOne = new String("Hello")
+const newvalueTwo = new String("World")
+console.log(newvalueOne.concat(" ", newvalueTwo));
+console.log(newvalueTwo.concat(",  ", newvalueOne));
+
+console.log(atSentence.endsWith("animal."));
+console.log(atSentence.lastIndexOf("animal."));
+console.log(atSentence.lastIndexOf(atnewIndex));
+
+
+const numberOne = 100
+console.log(numberOne);
+
+const numberTwo = new Number(300) 
+console.log(numberTwo);
+
+
 
 
 

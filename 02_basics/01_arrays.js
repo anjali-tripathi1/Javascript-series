@@ -52,7 +52,8 @@
 
   const myArr1 = [0, 1, 2, 3, 4, 5]
   myArr1.shift()          
-    //  this is like pop and push inside shift we don't give argument and 0 is despair and here 0 is shift. 
+    //  this is like pop and push inside shift we don't give argument and this removes first element. 0 is despair and here 0 is shift. 
+    myArr1.unshift()  // insert new elements at the start of an array. 
    console.log(myArr1); 
    
    const newArr = myArr.join()

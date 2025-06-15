@@ -518,6 +518,133 @@ console.log(mydate.toISOString());
 console.log(mydate.toJSON());
 console.log(typeof mydate);
 
+let mynewdate = new Date(2026, 0, 25)
+console.log(mynewdate.toDateString());
+
+let anothermynewdate = new Date(2023, 0, 15, 6, 20, 5)
+console.log(anothermynewdate.toLocaleString());
+
+let myspecificdate = new Date("2024-01-15")
+console.log(myspecificdate.toLocaleString());
+
+let myspecialdate = new Date("02-22-2026")
+console.log(myspecialdate.toLocaleString());
+
+let myTimeStamp = Date.now()
+console.log(myTimeStamp);
+
+
+console.log(myspecialdate.getTime());
+
+console.log(Date.now()/1000);
+
+console.log(Math.floor(Date.now()/1000))
+
+let newdatemethod = new Date()
+console.log(newdatemethod); 
+
+console.log(newdatemethod.getDay());
+console.log(newdatemethod.getMonth() + 1);
+console.log(newdatemethod.getDate());
+console.log(newdatemethod.getFullYear());
+console.log(newdatemethod.getHours());
+console.log(newdatemethod.getMinutes());
+console.log(newdatemethod.getSeconds());
+
+
+console.log(newdatemethod.toLocaleString('default',{
+    weekday: "long",
+    day: "2-digit",
+    month: "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    second: "2-digit"
+}));
+
+
+const heroes = ["shaktiman", "spiderman", "Batman"]
+const numbers = [0, 1, 2, 3, 4, 5]
+const isAdmitted = [true, false]
+const outsideTemp = [null]
+const accountState = [undefined]
+const mixvalue = ["Anjali", "Saroj", true, false, 0, 2, 5 ]
+
+console.log(heroes);
+console.log(typeof heroes);
+console.log(numbers);
+console.log(typeof numbers);
+console.log(isAdmitted);
+console.log(outsideTemp);
+console.log(accountState);
+console.log(mixvalue);
+
+const myArr = new Array(0, 1, 2, 3, 4, 5, "Anjali", "Saroj", true, false)
+console.log(myArr);
+
+console.log(myArr.length);
+
+myArr.push(6)
+console.log(myArr);
+
+myArr.push(7)
+console.log(myArr);
+
+myArr.pop()
+console.log(myArr);
+
+console.log(myArr.includes("Anjali"));
+console.log(myArr.indexOf("Saroj"));
+
+const myArr1 = [5, 1, 2, 3, 4, 5]
+
+myArr1.shift()
+console.log(myArr1);
+
+myArr1.unshift("Anjali", "Saroj")
+console.log(myArr1);
+
+const newArr = myArr.join()
+console.log(myArr);
+console.log(newArr);
+
+console.log(`Value of orginal array A:- ${"A", myArr} and datatype :- ${typeof myArr}`);   
+
+const myn1 = myArr.slice(1, 7)   // last range is not print.
+console.log(myn1);
+
+
+console.log(`Value of orginal array B:- ${"B", myArr} and datatype :- ${typeof myArr}`);  
+
+const myn2 = myArr.splice(1, 7)   // last range is print
+console.log(myn2);
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

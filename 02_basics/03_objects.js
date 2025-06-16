@@ -11,6 +11,7 @@
   // object literals 
   // this is the way to declare objects both ways create objects as such anything performance improvement is not done. only the diffrence is singleton.
   
+  // how to declare objects
   const JsUser = {
         name: "Anjali",
         "full name": "Anjali Tripathi",
@@ -21,10 +22,10 @@
         LastLoginDays: ["Monday", "Saturday"]
 
 }   
-  // these {} are objects now this is empty object but if we insert value inside this so we can access this. inside objects there are some point of keys and values (before this down line) but in objects this is change, here you can define key and value both in array you can't define key you only give [1], [2] and so on. here you can also give 0, 1, 2  in place of name or something like this. by default in it when we give name so system process this as in string => "name" but we don't write like this because that already accept in itself that i am string. and inside this value which you want to give you can like string, boolean, number, fuction, array, or one more object. doesn't matter.
+  // these {} are objects now this is empty object but if we insert value inside this so we can access this. inside objects there is a whirlwind(chakkar) of keys and values (before this down line 1.) but in objects this is change, here you can define key and value both in array you can't define keys you only give [1], [2] and so on. in objects you can also give 0, 1, 2  in place of name or something like this. by default in it when we give name so system process this as in string => "name" but we don't write like this because that already accept in itself that i am string. and inside this value which you want to give you can like string, boolean, number, fuction, array, or one more object. doesn't matter.
   
 
-//   like we declare array and we give values so we don't have any another way to access this, we only know one method and this can be access from this same way.
+// 1.  like we declare array and we give values so we don't have any another way to access this, we only know one method and this can be access from this same way.
 // myarray = ["A", "n"]
 // myarray[1]      //  this property of array like [0], [1] access like this so we have only this way to access.
 

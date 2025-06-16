@@ -298,7 +298,20 @@ console.log( mynewString[12]);
 console.log(mynewString.__proto__);
 console.log(mynewString.toUpperCase());
 console.log(mynewString.toLowerCase());
-console.log(mynewString.charAt(7));
+console.log(mynewString.charAt(9));
+console.log(mynewString.indexOf('S'));
+console.log(mynewString.substring(0, 7));
+console.log(mynewString.slice(-2, 5));
+const myotherString = mynewString.slice(-2, 5)
+console.log(myotherString);
+
+const anotherString = "   Anjali   "
+console.log(anotherString.trim());
+
+
+
+
+
 
 
 

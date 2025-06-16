@@ -44,3 +44,9 @@ console.log(JsUser["email"]);
 console.log(JsUser["full name"]);
 
 
+// you can also use symbol
+
+// how to declare symbol 
+const mySym = Symbol("key1")
+
+// now if we want to declare this symbol in object so how will we do.

@@ -307,6 +307,97 @@ console.log(myotherString);
 
 const anotherString = "   Anjali   "
 console.log(anotherString.trim());
+console.log(anotherString.trimStart());
+console.log(anotherString.trimEnd());
+
+const url = "https://anjali.com//anjali%20Tripathi" 
+console.log(url.replace('%20', ('-')));
+console.log(url.replace('%20', (' ')));
+console.log(url.replace('%20', ('##')));
+
+console.log(url.includes('anjali'));
+console.log(url.includes('Saroj'));
+
+console.log(mynewString.split('-'));    // comma (,)
+console.log(mynewString.split(' '));   // hyphen (-)
+console.log(mynewString.split('_'));  
+
+console.log(mynewString.at(-4));
+
+const myValueOne = "Hello"
+const myValueTwo = "World"
+console.log(myValueOne.concat(", ", myValueTwo));
+console.log(myValueTwo.concat(", ", myValueOne));
+
+console.log(mynewString.endsWith("Tripathi"));
+console.log(mynewString.endsWith("Tripathi", 6));
+console.log(mynewString.indexOf(''));
+
+console.log(mynewString.lastIndexOf("Tripathi"));
+
+
+const myNumber = 200
+console.log(myNumber);
+
+const mynumberone = new Number(300)
+console.log(mynumberone);
+
+console.log(mynumberone.toString().length);
+
+console.log(mynumberone.toFixed(2));
+console.log(mynumberone.toFixed(3));
+
+const myanotherNumber = 22.8945
+console.log(myanotherNumber.toPrecision(2));
+
+const  hundreads = 10000000
+console.log(hundreads.toLocaleString('en-In'));
+ 
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+console.log(Number.MAX_SAFE_INTEGER);
+
+console.log(Math);
+console.log(Math.abs(-5));
+
+console.log(Math.round(3.5));
+console.log(Math.ceil(6.2));
+console.log(Math.floor(6.9));
+
+console.log(Math.sqrt(144));
+console.log(Math.pow(5, 6));
+
+console.log(Math.max(0, 1, 4, 5, 8, 15));
+console.log(Math.min(1, 5, 8, 4, 7));
+
+console.log(Math.random()* 10 + 1);
+
+console.log((Math.random() * 10) + 1);
+console.log(Math.floor(Math.random() * 10) + 1);
+
+const min = 10
+const max = 20
+console.log(Math.floor(Math.random() * (max - min + 1)) + min );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

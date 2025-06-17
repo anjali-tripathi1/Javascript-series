@@ -43,21 +43,21 @@ console.log(JsUser.email);
 
 // one more way to access objects.
 console.log(JsUser["email"]);    
-// behind the scence it is taken as in string so we use string. we have to know this if we hae value like this so in this case we have to use this method and you can access this type of string structure with (.)
+// behind the scence it is taken as in string so we use string. we have to know this if we have value like this so in this case we have to use this method and you can access this type of string structure with (.)
 console.log(JsUser["full name"]);
 console.log(JsUser[mySym]);
 
-
+// important=> whenever we access values so we use (.) most of the cases but there are some cases where we have to use [] square bracket or some special cases that ask in interview where you don't have another option so you are accessed from square bracket 
 
 // you can also use symbol
 
 // how to declare symbol 
 // const mySym = Symbol("key1") 
 
-// now if we want to declare this symbol in object so how will we do. now if we want to declare this symbol in object Jsuser then how will we do it or we have to use symbol as a key so this ask inerview many times that a  take a symbol and add that in object keys and then print and show me.
+// now if we want to declare this symbol in object so how will we do. now if we want to declare this symbol in object Jsuser then how will we do it or we have to use symbol as a key so this ask inerview many times that   take a symbol and add that in object keys and then print and show me.
 
 // if we want to use symbol as key so can't use direct. if you do like this so it is not done.
-// mySym: "mykey1" so here mykey1 is print but if we will check datatype so it is not usee as symbol if we want to use this as an symbol so we have only one way to use these in bracket because this is syntax.
+// mySym: "mykey1" so here mykey1 is print but if we will check datatype so it is not use as symbol it treats as string if we want to use this as an symbol so we have only one way to use these in bracket because this is syntax.
 
 // [mySym] = "mykey1"  so we have to use this insted of that. if we want to access this so we have to use this in square bracket. 
 // console.log(JsUser[mySym]);
@@ -68,7 +68,7 @@ console.log(JsUser[mySym]);
 JsUser.email = "Anjali7398.com" 
 // so with aasignment operater (=) we can overright the value. we can also lock the value. if you want that none can change this value so you can freeze that object value.
 // we have to use this structure
-// Object.freeze(JsUser)
+Object.freeze(JsUser)
 JsUser.email = "Saroj9452google.com"
 console.log(JsUser);
 // so here before frreze structure is changed but that new change is not propogated and here key1 is showing is a symbol
@@ -87,7 +87,12 @@ console.log(JsUser.greeting());
 // so if we use like this so the value is print. and we have to remove freeze.
 
 JsUser.greetingTwo = function(){
-   console.log("Hello JS user");
+   console.log(`Hello JS user,  ${this.name}`);
    
 }
-// now we have to refrence that name that is inside object JsUser so refrence that name we have change its console from strings to backticks so this is called string inerpolation. 
+// now we have to refrence that name that is inside object JsUser so refrence that name we have change its console from strings to backticks so this is called string intrpolation. so here if you want to refrence the same object so you can write this and after add (.) whatever our object and inside this object we have as much as properties we get all here because lots of object can be possible now it doesn't know that now you are refrencing that object or Jsuser inside that what are the properties so for knowing that we take (this.).
+
+console.log(JsUser.greeting());
+console.log(JsUser.greetingTwo());
+// so this undefined sometimes we will see in browser.whenever when we will show this type of function and method so there you can also see undefined because one excution is done automatically.
+

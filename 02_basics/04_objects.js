@@ -39,10 +39,27 @@ const regularUser = {
  // as we combined/merged array mutually likewise we will combine/merge objects.
  const obj1 = {1: "a", 2: "b"}
  const obj2 = {3: "a", 4: "b"}
+ const obj3 = {5: "a", 6: "b"}
  // now we don't use name so we take keys as number , and take values as strings.
- const obj3 = { obj1, obj2 }
- console.log(obj3);
- 
+ const obj4 = { obj1, obj2,obj3 }
+ console.log(obj4);
  // here value is print object inside object.
+
+//  one more syntax to combine
+ const obj5 = Object.assign(obj1, obj2, obj3)
+ console.log(obj5);
+
+ // we can also use currlibraces with this syntax by adding this there is no change the result remains same. so this {} is optional parameter but if we will give this it'll good because as much as values will add gurranted. 
+ const obj6 = Object.assign({}, obj1, obj2, obj3)
+ console.log(obj6);
+ 
+
+ // one more syntax that we use for combine
+ const obj7 = {...obj1, ...obj2, ...obj3}
+ console.log(obj7);
+ 
+ 
+// one more syntax which we will use when values come from database.
+// suppose users have come when users come from  most of the database then users come array of objects.
   
  

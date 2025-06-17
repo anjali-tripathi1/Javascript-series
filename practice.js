@@ -379,6 +379,128 @@ const min = 10
 const max = 20
 console.log(Math.floor(Math.random() * (max - min + 1)) + min );
 
+const names = ["Anjali", "Saroj", "Aditya"]
+const numbers = [100, 200, 300]
+const isMarried = [true]
+const outsideWeather = [null]
+const City = [undefined]
+
+console.log(names)
+console.log(numbers)
+console.log(isMarried)
+console.log(outsideWeather)
+console.log(City)
+
+const myobj = {
+    name: "Anjali",
+    age: 19,
+    isAdmitted: false,
+    temp: null,
+    state: undefined,
+    value: ["shinchan", 300, true],
+  
+   }
+
+   console.log(myobj);
+
+   let myYoutubename = "Anjali@google.com"
+
+   let anothername = myYoutubename
+   anothername = "Anjali@123.com"
+   console.log(myYoutubename);
+   console.log(anothername);
+
+   let myNumbervalue = 200
+
+   let anothervalue = myNumbervalue
+   anothervalue = 300
+   console.log(myNumbervalue);
+   console.log(anothervalue);
+
+
+   let myBooleanvalue = true
+
+   let anotherbooleanValue = myBooleanvalue
+   anotherbooleanValue = false
+   console.log(myBooleanvalue);
+   console.log(anotherbooleanValue);
+   
+   
+   const userOne = {
+       email: "Anjali@google.com",
+       upi: "user@ybl"
+   }
+
+   let userTwo = userOne
+   userTwo.email = "Saroj123@google.com"
+   console.log(userOne.email);
+   console.log(userTwo.email);
+
+   const myArr = new Array(0, 1, 2, 3, 4, 5)
+   console.log(myArr[3]);
+
+   myArr.push(6)
+   myArr.push(7)
+   myArr.pop()
+   myArr.shift()
+   myArr.unshift(5)
+   console.log(myArr); 
+
+   const myArr2 = new Array("shaktiman", "shinchan", 100, 200, true)
+   console.log(myArr2);
+
+   console.log(myArr2.includes("saroj"));
+   console.log(myArr2.indexOf("shinchan"));
+
+   const newArr = myArr2.join()
+   console.log(myArr2);
+   console.log(newArr);
+   console.log(typeof newArr);
+
+  const mynewArr = [0, 1, 2, 3, 4, 5]
+  const myn1 = mynewArr.slice(1, 3)
+  console.log(myn1);
+
+  const myn2 = mynewArr.splice(1, 4)
+  console.log(myn2);
+  
+  const dc_Heroes = ["batman", "spiderman", "superman"]
+  const marvel_Heroes = ["shinchan", "Doremon", "pokemon"]
+
+  dc_Heroes.push(marvel_Heroes)
+  console.log(dc_Heroes);
+  
+   console.log(dc_Heroes[3][1])
+
+ const allHeroes = dc_Heroes.concat(marvel_Heroes)
+  console.log(allHeroes);
+
+  const all_new_heroes = [...dc_Heroes, ...marvel_Heroes]
+  console.log(all_new_heroes);
+
+  const another_array = [1, 2, 3, 4, 5, [6, 7], [6, 7, [4, 5]] ]
+  console.log(another_array);
+
+  const real_another_array = another_array.flat(2)
+  console.log(real_another_array);
+
+ log
+  
+  
+  
+  
+     
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
 
 
 

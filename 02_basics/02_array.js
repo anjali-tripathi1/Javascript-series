@@ -5,7 +5,7 @@
  //  this push in existing array
 
  console.log(marvel_Heroes);
- // here there is an array inside an array that we don't want in this situation, in javascript arrays take any type of entry data suppose in marval_heroes in's not important that all values should be in strings. we can take boolean value, objects so for proveing that array takes any data so it takes array as a data, array is single element here like element numbers are [1, 2, 3, and this all dc is 4 element and this element has further balue this id diffrent ] so it happens like this.
+ // here there is an array inside an array that we don't want in this situation, in javascript arrays take any type of entry data suppose in marval_heroes in's not important that all values should be in strings. we can take boolean value, objects so for proveing that array takes any data so it takes array as a data, array is single element here like element numbers are [1, 2, 3, and this all dc is 4 element and this element has further value this is diffrent ] so it happens like this.
 
  // if you want to access any value thor[0], ir[1], sp[2], and dc is[3] and if we take this [3] element so it is array in itself if you want to take out more values inside this so we have to do this.
 

@@ -1,492 +1,121 @@
- var accountPassword = "12345"
- console.log(accountPassword);
- accountPassword = "25431"
- console.log(accountPassword);
- var accountPassword = 225511
- console.log(accountPassword);
+ const myString = ["shaktiman", "Doremon", "Pokemon"]
+ const myNumber = [100, 200, 300]
+ const myBoolean = [true, false]
+ const myArray = ["pokemon", 100, true, {name : "Anjali", age : 19, isLoggedIn : true},]
+console.log(myString[2]);
+console.log(myNumber[1]);
+console.log(myBoolean);
+console.log(myArray);
+
+const myArray2 = new Array("Anjali", "Saroj", "Shaktiman", 100, 200, true, false, ["Anjali", 300, true, {name : "Anjali"}], { number : 200, name : "Anjali"})
+console.log(myArray2);
+
+const myArr = ["Anjali", 100, 200, true, false]
+console.log(myArr);
+
+myArr.push(300)
+// console.log(myArr);
+myArr.pop()
+myArr.shift()
+myArr.unshift(25)
+// console.log(myArr);
+
+// console.log(myArr.length);
+// console.log(myArr.includes(200));
+// console.log(myArr.indexOf(9));
+
+// const mynewArr = myArr.join()
+// console.log(myArr);
+// console.log(mynewArr);
+// console.log(typeof mynewArr);
+const myArr3 = new Array("Anjali", 100, 200, true, false)
+
+const myn1 = myArr3.slice(0, 3)
+console.log(myn1);
+
+const myn2 = myArr3.splice(0, 3)
+console.log(myn2);
+
+const marval_heroes = ["shaktiman", "Pokemon", "Doremon"]
+const dc_Heroes = ["Anjali", "Saroj", 200, 300]
+
+marval_heroes.push(dc_Heroes)
+console.log(marval_heroes);
+
+marval_heroes.concat(dc_Heroes)
+console.log(marval_heroes);
+
+console.log(marval_heroes[3][1]);
 
 
- let accountEmail = "Anjali@google.com"
- accountEmail = "Anjali123.com"
- console.log(accountEmail);
- 
+const myvalue1 = ["shaktiman", "pokemon", 200, 300]
+const myvalue2 = ["shinchan", "Doremon", 300, 200]
 
- const accountName = "Anjali"
- console.log(accountName);
+const allValues = myvalue1.concat(myvalue2)
+console.log(allValues);
 
- let name = "Anjali"
- let age = 19
- let isLoggedIn = true
- let weather = null
- let accountState = "Banda"
- let accountCity = undefined
- let accountNo = Symbol()
- 
- console.log(typeof name);
- console.log(typeof(name));
- console.log(typeof age);
- console.log(typeof(age));
- console.log(typeof isLoggedIn);
- console.log(typeof(isLoggedIn));
- console.log(typeof weather);
- console.log(typeof(weather));
- console.log(typeof accountState);
- console.log(typeof(accountState));
- console.log(typeof accountCity);
- console.log(typeof(accountCity));
- console.log(typeof accountNo);
- console.log(typeof(accountNo));
+const all_new_heroes = [...myvalue1, ...myvalue2]
+console.log(all_new_heroes);
 
- let score = 33
- let score1 = "33"
- let score2 = "33abc"
- let score3 = true
- let score4 = false
- let score5 = "Anjali"
- let score6 = ""
- let score7 = null
- let score8 = undefined
- let score9 = -1/0
- let score10 = 0
- let score11 = 1
- 
+const mynewvalues = [0, 1, 2, 3, 4, 5, [4, 5], [5, 6, 7, [4, 5]]]
+const my_new_values = mynewvalues.flat(2)
+console.log(my_new_values);
 
- console.log(`value of datatype is :- ${typeof score} and value is :- ${score}`);
- console.log(`value of datatype is :- ${typeof score1} and value is :- ${score1}`);
- console.log(`value of datatype is :- ${typeof score2} and value is :- ${score2}`);
- console.log(`value of datatype is :- ${typeof score3} and value is :- ${score3}`);
- console.log(`value of datatype is :- ${typeof score4} and value is :- ${score4}`);
- console.log(`value of datatype is :- ${typeof score5} and value is :- ${score5}`);
- console.log(`value of datatype is :- ${typeof score6} and value is :- ${score6}`);
- console.log(`value of datatype is :- ${typeof score7} and value is :- ${score7}`);
- console.log(`value of datatype is :- ${typeof score8} and value is :- ${score8}`);
- console.log(`value of datatype is :- ${typeof score9} and value is :- ${score9}`);
- console.log(`value of datatype is :- ${typeof score10} and value is :- ${score10}`);
- console.log(`value of datatype is :- ${typeof score11} and value is :- ${score11}`);
- 
- let holder = new String("Anjali")
- console.log(`value of datatype :- ${typeof holder} and value is :- ${holder}`);
+console.log(Array.isArray("Anjali"));
+console.log(Array.from("Anjali"));
+console.log(Array.from([100, 200, 300]));
+console.log(Array.from([true, false]));
+console.log(Array.from({name : "Anjali"[0, 0]}));
 
- let email = new Number(200)
- console.log(`value of datatype :- ${typeof email} and value is :- ${email}`);
+let score1 = "Anjali"
+let score2 = 200
+let score3 = true
+let score4 = false
+let score5 = ["Anjali", 100, true]
+let score6 = {
+    name : "Anjali",
+    age :  19,
+    isLoggedIn : true
+}
 
- let isAdmitted = new Boolean(true)
- console.log(`value of datatype :- ${typeof isAdmitted} and value is :- ${isAdmitted}`);
- 
- let outsideTemp =  null
- console.log(`value of datatype :- ${typeof outsideTemp} and value is :- ${outsideTemp}`);
-
- let State = undefined
- console.log(`value of datatype :- ${typeof State} and value is :- ${State}`);
+console.log(Array.of(score1, score2, score3, score4, score5, score6));
 
 
- let valueInString = String(score)
- let valueInString1 = String(score1)
- let valueInString2 = String(score2)
- let valueInString3 = String(score3)
- let valueInString4 = String(score4)
- let valueInString5 = String(score5)
- let valueInString6 = String(score6)
- let valueInString7 = String(score7)
- let valueInString8 = String(score8)
- let valueInString9 = String(score9)
- let valueInString10 = String(score10)
- let valueInString11 = String(score11)
 
 
- console.log(`value of stringDatatype :- ${typeof valueInString} and value is :- ${valueInString}`);
- console.log(`value of stringDatatype1 :- ${typeof valueInString1} and value is :- ${valueInString1}`);
- console.log(`value of stringDatatype2 :- ${typeof valueInString2} and value is :- ${valueInString2}`);
- console.log(`value of stringDatatype3 :- ${typeof valueInString3} and value is :- ${valueInString3}`);
- console.log(`value of stringDatatype4 :- ${typeof valueInString4} and value is :- ${valueInString4}`);
- console.log(`value of stringDatatype5 :- ${typeof valueInString5} and value is :- ${valueInString5}`);
- console.log(`value of stringDatatype6 :- ${typeof valueInString6} and value is :- ${valueInString6}`);
- console.log(`value of stringDatatype7 :- ${typeof valueInString7} and value is :- ${valueInString7}`);
- console.log(`value of stringDatatype8 :- ${typeof valueInString8} and value is :- ${valueInString8}`);
- console.log(`value of stringDatatype9 :- ${typeof valueInString9} and value is :- ${valueInString9}`);
- console.log(`value of stringDatatype10 :- ${typeof valueInString10} and value is :- ${valueInString10}`);
- console.log(`value of stringDatatype11 :- ${typeof valueInString11} and value is :- ${valueInString11}`);
- 
- 
- let valueInNumber = Number(score)
- let valueInNumber1 = Number(score1)
- let valueInNumber2 = Number(score2)
- let valueInNumber3 = Number(score3)
- let valueInNumber4 = Number(score4)
- let valueInNumber5 = Number(score5)
- let valueInNumber6 = Number(score6)
- let valueInNumber7 = Number(score7)
- let valueInNumber8 = Number(score8)
- let valueInNumber9 = Number(score9)
- let valueInNumber10 = Number(score10)
- let valueInNumber11 = Number(score11)
-
- console.log(`value of numberDatatype :- ${typeof valueInNumber} and value is :- ${valueInNumber}`);
- console.log(`value of numberDatatype1 :- ${typeof valueInNumber1} and value is :- ${valueInNumber1}`);
- console.log(`value of numberDatatype2 :- ${typeof valueInNumber2} and value is :- ${valueInNumber2}`);
- console.log(`value of numberDatatype3:- ${typeof valueInNumber3} and value is :- ${valueInNumber3}`);
- console.log(`value of numberDatatype4:- ${typeof valueInNumber4} and value is :- ${valueInNumber4}`);
- console.log(`value of numberDatatype5:- ${typeof valueInNumber5} and value is :- ${valueInNumber5}`);
- console.log(`value of numberDatatype6:- ${typeof valueInNumber6} and value is :- ${valueInNumber6}`);
- console.log(`value of numberDatatype7:- ${typeof valueInNumber7} and value is :- ${valueInNumber7}`);
- console.log(`value of numberDatatype8:- ${typeof valueInNumber8} and value is :- ${valueInNumber8}`);
- console.log(`value of numberDatatype9:- ${typeof valueInNumber9} and value is :- ${valueInNumber9}`);
- console.log(`value of numberDatatype10:- ${typeof valueInNumber10} and value is :- ${valueInNumber10}`);
- console.log(`value of numberDatatype10:- ${typeof valueInNumber11} and value is :- ${valueInNumber11}`);
- 
-
-let valueInBoolean = Boolean(score)
-let valueInBoolean1 = Boolean(score1)
-let valueInBoolean2 = Boolean(score2)
-let valueInBoolean3 = Boolean(score3)
-let valueInBoolean4 = Boolean(score4)
-let valueInBoolean5 = Boolean(score5)
-let valueInBoolean6 = Boolean(score6)
-let valueInBoolean7 = Boolean(score7)
-let valueInBoolean8 = Boolean(score8)
-let valueInBoolean9 = Boolean(score9)
-let valueInBoolean10 = Boolean(score10)
-let valueInBoolean11 = Boolean(score11)
 
 
-console.log(`value of booleanDatatype :- ${typeof valueInBoolean} and value is :- ${valueInBoolean}`);
-console.log(`value of booleanDatatype1 :- ${typeof valueInBoolean1} and value is :- ${valueInBoolean1}`);
-console.log(`value of booleanDatatype2 :- ${typeof valueInBoolean2} and value is :- ${valueInBoolean2}`);
-console.log(`value of booleanDatatype3 :- ${typeof valueInBoolean3} and value is :- ${valueInBoolean3}`);
-console.log(`value of booleanDatatype4 :- ${typeof valueInBoolean4} and value is :- ${valueInBoolean4}`);
-console.log(`value of booleanDatatype5 :- ${typeof valueInBoolean5} and value is :- ${valueInBoolean5}`);
-console.log(`value of booleanDatatype6 :- ${typeof valueInBoolean6} and value is :- ${valueInBoolean6}`);
-console.log(`value of booleanDatatype7 :- ${typeof valueInBoolean7} and value is :- ${valueInBoolean7}`);
-console.log(`value of booleanDatatype8 :- ${typeof valueInBoolean8} and value is :- ${valueInBoolean8}`);
-console.log(`value of booleanDatatype9 :- ${typeof valueInBoolean9} and value is :- ${valueInBoolean9}`);
-console.log(`value of booleanDatatype10 :- ${typeof valueInBoolean10} and value is :- ${valueInBoolean10}`);
-console.log(`value of booleanDatatype11 :- ${typeof valueInBoolean11} and value is :- ${valueInBoolean11}`);
+
+
+
+
 
  
- let value = 5
- let negValue = -value
- console.log(negValue);
 
- console.log(5 + 2);
- console.log(5 - 2);
- console.log(5 + (-2));
- console.log(5 - (2));
- console.log(5 * 2);
- console.log(5 ** 2);
- console.log(5 ** 3);
- console.log(5 / 3);
- console.log(5 % 3);
- console.log(0 / 3);
- console.log(3 / 0);
 
- console.log(5 + true);
- console.log(5 - true);
- console.log(5 + (-true));
- console.log(5 * (-true));
- console.log(5 * true);
- console.log(5 / true);
- console.log(5 / (-true));
- console.log(true);
- console.log(-true);
- console.log(false);
- console.log(-false);
- console.log("1" + 2);
- console.log("1" - 2);
- console.log("1" + (-2));
- console.log("1" + 2 + 3);
- console.log("1" + (-2) + 3);
- console.log(1 + 2 + "3");
- console.log(1 - (-2) + "3");
- console.log(1 + (-2) + "3");
- console.log(1 + "");
- console.log(typeof 1 + "");
- console.log(1 - "");
- console.log(typeof 1 - "");
 
- let gamecounter1 = 100
- let gamecounter2 = 200
- console.log(`value of gamecounter1 :- ${typeof gamecounter1} and value is : ${gamecounter1} `);
- console.log(`value of gamecounter2 :- ${typeof gamecounter2} and value is : ${gamecounter2} `);
 
- gamecounter1++
- ++gamecounter2
- console.log(`value of gamecounter1 :- ${typeof gamecounter1} and value is : ${gamecounter1} `);
- console.log(`value of gamecounter2 :- ${typeof gamecounter2} and value is : ${gamecounter2} `);
+
+
  
 
- console.log(2 > 1);
- console.log(2 < 1);
- console.log(2 >= 1);
- console.log(2 <= 1);
- console.log(2 == 1);
- console.log(2 != 1);
-
- console.log("2" > "1");
- console.log("2" < "1");
- console.log("2" >= "1");
- console.log("2" <= "1");
- console.log("2" == "1");
- console.log("2" != "1");
-
- console.log(true > false);
- console.log(true < false);
- console.log(true >= false);
- console.log(true <= false);
- console.log(true == false);
- console.log(true != false);
- 
- 
- console.log(`value of not same datatype :- ${"2" > 1}`);
- console.log(`value of not same datatype :- ${"2" < 1}`);
- console.log(`value of not same datatype :- ${"2" >= 1}`);
- console.log(`value of not same datatype :- ${"2" <= 1}`);
- console.log(`value of not same datatype :- ${"2" == 1}`);
- console.log(`value of not same datatype :- ${"2" != 1}`);
- 
- console.log(`value of not same datatype number :- ${2 > true}`);
- console.log(`value of not same datatype number :- ${2 < true}`);
- console.log(`value of not same datatype number :- ${2 >= true}`);
- console.log(`value of not same datatype number :- ${2 <= true}`);
- console.log(`value of not same datatype number :- ${2 == true}`);
- console.log(`value of not same datatype number :- ${2 != true}`);
- 
- console.log(`value of not same datatype string :- ${"2" > true}`);
- console.log(`value of not same datatype string :- ${"2" < true}`);
- console.log(`value of not same datatype string :- ${"2" >= true}`);
- console.log(`value of not same datatype string :- ${"2" <= true}`);
- console.log(`value of not same datatype string :- ${"2" == true}`);
- console.log(`value of not same datatype string :- ${"2" != true}`);
-
- console.log(null > 0);
- console.log(null < 0);
- console.log(null >= 0);
- console.log(null <= 0);
- console.log(null == 0);
- console.log(null != 0);
-
- console.log(undefined > 0 );
- console.log(undefined < 0 );
- console.log(undefined >= 0 );
- console.log(undefined <= 0 );
- console.log(undefined == 0 );
- console.log(undefined != 0 );
-
- console.log("2" == 2);
- console.log("2" === 2);
-
-const namestring = "Anjali"
-const repocount = 50
-
-console.log(namestring + repocount + " value");
 
 
- let myString = "Anjali"
- let repoCount = 15
- console.log(`value of mystring :- ${myString} and value is :- ${repoCount}`);
-
- let mynewString = new String("Saroj Tripathi")
- console.log(mynewString);
-//  0 : "S"
-//  1 : "a"
-//  2 : "r"
-//  3 : "o"
-//  4 : "j"
-// length: 14
-
-console.log( mynewString.length);
-console.log( mynewString[12]);
-console.log(mynewString.__proto__);
-console.log(mynewString.toUpperCase());
-console.log(mynewString.toLowerCase());
-console.log(mynewString.charAt(9));
-console.log(mynewString.indexOf('S'));
-console.log(mynewString.substring(0, 7));
-console.log(mynewString.slice(-2, 5));
-const myotherString = mynewString.slice(-2, 5)
-console.log(myotherString);
-
-const anotherString = "   Anjali   "
-console.log(anotherString.trim());
-console.log(anotherString.trimStart());
-console.log(anotherString.trimEnd());
-
-const url = "https://anjali.com//anjali%20Tripathi" 
-console.log(url.replace('%20', ('-')));
-console.log(url.replace('%20', (' ')));
-console.log(url.replace('%20', ('##')));
-
-console.log(url.includes('anjali'));
-console.log(url.includes('Saroj'));
-
-console.log(mynewString.split('-'));    // comma (,)
-console.log(mynewString.split(' '));   // hyphen (-)
-console.log(mynewString.split('_'));  
-
-console.log(mynewString.at(-4));
-
-const myValueOne = "Hello"
-const myValueTwo = "World"
-console.log(myValueOne.concat(", ", myValueTwo));
-console.log(myValueTwo.concat(", ", myValueOne));
-
-console.log(mynewString.endsWith("Tripathi"));
-console.log(mynewString.endsWith("Tripathi", 6));
-console.log(mynewString.indexOf(''));
-
-console.log(mynewString.lastIndexOf("Tripathi"));
 
 
-const myNumber = 200
-console.log(myNumber);
-
-const mynumberone = new Number(300)
-console.log(mynumberone);
-
-console.log(mynumberone.toString().length);
-
-console.log(mynumberone.toFixed(2));
-console.log(mynumberone.toFixed(3));
-
-const myanotherNumber = 22.8945
-console.log(myanotherNumber.toPrecision(2));
-
-const  hundreads = 10000000
-console.log(hundreads.toLocaleString('en-In'));
- 
-console.log(Number.MAX_VALUE);
-console.log(Number.MIN_VALUE);
-console.log(Number.MAX_SAFE_INTEGER);
-
-console.log(Math);
-console.log(Math.abs(-5));
-
-console.log(Math.round(3.5));
-console.log(Math.ceil(6.2));
-console.log(Math.floor(6.9));
-
-console.log(Math.sqrt(144));
-console.log(Math.pow(5, 6));
-
-console.log(Math.max(0, 1, 4, 5, 8, 15));
-console.log(Math.min(1, 5, 8, 4, 7));
-
-console.log(Math.random()* 10 + 1);
-
-console.log((Math.random() * 10) + 1);
-console.log(Math.floor(Math.random() * 10) + 1);
-
-const min = 10
-const max = 20
-console.log(Math.floor(Math.random() * (max - min + 1)) + min );
-
-const names = ["Anjali", "Saroj", "Aditya"]
-const numbers = [100, 200, 300]
-const isMarried = [true]
-const outsideWeather = [null]
-const City = [undefined]
-
-console.log(names)
-console.log(numbers)
-console.log(isMarried)
-console.log(outsideWeather)
-console.log(City)
-
-const myobj = {
-    name: "Anjali",
-    age: 19,
-    isAdmitted: false,
-    temp: null,
-    state: undefined,
-    value: ["shinchan", 300, true],
-  
-   }
-
-   console.log(myobj);
-
-   let myYoutubename = "Anjali@google.com"
-
-   let anothername = myYoutubename
-   anothername = "Anjali@123.com"
-   console.log(myYoutubename);
-   console.log(anothername);
-
-   let myNumbervalue = 200
-
-   let anothervalue = myNumbervalue
-   anothervalue = 300
-   console.log(myNumbervalue);
-   console.log(anothervalue);
 
 
-   let myBooleanvalue = true
 
-   let anotherbooleanValue = myBooleanvalue
-   anotherbooleanValue = false
-   console.log(myBooleanvalue);
-   console.log(anotherbooleanValue);
-   
-   
-   const userOne = {
-       email: "Anjali@google.com",
-       upi: "user@ybl"
-   }
 
-   let userTwo = userOne
-   userTwo.email = "Saroj123@google.com"
-   console.log(userOne.email);
-   console.log(userTwo.email);
 
-   const myArr = new Array(0, 1, 2, 3, 4, 5)
-   console.log(myArr[3]);
 
-   myArr.push(6)
-   myArr.push(7)
-   myArr.pop()
-   myArr.shift()
-   myArr.unshift(5)
-   console.log(myArr); 
 
-   const myArr2 = new Array("shaktiman", "shinchan", 100, 200, true)
-   console.log(myArr2);
 
-   console.log(myArr2.includes("saroj"));
-   console.log(myArr2.indexOf("shinchan"));
 
-   const newArr = myArr2.join()
-   console.log(myArr2);
-   console.log(newArr);
-   console.log(typeof newArr);
 
-  const mynewArr = [0, 1, 2, 3, 4, 5]
-  const myn1 = mynewArr.slice(1, 3)
-  console.log(myn1);
 
-  const myn2 = mynewArr.splice(1, 4)
-  console.log(myn2);
-  
-  const dc_Heroes = ["batman", "spiderman", "superman"]
-  const marvel_Heroes = ["shinchan", "Doremon", "pokemon"]
 
-  dc_Heroes.push(marvel_Heroes)
-  console.log(dc_Heroes);
-  
-   console.log(dc_Heroes[3][1])
 
- const allHeroes = dc_Heroes.concat(marvel_Heroes)
-  console.log(allHeroes);
-
-  const all_new_heroes = [...dc_Heroes, ...marvel_Heroes]
-  console.log(all_new_heroes);
-
-  const another_array = [1, 2, 3, 4, 5, [6, 7], [6, 7, [4, 5]] ]
-  console.log(another_array);
-
-  const real_another_array = another_array.flat(2)
-  console.log(real_another_array);
-
- log
-  
-  
   
   
      

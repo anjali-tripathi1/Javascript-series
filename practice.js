@@ -82,6 +82,65 @@ console.log(Array.of(score1, score2, score3, score4, score5, score6));
 
 
 
+const mynewArr1 = [0, 1, 2, 3, 4, 5]
+console.log(mynewArr1);
+
+const myn3 = mynewArr1.slice(1, 3)
+console.log(myn3);
+
+const myn4 = mynewArr1.splice(1, 3)
+console.log(myn4);
+ 
+const mySym = Symbol("key1")
+
+const myobj = {
+    name : "Anjali",
+    age : 19,
+    [mySym] : "mykey1",
+    "fullname" : "Anjali Tripathi",
+    isLoggedIn : true,
+    myvalue : ["shaktiman", 100, true],
+    myobj1 : {
+        myfirstname : "Anjali",
+        mylastname : "Trupathi"
+    }
+}
+
+console.log(myobj);
+console.log( myobj.name);
+console.log( myobj.myobj1);
+console.log(myobj["name"]);
+console.log(myobj["fullname"]);
+
+console.log(myobj[mySym]);
+
+myobj.name = "Saroj"
+// Object.freeze(myobj)
+myobj.name = "Peter"
+console.log(myobj);
+
+myobj.greeting = function(){
+    console.log("Hello Js user");
+    
+}
+
+console.log(myobj.greeting);
+console.log(myobj.greeting());
+
+
+myobj.greetingTwo = function(){
+    console.log(`Hello Js user ${this.name}`);
+    
+}
+
+console.log(myobj.greetingTwo());
+
+
+
+
+
+
+
 
 
 

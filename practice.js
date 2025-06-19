@@ -137,7 +137,161 @@ console.log(myobj.greetingTwo());
 
 
 
+let mydate = new Date()
+console.log(mydate);
+console.log(mydate.toString());
+console.log(mydate.toLocaleString());
+console.log(mydate.toLocaleDateString());
+console.log(mydate.toLocaleTimeString());
+console.log(mydate.toDateString());
+console.log(mydate.toISOString());
+console.log(mydate.toJSON());
+console.log(mydate.toTimeString());
+console.log(typeof mydate);
 
+
+let mynewdate = new Date(2023, 0, 25, 5, 20, 5)
+console.log(mynewdate.toDateString());
+console.log(mynewdate.toLocaleString());
+
+
+let mynewdate1 = new Date("2025-01-23")
+console.log(mynewdate1.toLocaleString());
+
+let mynewdate2 = new Date("01-25-2023")
+console.log(mynewdate2.toLocaleDateString());
+
+let myTimeStamp =  Date.now()
+console.log(myTimeStamp);
+
+console.log(mynewdate.getTime());
+
+console.log(Date.now()/1000);
+console.log(Math.floor(Date.now()/1000));
+
+let myupdatedate = new Date()
+console.log(myupdatedate);
+
+console.log(myupdatedate.getMonth() + 1);
+console.log(myupdatedate.getDate());
+console.log(myupdatedate.getDay());
+console.log(myupdatedate.getFullYear());
+console.log(myupdatedate.getSeconds());
+
+console.log(myupdatedate.toLocaleString('default', {
+    weekday : "long",
+    month : "long",
+    day : "numeric",
+    year : "numeric",
+    hour : "2-digit",
+    minute : "2-digit"
+}));
+
+
+// const tinderUser = new Object()
+const tinderUser = {}
+console.log(tinderUser);
+
+tinderUser.id = "abc123"
+tinderUser.name = "Peter"
+tinderUser.isLoggedIn = true
+console.log(tinderUser);
+
+const mysub = {
+    email : "abc@gmail.com",
+    id : "123@",
+    fullname : {
+        userfullname : {
+            firstname : "Anjali",
+            lastname : "Tripathi"
+        }
+    }
+}
+
+console.log(mysub.fullname.userfullname.lastname);
+
+let myobj1 = {1 : "a", 2 : "b"}
+let myobj2 = {3 : "a", 4 : "b"}
+let myobj3 = {5 : "a", 6 : "b"}
+
+console.log(myobj1, myobj2, myobj3);
+let obj4 = {myobj1, myobj2, myobj3}
+console.log(obj4);
+
+const obj5 = Object.assign(myobj1, myobj2, myobj3)
+console.log(obj5);
+
+const obj6 = {...myobj1, ...myobj2, ...myobj3}
+console.log(obj6);
+
+const users = [
+    {
+        email : "abc@gmail.com",
+        id : "ybl123@"
+    },
+
+     {
+        email : "xyz@gmail.com",
+        id : "ybl123@"
+    },
+
+     {
+        email : "mno@gmail.com",
+        id : "ybl123@"
+    }
+]
+
+console.log(users);
+console.log(users[1].email);
+console.log(users[0].id);
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+const course = {
+    coursename : "Js Series",
+    Price : "999",
+    courseInstructer : "peter"
+}
+
+// console.log(course.Price);
+
+const {courseInstructer : Instructor} = course
+console.log(Instructor);
+
+const {Price : p} = course
+console.log(p);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 

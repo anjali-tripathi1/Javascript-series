@@ -125,12 +125,26 @@ const regularUser = {
 
      // In react we have some method 
      
+    //  const navbar = ({company}) => {
+
+    //  }
      
-     
-     
+    //  navbar (company = "Anjali")
      
       
+    // ApI's documentation
+
+    // {
+    //     "coursename" : "Js Series",
+    //     "Price" : "free",
+    //     "name" : "Anjali"
+    // }
      
-     
+    //  in  array format
+    [
+        {},
+        {},
+        {}
+    ]
 
  

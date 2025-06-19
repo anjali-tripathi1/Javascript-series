@@ -123,7 +123,7 @@ const regularUser = {
      
 
 
-     // In react we have some method 
+     // In react we have destructureing method 
      
     //  const navbar = ({company}) => {
 

@@ -6,7 +6,7 @@ console.log(myString + myNumber + " value");
 console.log(typeof myString);
 console.log(`myString name is :- ${myString} and myNumber is : ${myNumber}` );
 
-const myString1 = new String("Anjali Tripathi")
+const myString1 = new String("Anjali-Tripathi")
 console.log(myString1);
 
 console.log(myString1[5]);
@@ -29,6 +29,17 @@ const myanotherString1 =  "    Saroj   "
 // console.log(myanotherString1.trim());
 console.log(myanotherString1.trimStart());
 console.log(myanotherString1.trimEnd());
+
+const url = "https://anjali.com//anjali%20Tripathi"
+console.log(url.replace("%20", "-"));
+console.log(url.replace("%20", " "));
+
+console.log(url.includes("anjali"));
+console.log(myString1.split("-"));
+console.log(myString1.split(" "));
+
+
+
 
 
 

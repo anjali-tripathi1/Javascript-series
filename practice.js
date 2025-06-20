@@ -338,24 +338,34 @@ console.log(Instr);
 // ]
 
 
-function sayMyName (){
-      console.log("A");
-      console.log("n");
-      console.log("j");
-      console.log("a");
-      console.log("l");
-      console.log("i");
+// function sayMyName (){
+//       console.log("A");
+//       console.log("n");
+//       console.log("j");
+//       console.log("a");
+//       console.log("l");
+//       console.log("i");
       
+// }
+
+// console.log(sayMyName());
+
+// function addTwoNumbers (number1, number2){
+//       console.log(number1 + number2);
+      
+// }
+
+// addTwoNumbers(3, 5)
+
+function addTwoNumbers(number1, number2){
+      let result = number1 + number2
+      return result
 }
 
-console.log(sayMyName());
+addTwoNumbers(3, 5)
 
-function addTwoNumbers (number1, number2){
-      console.log(number1 + number2);
-      
-}
 
-console.log(addTwoNumbers());
+
 
 
 

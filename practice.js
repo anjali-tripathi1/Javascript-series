@@ -146,7 +146,242 @@ console.log(myArray[7]);
 
 const myArray1 = new Array("Anjali", 300, true, ["Saroj", 200, false], { cartoonname : "Pokemon", email : "abc123@.com"})
 
-console.log(myArray1[4]);
+console.log(myArray1);
+myArray1.push(["shinchan, 200, true", {name : "Saroj", age : 40, isLoggedIn : true}])
+console.log(myArray1);
+
+
+const mynewArray = new Array(0, 1, 2, 3, 4, 5)
+mynewArray.push(6)
+console.log(mynewArray);
+mynewArray.pop()
+mynewArray.shift()
+mynewArray.unshift(7)
+
+console.log(mynewArray);
+console.log(mynewArray.includes(9));
+console.log(mynewArray.indexOf(3));
+
+const myanotherarray = mynewArray.join()
+console.log(myanotherarray);
+
+const mya1 = mynewArray.slice(1, 4) 
+console.log(mya1);
+
+const mya2 = mynewArray.splice(1, 4)
+console.log(mya2);
+
+
+const marval_heroes = ["spiderman", "batman", "superman"]
+const dc_Heroes = ["shaktiman", "doga, mukambo"]
+
+ 
+// marval_heroes.push(dc_Heroes)
+// console.log(marval_heroes);
+
+const allHeroes = marval_heroes.concat(dc_Heroes)
+console.log(allHeroes);
+
+const all_new_heroes = [...marval_heroes, ...dc_Heroes]
+console.log(all_new_heroes);
+
+const myrareArray = [0, 1, 2, 3, 4, 5, [4, 5], [6, 7, 8, [3, 4, 5]]]
+console.log(myrareArray.flat(2));
+
+console.log(Array.isArray("Anjali"));
+console.log(Array.from("Anjali"));
+console.log(Array.from([100, 200, 300]));
+console.log(Array.from({ name : "Anjali"}));
+
+let score1 = "Anjali"
+let score2 =  100
+let score3 =  true
+let score4 =  ["shaktiman", 100, true] 
+let score5 =  {user : "Anjali", age : 19, isLogged : true}
+let score6 =  ["Doremon", 300, true, { username : "Saroj"}]
+let score7 =  false
+
+console.log(Array.of(score1, score2, score3, score4, score5, score6, score7));
+
+const mySym = Symbol("mykey1")
+
+const myobject = {
+     name : "Anjali",
+     age : 19,
+     "fullname" : "Anjali Tripathi",
+     [mySym] : "mykey1",
+     isLoggedIn : true,
+     location : "Banda",
+     email : "abc123@.com",
+     Lastlogindays : ["Monday", "Saturday"],
+     myobj : {
+         username : "Anjali",
+         Price : 199
+     }
+}
+
+console.log(myobject);
+
+console.log(myobject.Lastlogindays);
+console.log(myobject["email"]);
+console.log(myobject["fullname"]);
+console.log(myobject[mySym]);
+// console.log(typeof myobject.mySym);
+
+myobject.email = "Anjali123@.com"
+// Object.freeze(myobject)
+myobject.email = "Saroj123@.com"
+console.log(myobject);
+
+myobject.greeting = function(){
+      console.log("Hello Js user");
+      return 
+}
+
+console.log(myobject.greeting());
+
+myobject.greetingTwo = function(){
+      console.log(`Hello Js user ${this.email}`);
+      
+}
+
+console.log(myobject.greetingTwo());
+
+// const tinderUser = new Object()
+
+
+const tinderUser = {}
+
+tinderUser.id = "123"
+tinderUser.name = "Anjali"
+tinderUser.isAdmitted =  true
+
+
+console.log(tinderUser);
+
+const regularUser = {
+      email : "Anjali@.com",
+      fullname : {
+            firstname : "Anjali",
+            lastname : "Tripathi",
+          address : {
+             location : "Bengluru",
+             Road : "Ab Line" ,
+             Address : true
+           }  
+      }
+}
+
+console.log(regularUser);
+console.log(regularUser.fullname.address.Road);
+
+const obj1 = {1 : "a", 2 : "b"}
+const obj2 = {3 : "c", 4 : "d"}
+const obj6 = {5 : "c", 6 : "d"}
+
+const obj3 = {obj1, obj2}
+console.log(obj3);
+
+const obj4 = Object.assign({}, obj1, obj2, obj6)
+console.log(obj4);
+
+const obj5 = {...obj1, ...obj2, ...obj6}
+console.log(obj5);
+
+const user = [
+      {
+         email : "123@.com",
+         id : "1bl@" 
+      },
+
+       {
+         email : "abc@.com",
+         id : "abl@" 
+      },
+
+       {
+         email : "xyz@.com",
+         id : "xbl@" 
+      }
+]
+
+console.log(user[0].email);
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+
+console.log(tinderUser.hasOwnProperty("isAdmitted")); 
+
+
+
+const course = {
+      coursename : "Js Series",
+      courseInstructor : "Anjali" ,
+      Price : 199
+}
+
+console.log(course.coursename);
+
+const {courseInstructor : Instr} = course
+console.log(Instr);
+
+// {
+//       "course" : "Js Series",
+//       "Price" : "199",
+//       "courseInstructor" : "Anjali"
+// }
+
+// [
+//       {},
+//       {},
+//       {}
+// ]
+
+
+function sayMyName (){
+      console.log("A");
+      console.log("n");
+      console.log("j");
+      console.log("a");
+      console.log("l");
+      console.log("i");
+      
+}
+
+console.log(sayMyName());
+
+function addTwoNumbers (number1, number2){
+      console.log(number1 + number2);
+      
+}
+
+console.log(addTwoNumbers());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -97,6 +97,65 @@ console.log(mydate.toLocaleTimeString());
 console.log(mydate.toISOString());
 console.log(mydate.toJSON());
 
+const mynewdate = new Date(2025, 0, 25, 5, 15, 5)
+console.log(mynewdate.toLocaleDateString());
+console.log(mynewdate.toDateString());
+console.log(mynewdate.toLocaleString());
+console.log(mynewdate.toLocaleDateString());
+
+const mynewcreateddate = new Date("2023-01-20")
+console.log(mynewcreateddate.toLocaleDateString());
+console.log(mynewcreateddate.toLocaleString());
+
+
+const myanotherdate = new Date("01-25-2023")
+console.log(myanotherdate.toLocaleDateString());
+
+const mytimestamp = Date.now()
+console.log(mytimestamp);
+
+console.log(mydate.getTime());
+
+console.log(Math.floor(Date.now()/1000));
+
+const newdate = new Date()
+console.log(newdate);
+
+console.log(newdate.getMonth() + 1);
+console.log(newdate.getFullYear());
+console.log(newdate.getDate());
+console.log(newdate.getDay());
+console.log(newdate.getHours());
+console.log(newdate.getMinutes());
+console.log(newdate.getSeconds());
+console.log(newdate.getMilliseconds());
+
+console.log(newdate.toLocaleString('default', {
+      weekday : "long",
+      day : "2-digit",
+      month : "numeric",
+      year : "numeric",
+      hour : "2-digit",
+      minute : "numeric",
+      second : "2-digit"
+}));
+
+const myArray = ["Shaktiman", "Doremon", 100, 200, true, false, ["Anjali", 100, true], {name : "Anjali", age : 19, isLoggedIn : true}]
+
+console.log(myArray[7]);
+
+const myArray1 = new Array("Anjali", 300, true, ["Saroj", 200, false], { cartoonname : "Pokemon", email : "abc123@.com"})
+
+console.log(myArray1[4]);
+
+
+
+
+
+
+ 
+
+
 
 
 

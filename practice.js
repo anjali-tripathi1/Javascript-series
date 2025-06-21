@@ -350,36 +350,37 @@ console.log(Instr);
 
 // console.log(sayMyName());
 
-// function addTwoNumbers (number1, number2){
-//       console.log(number1 + number2);
-      
+// function addTwoNumbers(number1, number2){
+//         console.log(number1 + number2);
+        
 // }
 
-// addTwoNumbers(3, 5)
-
 function addTwoNumbers(number1, number2){
-      let result = number1 + number2
-      return result
+//      let result = number1 + number2
+//      return result
+        return number1 + number2
 }
 
-addTwoNumbers(3, 5)
+// addTwoNumbers(3, 5)
+const result = addTwoNumbers(3, 5)
+console.log("Result", result);
 
+function loginUserMessage(username = "Sam"){
+      if(username === undefined){
+           console.log("Please enter your name");
+           return
+      }
+      if(!username){
+          console.log("please enter your name");
+          return
+          
+      }
+      return `${username} just Logged In`
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(loginUserMessage("Anjali"))
+// console.log(loginUserMessage("")) 
+console.log(loginUserMessage())
 
 
 

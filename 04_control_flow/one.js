@@ -88,6 +88,7 @@
                
         }
         // here we will check both userloggedin and debitcard both.
+        // All and condition should be true. 
 
         if(userLoggedIn && debitCard && 2 == 3){
                console.log("Allow to buy course");
@@ -106,3 +107,17 @@
 
         //here we will check either he logged with goggle or email
         // this || pipesign used for testing multiple conditions
+        // or means if any one condition is true so we go inside code.
+
+        // And/Or are logical operator.
+        
+        
+        // Nullish coalescing Operator (??): null undefined
+
+        let val1;
+        val1 = 5 ?? 10
+
+
+
+        console.log(val1);
+        

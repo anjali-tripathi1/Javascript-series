@@ -174,6 +174,48 @@ chai2()
 
 
 
+const course = {
+      coursename : "Js series",
+      Price : 199
+}
+
+// const {coursename} = course
+
+console.log(course.coursename);
+
+let data = [383,23, 45, 92,92, 122]
+data.push("Anjali")
+data.unshift("Aman")
+data.shift()
+data.pop()
+console.log(data);
+
+
+
+let myNumber = 4
+
+if(myNumber > 18){
+     console.log("My number is greater than 18");
+     
+} else {
+      console.log("my number is less than 18");
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

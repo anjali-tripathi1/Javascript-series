@@ -34,6 +34,8 @@ function one(){
 
 // one()
 
+// when we declare apart function so for this a diffrent callstack create means a diffrent scope creats.
+
 // this same can do with if or else
 
 if (true) {
@@ -57,6 +59,8 @@ console.log(addone(5));
 function addone(num){
      return num + 1
 }
+
+// here function declartion and storeing variable problem this concept is hoisting
 
 addTwo(5)
 

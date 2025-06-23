@@ -113,12 +113,24 @@
         
         
         // Nullish coalescing Operator (??): null undefined
-
+       // this only for null and undefined
         let val1;
      //    val1 = 5 ?? 10
-        val1 = null ?? 10
-
-
+     //    val1 = null ?? 10
+     //     val1 = undefined ?? 15
+         val1 = null ?? 10 ?? 15
 
         console.log(val1);
         
+
+        // Ternary operator
+     //    this is our if else's small syntax
+
+     // condition ? true : false
+     // this is diffrent from coalescing opera tor it's pattern design and goal is completely diffrent.
+
+     // const IceTeaPrice = 100
+     // IceTeaPrice >= 80 ? console.log("less than 80") : console.log("more than 80");
+     
+     const IceTeaPrice = 100
+     IceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80");

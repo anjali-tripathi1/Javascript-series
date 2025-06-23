@@ -8,21 +8,6 @@
 
 
 
-const course = {
-      coursename : "Js series",
-      Price : 199
-}
-
-// const {coursename} = course
-
-console.log(course.coursename);
-
-let data = [383,23, 45, 92,92, 122]
-data.push("Anjali")
-data.unshift("Aman")
-data.shift()
-data.pop()
-console.log(data);
 
 
 

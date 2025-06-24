@@ -306,37 +306,75 @@ val3 = undefined ?? 20
 val3 = null ?? 16 ?? 18
 console.log(val3);
 
+const IceTeaPrice = 100
+IceTeaPrice <= 80 ? console.log(`Less than 80`) : console.log(`More than 80`);
 
 
+ const month = "september"
+ switch (month) {
+     case "jan":
+          console.log("January");
+       break;
 
+         case "feb":
+          console.log("Feb");
+       break;
 
+         case "march":
+          console.log("March");
+       break;
 
+         case "april":
+          console.log("April");
+       break;
 
+         case "may":
+          console.log("May");
+       break;
 
+         case "june":
+          console.log("June");
+       break;
 
-
-
-
-
-
-
-
-
-
-
+         case "july":
+          console.log("July");
+       break;
  
+     default:
+          console.log(`Default case match`);
+        break;
+ }
 
+//  const userEmail = "A@Anjali.ai"
+//  const userEmail = ""
+// const userEmail = []
+// const userEmail = {}
+const userEmail = "false"
 
+ if(userEmail){
+     console.log(`Got useremail`);
+     
+ } else{
+     console.log(`Don't have userEmail`);
+     
+ }
 
+ const emptyArray = []
+ if(emptyArray.length === 0){
+     console.log(`Array is empty`);
+     
+ }
 
+ const emptyObject = {}
+ if(Object.keys(emptyObject).length === 0){
+      console.log(`Object is empty`);
+      
+ }
 
-
-
-
-
-
-
- 
+ for (let index = 0; index <= 10; index++) {
+     const element = index;
+     console.log(element)
+ }
 
 
 

@@ -203,13 +203,108 @@ console.log(addnumber(6, 7));
 
 // chai()
 
-(function aurcode(){
-     console.log(`DB Connected`);
+// (function aurcode(){
+//      console.log(`DB Connected`);
      
-})()
+// })()
 
  
+(function myCode(){
+     console.log(`MY Code Printed`);
+     
+})();
 
+
+ ((name) => {
+     console.log(`My code printed ${name}`);
+     
+ })("Anjali")
+
+let val1 = 10
+let val2 = 15
+function addNum(num1, num2){
+    return num1 + num2
+}
+
+let result1 = addNum(val1, val2)
+let result2 = addNum(10, 15)
+
+console.log(`Result1: ${result1} `);
+console.log(`Result2: ${result2} `);
+
+const userLoggedIn = true
+const temprature = 41
+
+if(userLoggedIn === true){
+     console.log(`Login Excuted`);
+
+}
+
+if(temprature < 50){
+     console.log(`Temprature Excuted`);
+     
+}
+
+if(temprature === 41){
+     console.log(`Less than 50`);
+} else{
+     console.log(`Greater than 50`);
+     
+}
+
+console.log('greater than 20');
+
+const score = 200
+if(score > 100){
+     const power = "fly"
+    console.log(`User Power: ${power}`);
+    
+}
+
+// console.log(`User power: ${power}`);
+
+const balance = 1000
+if(balance > 500)  console.log(`balance excuted`), console.log(`excuted`);
+
+const salary = 2000
+if(salary < 1500){
+    console.log(`Less than 1500`);
+    
+} else if(salary < 1600){
+     console.log(`Less than 1600`);
+     
+} else if(salary < 1700){
+     console.log(`Less than 1700`);
+     
+} else if(salary < 1800){
+     console.log(`Less than 1800`);
+     
+} else{
+     console.log(`Greater than 2500`);
+     
+}
+
+const userAdmittedIn = true
+const debitCard = true
+
+if(userLoggedIn && debitCard && 2 == 2){
+      console.log(`Allow to buy course`);
+      
+}
+
+const loggedInFromGoogle = true
+const loggedInFromEmail =  false
+if(loggedInFromEmail || loggedInFromGoogle){
+     console.log(`User Logged In`);
+     
+}
+
+let val3;
+val3 = 5 ?? 10
+val3 = null ?? 15
+val3 = undefined ?? 20
+val3 = null ?? 16 ?? 18
+console.log(val3);
 
 
 

@@ -54,7 +54,7 @@
     // shorthand notation
     const balance = 1000
     if(balance > 500)  console.log("test");
-    // this is implicit scope means we assume that it's in scope but this excute in one line we can't write here multiple lines but there's a way but that's not a good practice.
+    // this is implicit scope means we assume that it's in scope but this excute in one line we don't write here multiple lines but there's a way but that's not a good practice.
 
     // if(balance > 500)  console.log("test"), console.log("test2");  // not use this structure 
     

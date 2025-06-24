@@ -373,19 +373,75 @@ const userEmail = "false"
 
  for (let index = 0; index <= 10; index++) {
      const element = index;
-     console.log(element)
+     console.log(element);
+     
  }
 
  for (let i = 0; i <= 10; i++) {
      const element = i;
-     if(element === 5){
-         console.log("5 is the best number")
+     if(element == 5){
+         console.log("five is best number");
+         
      }
-     console.log(element);
-     
-    
-}
 
+      console.log(element);
+ }
+
+ for (let i = 1; i <= 10; i++) {
+     console.log(`Outer loop value: ${i}`);
+     for (let j = 1; j <= 10; j++) {
+          // console.log(`Inner loop value: ${j} and Inner loop: ${i}`);
+          console.log(i + '*' + j + ' = ' + i*j )
+          
+     }
+     
+ }
+
+ const myArr = ["shinchan", "Doremon", "pokemon"]
+ console.log(myArr.length);
+ for (let index = 0; index < myArr.length; index++) {
+     const element = myArr[index];
+     console.log(element)
+ }
+
+ for (let i = 1; i <= 10; i++) {
+     // const element = i;
+     for (let j = 5; j <= 10; j++) {
+          const element = j;
+          console.log(i + '+' + j + ' = ' + i+j);
+          
+     }
+ }
+
+ for (let index = 1; index <= 20; index++) {
+     
+     if(index == 5){
+        console.log(`5 is Detected`)
+        continue
+     }
+
+     console.log(`value is: ${index}`);
+     
+ }
+
+ let index = 1
+ while (index <= 10) {
+     console.log(`Value is ${index}`);
+     //  index++
+      index = index + 3
+ }
+
+
+ const myArray1 = ["Anjali", "Aman", "Aditya", 100, 200, true, false]
+ let item = 1
+ while (item < myArray1.length) {
+     console.log(`value is: ${myArray1[item]}`);
+     // item++
+     item = item + 2
+ }
+
+
+ 
 
 
 

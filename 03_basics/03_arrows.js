@@ -21,12 +21,21 @@ console.log(this);  // empty object
 // when this javascript engine runs inside browser the most global object is window object. 
 
 // function chai(){
+//      console.log(this);
+     
+// }
+
+// chai()
+
+// function chai(){
 //     let username = "Anjali"
 //     console.log(this.username);  
     
 // }
 
 // chai()
+
+
 
 const chai = function (){
      let username = "Anjali"
@@ -38,7 +47,7 @@ const chai = function (){
 
 chai()
 
-// we can use (this) inside object but we can't use (this) inside function 
+
 
 
 // how to declare functions through arrow function

@@ -461,54 +461,244 @@
 //  } while (myUser <= 15);
  
 
- const myArray  = [100, 300, 500, 700, 1000]
- for (const num of myArray) {
-     console.log(num);
+//  const myArray  = [100, 300, 500, 700, 1000]
+//  for (const num of myArray) {
+//      console.log(num);
      
- }
+//  }
 
- const greetings = "Hello World!"
- for (const greet of greetings) {
-     console.log(`Value is: ${greet}`);
+//  const greetings = "Hello World!"
+//  for (const greet of greetings) {
+//      console.log(`Value is: ${greet}`);
      
- }
+//  }
 
- const map = new Map()
- map.set('In', "India")
- map.set('Pa', "Paris")
- map.set('USA', "United States of America")
- map.set('Fr', "France")
+//  const map = new Map()
+//  map.set('In', "India")
+//  map.set('Pa', "Paris")
+//  map.set('USA', "United States of America")
+//  map.set('Fr', "France")
 
- console.log(map);
+//  console.log(map);
 
- for (const key of map) {
-     console.log(key);
+//  for (const key of map) {
+//      console.log(key);
      
- }
+//  }
 
- for (const [key, value] of map) {
-     console.log(key,":", value);
+//  for (const [key, value] of map) {
+//      console.log(key,":", value);
      
- }
+//  }
 
- const myObject = {
-     "game1" : "Super Mario",
-     "game2" : "NFS",
-     game1 : "Trans",
-     game2 : "spiderman"
- }
+//  const myObject = {
+//      "game1" : "Super Mario",
+//      "game2" : "NFS",
+//      game1 : "Trans",
+//      game2 : "spiderman"
+//  }
 
- for (const key of myObject) {
-     console.log(key);
+//  for (const key of myObject) {
+//      console.log(key);
      
- }
+//  }
+
+//  for (const [key, value] of myObject) {
+//      console.log(key, ':', value);
+     
+//  }
+
+// const myObject = {
+//     js : "Javascript",
+//     py : "Python",
+//     java : "Java",
+//     cpp : "C++",
+//     rb : "ruby",
+//     swift : "swift by apple"
+// }
+
+// for (const obj in myObject) {
+//     console.log(myObject[obj]);
+    
+// }
+
+// for (const obj in myObject) {
+//     console.log(`Key is: ${obj} and value is: ${myObject[obj]}`);
+    
+// }
+
+// const myArr = ["Anjali", "Saroj", 100, 200, 300]
+// for (const key in myArr) {
+//     console.log(myArr[key]);
+    
+// }
+
+// const coding = ["js", "python", "ruby", "java", "swift"]
+// coding.forEach( function (val) {
+//      console.log(val);
+     
+// })
+
+// coding.forEach( (item) => {
+//     console.log(item);
+    
+// })
+
+// function printMe (item){
+//       console.log(item);
+      
+// }
+
+// coding.forEach(printMe)
+
+// coding.forEach( (item, index, arr) => {
+//     console.log(item, index, arr);
+    
+// })
+
+// const myCoding = [
+//     {
+//         languageName : "javascript",
+//         languageFileName : "js"
+//     },
+
+//     {
+//         languageName : "java",
+//         languageFileName : "java"
+//     },
+
+//     {
+//         languageName : "python",
+//         languageFileName : "py"
+//     },
+
+//     {
+//         languageName : "ruby",
+//         languageFileName : "rb"
+//     }
+// ]
+
+// myCoding.forEach( (item) => {
+//     console.log(item.languageName);
+    
+// })
+
+// const coding = ["javascript", "java", "python", "ruby", "swift"]
  
+// const myvals  = coding.forEach( (item) => {
+//     // console.log(item);
+//     // return item
+// })
+
+// console.log(myvals);
+
+const mynums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const newnums = mynums.filter( (num) => { return num > 4})
+// console.log(newnums);
+
+const myvals = []
+mynums.forEach( (num) => {
+    if(num > 5){
+        myvals.push(num) 
+    }
+})
+
+console.log(myvals);
+
+const books = [
+     { title: 'Book One', genre: 'History', publish: 1968, edition: 2009  },
+     { title: 'Book Two', genre: 'Science', publish: 1928, edition: 2013  },
+     { title: 'Book Three', genre: 'Non-Fiction', publish: 1998, edition: 2010  },
+     { title: 'Book Four', genre: 'Fiction', publish: 1988, edition: 1934  },
+     { title: 'Book Five', genre: 'History', publish: 2011, edition: 2014  },
+     { title: 'Book Six', genre: 'Fiction', publish: 1944, edition: 1984  },
+     { title: 'Book Seven', genre: 'Non-Fiction', publish: 2018, edition: 2008  },
+     { title: 'Book Eight', genre: 'Science', publish: 1938, edition: 2006 },
+     { title: 'Book Nine', genre: 'History', publish: 2005, edition: 1954  },       
+     { title: 'Book Ten', genre: 'Fiction', publish: 2008, edition: 1995  }       
+]
+
+let myBooks = books.filter( (bk) => bk.genre === "History")
+myBooks = books.filter( (bk) => { return bk.publish >= 1995})
+myBooks = books.filter( (bk) => {return bk.publish >= 1995 && bk.genre === "Fiction"})
+myBooks = books.filter( (bk) => bk.edition === 2013)
+console.log(myBooks);
+
+const addnums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let myaddnums = addnums.map( (num) => num + 10)
+// myaddnums = addnums.map( (num) => { return num + 10 - 2})
+// myaddnums = addnums.map( (num) => {
+//     return num *10 + 5
+// })
+
+// console.log(myaddnums);
+
+// const mynewnums = []
+// addnums.forEach( (num) => {
+//     if(num){
+//         mynewnums.push(num + 10)
+//     }
+// })
+
+// console.log(mynewnums);
+
+// const myArr = [100, 200, 300, 400, 500]
+// function myvalue (num){
+//     console.log(num);
+    
+// }
+
+// myArr.forEach(myvalue)
+
+let mynums2 = addnums
+              .map( (num) => num + 10)
+              .map( (num) => { return num * 5})
+              .filter( (num) => num >= 65)
+              .filter( (num) => { return num >= 70})
 
 
 
+  console.log(mynums2);
 
- 
+  const myvalues = [1, 2, 3]
+//   const myTotal = myvalues.reduce( function (acc, currval) {
+//        console.log(`acc is: ${acc} and currval is: ${currval}`);
+//        return acc + currval
+//   }, 0)
+           
+  
 
+  const myTotal = myvalues.reduce( (acc, currval) => {
+      console.log(acc, currval);
+      return acc + currval
+  }, 0)
+  
+console.log(myTotal);
+
+const myshoppingcart = [
+    {
+        coursename : "Javascript course",
+        Price : 2999
+    },
+
+     {
+        coursename : "Java course",
+        Price : 999
+    },
+
+     {
+        coursename : "Mobile dev course",
+        Price : 5999
+    },
+
+     {
+        coursename : "Datascience course",
+        Price : 12999
+    },
+]
+
+const PayToPrice = myshoppingcart.reduce( (acc, item) => acc + item.Price, 0 )
+console.log(PayToPrice);
 
 
 

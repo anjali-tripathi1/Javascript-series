@@ -60,6 +60,8 @@ let score4 = ["Anjali", 200, true, { name : "Saroj", age : 19 }]
 let score5 = {course : "Javascript", Price : 399}
 
 console.log(Array.of(score1, score2, score3, score4, score5));
+console.log(score4[3].age);
+
 
 const mySym =  Symbol("key1")
 
@@ -85,9 +87,130 @@ console.log(myObject);
 // Object.create()
 
 myObject.email = "Saroj7398@gmail.com"
-Object.freeze(myObject)
+// Object.freeze(myObject)
 myObject.email = "Aman@.com"
 console.log(myObject);
+
+myObject.greeting = function (){
+     console.log('Hello myObject');
+     
+}
+
+console.log(myObject.greeting());
+
+myObject.greetingTwo = function(){
+    console.log(`Hello myObject, ${this.name}`);
+    
+}
+
+console.log(myObject.greetingTwo);
+console.log(myObject.greetingTwo());
+
+// const myNewObject = new Object()
+
+const myNewObject = {}
+
+myNewObject.id = "123abc"
+myNewObject.email = "Anjali@google.com"
+myNewObject.name = "Anjali"
+myNewObject.location = "banda"
+myNewObject.loginDays = ["monday", "sunday"]
+console.log(myNewObject);
+
+
+const regularUser = {
+    email : "Anjali@.com",
+    fullname : {
+        userfullname : {
+            firstName : "Anjali",
+            lastName : "Tripathi"
+        }  
+    }
+}
+
+console.log(regularUser.fullname.userfullname.lastName);
+
+const myObj1 = {1 : "a", 2 : "b"}
+const myObj2 = {3 : "c", 4 : "d"}
+
+// console.log(myObj1, myObj2);
+const myObj3 = {myObj1, myObj2}
+console.log(myObj3);
+
+const myObj4 = Object.assign({}, myObj1, myObj2)
+console.log(myObj4);
+
+const myObj5 = {...myObj1, ...myObj2}
+console.log(myObj5);
+
+const user = [
+    {
+        userName : "Anjali",
+        id : "Anjali@.com"
+    },
+
+     {
+        userName : "Saroj",
+        id : "Saroj@.com"
+    },
+
+     {
+        userName : "Aditya",
+        id : "Aditya@.com"
+    }
+]
+
+console.log(user[0].userName);
+console.log(user[1].id);
+console.log(user[2]);
+
+console.log(myNewObject);
+console.log(Object.keys(myNewObject));
+console.log(Object.values(myNewObject));
+console.log(Object.entries(myNewObject));
+
+console.log(myNewObject.hasOwnProperty("name"));
+
+const myData = {
+    coursename : "Js Series",
+    price : 999
+}
+
+const {price : P} = myData
+console.log(P);
+
+function addnums (number1, number2){
+    // console.log(number1 + number2);
+    // let result = number1 + number2
+    // return result
+    return number1 + number2
+}
+
+const result = addnums(6, 5)
+console.log("Result:", result);
+
+function loginUserMessage (username){
+     console.log(username, "Just logged in");
+     
+}
+
+loginUserMessage("Anjali")
+loginUserMessage("")
+loginUserMessage()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

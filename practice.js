@@ -62,15 +62,75 @@ function returnSecondValue (getArray) {
 console.log(returnSecondValue(myArray))
 console.log(returnSecondValue([500, 800, 1100, 1400, 1700]))
 
+var c = 300
+
 if (true) {
    let a = 10
    const b = 20
-   var c = 30
+   
+   console.log("Inner:", a);
+   
 }
 
 // console.log(a);
 // console.log(b);
 console.log(c);
+
+function One () {
+    const username = "Anjali"
+
+    function Two () {
+        const website = "youtube"
+        console.log(username);
+        
+    }
+
+    // console.log(website);
+
+    Two()
+    
+}
+
+One()
+
+if (true) {
+    const username = "Anjali"
+
+    if (username === "Anjali") {
+          const website = " youtube"
+          console.log(username + website);
+          
+    }
+
+    // console.log(website);
+    
+}
+
+// console.log(username);
+
+console.log(addone(5))
+
+function addone (num) {
+    return num + 1
+}
+
+
+console.log(addone(3))
+
+function addone (num) {
+    return num + 1
+}
+
+
+
+const myFunction = function(num) {
+   return num + 1
+}
+
+console.log(myFunction(7))
+
+
+
 
 
 

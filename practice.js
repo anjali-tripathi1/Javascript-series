@@ -162,21 +162,21 @@ console.log(this);
 
 // chai()
 
-const chai = function () {
-    let username = "Anjali"
-    // console.log(this);
-    console.log(this.username)
-}
+// const chai = function () {
+//     let username = "Anjali"
+//     // console.log(this);
+//     console.log(this.username)
+// }
 
-chai()
+// chai()
     
-const chai1 = () => {
-    // let username = "Anjali"
-    console.log(this.username)
+// const chai1 = () => {
+//     // let username = "Anjali"
+//     console.log(this.username)
     
-}
+// }
 
-chai1()
+// chai1()
 
 const addTwoNumber = (num1, num2) => {
     //   console.log(num1 + num2);
@@ -188,6 +188,40 @@ const addTwoNumber = (num1, num2) => {
 // console.log(addTwoNumber(5, 7))
 const nums = addTwoNumber(3, 8)
 console.log(nums);
+
+
+// const user1 = {
+//     username : "Anjali",
+//     age : 20,
+
+//     welcomeMessage : function () {
+//         console.log(`${this.username}, Welcome to website`);
+//         console.log(this);
+        
+//     }
+// }
+
+// user1.welcomeMessage()
+// user1.username = "Sam"
+// user1.welcomeMessage()
+
+// console.log(this);
+
+// function chai() {
+//     let username = "Anjali"
+//     console.log(this.username);
+
+    
+// }
+
+const chai1 = function ()  {
+    let username = "Anjali"
+    console.log(this.username);
+    
+}
+
+chai1()
+
 
 
 

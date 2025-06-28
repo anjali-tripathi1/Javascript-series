@@ -129,6 +129,67 @@ const myFunction = function(num) {
 
 console.log(myFunction(7))
 
+const user = {
+    username : "Anjali",
+    age : 20,
+    location : "banda",
+
+    welcomeMessage : function () {
+        // console.log(`${this.username}, welcome to website`)
+        console.log(this);
+        
+    }
+}
+
+user.welcomeMessage()
+// user.username = "Saroj"
+// user.welcomeMessage()
+
+console.log(this);
+
+// function chai() {
+//     console.log(this);
+    
+// }
+
+// chai()
+
+// function chai () {
+//      let username = "Anjali"
+//      console.log(this.username);
+    
+// }
+
+// chai()
+
+const chai = function () {
+    let username = "Anjali"
+    // console.log(this);
+    console.log(this.username)
+}
+
+chai()
+    
+const chai1 = () => {
+    // let username = "Anjali"
+    console.log(this.username)
+    
+}
+
+chai1()
+
+const addTwoNumber = (num1, num2) => {
+    //   console.log(num1 + num2);
+    //   let nums = num1 + num2
+    //   return nums
+    return num1 + num2
+}
+
+// console.log(addTwoNumber(5, 7))
+const nums = addTwoNumber(3, 8)
+console.log(nums);
+
+
 
 
 

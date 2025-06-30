@@ -6,63 +6,91 @@
 
 // chai()
 
-(function code () {
-    console.log(`DV connected`);
+// (function code () {
+//     console.log(`DV connected`);
     
-}) ();
+// }) ();
 
 
-((name) => {
-    console.log(`DB connected Two, ${name}`);
+// ((name) => {
+//     console.log(`DB connected Two, ${name}`);
     
-}) ("Anjali");
+// }) ("Anjali");
+
+// const userLoggedIn = true
+// const temprature = 41
+
+// if(userLoggedIn === true){
+//    console.log(`User logged in`);
+   
+// }
+
+// if (temprature < 50) {
+//    console.log(`Less than 50`);
+   
+// }
+
+// if (temprature === 42) {
+//    console.log(`Less than 50`);
+   
+// } else {
+//     console.log(`greater than 50`);
+    
+// }
+
+// const score = 200
+// if (score > 100) {
+//     const power = "fly"
+//     console.log(power);
+    
+// }
+
+// // console.log(power);
+
+// const balance = 1000
+// if (balance > 500)  console.log(`test`);
+
+
+// if (balance > 500) {
+//   console.log(`greater than 500`);
+  
+// } else if (balance < 750) {
+//     console.log(`Less than 750`);
+    
+// } else if (balance < 900) {
+//    console.log(`Less than 900`);
+   
+// } else {
+//     console.log(`Less than 1200`);
+    
+// }
 
 const userLoggedIn = true
-const temprature = 41
-
-if(userLoggedIn === true){
-   console.log(`User logged in`);
-   
-}
-
-if (temprature < 50) {
-   console.log(`Less than 50`);
-   
-}
-
-if (temprature === 42) {
-   console.log(`Less than 50`);
-   
-} else {
-    console.log(`greater than 50`);
+const debitCard = true
+if (userLoggedIn && debitCard && 2==2) {
+    console.log(`user logged and debitcard is true`);
     
 }
 
-const score = 200
-if (score > 100) {
-    const power = "fly"
-    console.log(power);
+const loggedInFromEmail = true
+const loggedInFromGoggle = false
+if (loggedInFromEmail || loggedInFromGoggle) {
+    console.log(`user logged in`);
     
 }
 
-// console.log(power);
+let val1;
+val1 = 5 ?? 10
+val1 = null ?? 10
+val1 = undefined ?? 4 ?? 5
+console.log(val1);
 
-const balance = 1000
-if (balance > 500)  console.log(`test`);
+const IceTeaPrice = 100
+IceTeaPrice >= 80 ? console.log("less than 50") : console.log("more than 80");
+IceTeaPrice <= 80 ? console.log("less than 50") : console.log("more than 80");
 
 
-if (balance > 500) {
-  console.log(`greater than 500`);
-  
-} else if (balance < 750) {
-    console.log(`Less than 750`);
-    
-} else if (balance < 900) {
-   console.log(`Less than 900`);
-   
-} else {
-    console.log(`Less than 1200`);
-    
-}
+
+
 
 

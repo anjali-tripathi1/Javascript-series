@@ -89,6 +89,44 @@ const IceTeaPrice = 100
 IceTeaPrice >= 80 ? console.log("less than 50") : console.log("more than 80");
 IceTeaPrice <= 80 ? console.log("less than 50") : console.log("more than 80");
 
+const month = "feb"
+switch (month) {
+    case "jan":
+        console.log("January");
+     break;
+
+     case "feb":
+        console.log("Feb");
+     break;
+
+     case "march":
+        console.log("March");
+     break;
+
+     case "april":
+        console.log("April");
+     break;
+
+     case "may":
+        console.log("May");
+     break;
+
+    default:
+        console.log(`month is not print`);
+        
+        break;
+}
+
+const userEmail = "A@Anjali.ai"
+
+if (userEmail) {
+    console.log(`got userEmail`);
+    
+} else {
+    console.log(`don't have userEmail`);
+    
+}
+
 
 
 

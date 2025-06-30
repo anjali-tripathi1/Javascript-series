@@ -1,98 +1,68 @@
 
-// function addTwoNumber (num1, num2){
-//     //   console.log(num1 + num2);
-//     // let result = num1 + num2
-//     // return result
-//     return num1 + num2
-// }
-
-// const result = addTwoNumber(5, 9)
-// console.log(result);
-
-// // addTwoNumber(4, 7)
-
-// const user = {
-//     coursename : "Anjali",
-//     Price : 599,
-
-//     welcomeMessage : function () {
-//         console.log(`${this.coursename}, welcome to website`);
-//         console.log(this);
-        
-//     }
-// }
-
-// user.welcomeMessage()
-// user.coursename = "Saroj"
-// user.welcomeMessage()
-
-// console.log(this);
-
 // function chai () {
-//     console.log(this);
-//     let username = "Anjali"
-//     console.log(this.username);
-    
+//    console.log(`DB connected`);
+   
 // }
 
 // chai()
 
-const chai1 = function () {
-    console.log(this);
-    let username = "Anjali"
-    console.log(this.username);
+(function code () {
+    console.log(`DV connected`);
+    
+}) ();
+
+
+((name) => {
+    console.log(`DB connected Two, ${name}`);
+    
+}) ("Anjali");
+
+const userLoggedIn = true
+const temprature = 41
+
+if(userLoggedIn === true){
+   console.log(`User logged in`);
+   
+}
+
+if (temprature < 50) {
+   console.log(`Less than 50`);
+   
+}
+
+if (temprature === 42) {
+   console.log(`Less than 50`);
+   
+} else {
+    console.log(`greater than 50`);
     
 }
 
-chai1()
-
-const code = () => {
-    console.log(this);
+const score = 200
+if (score > 100) {
+    const power = "fly"
+    console.log(power);
     
 }
 
-code()
+// console.log(power);
+
+const balance = 1000
+if (balance > 500)  console.log(`test`);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if (balance > 500) {
+  console.log(`greater than 500`);
+  
+} else if (balance < 750) {
+    console.log(`Less than 750`);
+    
+} else if (balance < 900) {
+   console.log(`Less than 900`);
+   
+} else {
+    console.log(`Less than 1200`);
+    
+}
 
 

@@ -1,41 +1,41 @@
 
-function addTwoNumber (num1, num2){
-    //   console.log(num1 + num2);
-    // let result = num1 + num2
-    // return result
-    return num1 + num2
-}
+// function addTwoNumber (num1, num2){
+//     //   console.log(num1 + num2);
+//     // let result = num1 + num2
+//     // return result
+//     return num1 + num2
+// }
 
-const result = addTwoNumber(5, 9)
-console.log(result);
+// const result = addTwoNumber(5, 9)
+// console.log(result);
 
-// addTwoNumber(4, 7)
+// // addTwoNumber(4, 7)
 
-const user = {
-    coursename : "Anjali",
-    Price : 599,
+// const user = {
+//     coursename : "Anjali",
+//     Price : 599,
 
-    welcomeMessage : function () {
-        console.log(`${this.coursename}, welcome to website`);
-        console.log(this);
+//     welcomeMessage : function () {
+//         console.log(`${this.coursename}, welcome to website`);
+//         console.log(this);
         
-    }
-}
+//     }
+// }
 
-user.welcomeMessage()
-user.coursename = "Saroj"
-user.welcomeMessage()
+// user.welcomeMessage()
+// user.coursename = "Saroj"
+// user.welcomeMessage()
 
-console.log(this);
+// console.log(this);
 
-function chai () {
-    console.log(this);
-    let username = "Anjali"
-    console.log(this.username);
+// function chai () {
+//     console.log(this);
+//     let username = "Anjali"
+//     console.log(this.username);
     
-}
+// }
 
-chai()
+// chai()
 
 const chai1 = function () {
     console.log(this);
@@ -46,13 +46,12 @@ const chai1 = function () {
 
 chai1()
 
-const chai2 = () => {
+const code = () => {
     console.log(this);
     
 }
 
-chai2()
-
+code()
 
 
 

@@ -190,6 +190,27 @@ for (let i = 0; i <= 20; i++) {
     
 }
 
+let index = 0
+while (index <= 10) {
+    console.log(`value of index is: ${index}`);
+    // index = index + 2
+    // index++
+    index = index + 1
+}
+
+const myArr = ["flash", "shaktiman", "doga"]
+let arr = 0 
+while (arr < myArr.length) {
+    console.log(`value is ${myArr[arr]}`);
+    arr++   
+}
+
+// let score = 10
+// do {
+//     console.log(``);
+    
+// } while (sco);
+
 
 
 

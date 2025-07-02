@@ -359,11 +359,77 @@ const values = coding.forEach( (item) => {
 
 console.log(values);
 
-// const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-// const myArr = myNums.filter( (num) => num > 4)
-// console.log(myArr);
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const myArr = myNums.filter( (num) => num > 4)
+console.log(myArr);
+
+const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const myNewArray = myArray.filter( (num) => {
+   return num > 3
+})
+
+console.log(myNewArray);
+
+const myvals = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const myNewVals = []
+myvals.forEach( (num) => {
+   if(num > 2){
+       myNewVals.push(num)
+   }
+})
+
+console.log(myNewVals);
+
+const books = [
+     { title: 'Book One', genre: 'History', publish: 1968, edition: 2009  },
+     { title: 'Book Two', genre: 'Science', publish: 1928, edition: 2013  },
+     { title: 'Book Three', genre: 'Non-Fiction', publish: 1998, edition: 2010  },
+     { title: 'Book Four', genre: 'Fiction', publish: 1988, edition: 1934  },
+     { title: 'Book Five', genre: 'History', publish: 2011, edition: 2014  },
+     { title: 'Book Six', genre: 'Fiction', publish: 1944, edition: 1984  },
+     { title: 'Book Seven', genre: 'Non-Fiction', publish: 2018, edition: 2008  },
+     { title: 'Book Eight', genre: 'Science', publish: 1938, edition: 2006 },
+     { title: 'Book Nine', genre: 'History', publish: 2005, edition: 1954  },       
+     { title: 'Book Ten', genre: 'Fiction', publish: 2008, edition: 1995  }       
+]
+
+let userBooks = books.filter( (bk) => bk.genre === "History")
+ userBooks = books.filter( (bk) => {return bk.publish >= 1995})
+ userBooks = books.filter( (bk) => bk.publish >= 1995 && bk.genre === "Fiction")
+ userBooks = books.filter( (bk) => { 
+    return bk.publish >= 1995 && bk.genre === "History" })
+ userBooks = books.filter( (bk) => bk.edition >= 2025 || bk.genre === "Fiction" )   
+console.log(userBooks);
+
     
+ const myvalues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+ myvalues.map( (num) => num + 10)  
+ console.log(myvalues);
+
+//  const myNewValues = myvalues.map( (num) => num + 10)
+//  const myNewValues = myvalues.map( (num) => { return num + 10 - 5})
+//  console.log(myNewValues);
+
+// const myNewValues = []
+//   myvalues.forEach( (num) => {
+//     if (num <= 10) {
+//          myNewValues.push(num + 10)
+//     }} )
+
+//     console.log(myNewValues);
     
+    const myNewValues  = []
+    myvalues.map( (num) => {
+        if (num <= 10) {
+             myNewValues.push((num + 1 )* 2)
+        }
+    })
+
+    console.log(myNewValues);
+    
+
+ 
+ 
 
 
 

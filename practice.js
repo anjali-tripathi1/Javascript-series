@@ -427,9 +427,73 @@ console.log(userBooks);
 
     console.log(myNewValues);
     
+const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const myNewNums = myNumbers
+                  .map( (num) => num + 10)
+                  .map( (num) => num * 10)
+                  .filter( (num) => num >= 150)
+                
+                   
+ 
+console.log(myNewNums);
 
- 
- 
+const myNums1 = [1, 2, 3]
+// const myNewNums1 = myNums1.reduce( function (acc, currval) {
+//      console.log(`acc is ${acc} and currval is ${currval}`);
+//      return acc + currval
+// } , 0) 
+
+const myNewNums1 = myNums1.reduce( (acc, currval) => {
+   console.log(`acc is ${acc} and currval is ${currval}`);
+   return acc + currval
+
+}, 0)
+console.log(myNewNums1);
+
+const shoppingCart = [
+    {
+        coursename : "Js series",
+        price : 199
+    },
+
+    {
+        coursename : "Java",
+        price : 599
+    },
+
+    {
+        coursename : "python",
+        price : 2999
+    },
+
+    {
+        coursename : "Data science",
+        price : 12999
+    },
+
+    {
+        coursename : "Mobile development",
+        price : 5999
+    },
+
+
+]
+
+const priceToPay = shoppingCart.reduce( (acc, item) => acc + item.price, 0)
+console.log(priceToPay);
+
+
+
+const myArray2 = [1, 2, 3, 4, 5]
+const totalPay = myArray2.reduce( (acc, currval) => {
+    console.log(`acc is ${acc} currval is ${currval}`);
+    return acc + currval
+}, 0)
+
+console.log(totalPay);
+
+
+
 
 
 

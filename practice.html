@@ -12,27 +12,35 @@
     </style>
  </head>
  <body class="bg-color">
-    
-    <div>
-        <h1 class="heading" id="title">Dom learning on chai aur code <span style="display: none;">test text</span></h1>
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <input type="password" name="" id="">
-        <div class="container">
-            <p>I am first child of container</p>
-            <p>I am second child of container</p>
-            <p>I am third child of container</p>
-            <h1>I am last heading</h1>
-        </div>
-       <ul>
-        <li class="list-item">One</li>
-        <li class="list-item">Two</li>
-        <li class="list-item">Three</li>
-        <li class="list-item">Three</li>
-      </ul>
-
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
     </div>
  </body>
+ <script>
+    const parent = document.querySelector('.parent')
+    console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[3].innerHTML);
+
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+        
+    }
+
+    parent.children[1].style.color = 'orange'
+    console.log(parent.firstElementChild);
+    parent.firstElementChild.innerHTML = "One"
+    console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+    
+    
+    
+ </script>
  </html>

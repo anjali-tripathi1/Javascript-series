@@ -36,7 +36,7 @@ function validateGuess (guess) {
          if (numGuess === 11) {
               displayGuess(guess)
               displayMessage(`GameOver, Random Number was ${randomNumber} `)
-              gameEnd()
+              endGame()
          } else {
             displayGuess(guess)
             checkGuess(guess)
@@ -47,7 +47,7 @@ function validateGuess (guess) {
 function checkGuess (guess) {
     if (guess === randomNumber) {
           displayMessage("you guessed it right")
-          gameEnd()
+          endGame()
     }  else if (guess < randomNumber){
           displayMessage(`Number is Tooo low`)
     }  else if (guess > randomNumber) {
@@ -66,11 +66,13 @@ function displayMessage (message) {
   lowOrHi.innerHTML = `<h2>${message}</h2>`
 }
 
-function gameEnd () {
+function endGame () {
+   userInput.value = ''
+   userInput.setAttribute('disabled', '')
 
 }
 
-function gameStart () {
+function newGame () {
 
 }
 

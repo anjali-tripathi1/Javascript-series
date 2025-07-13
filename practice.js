@@ -698,12 +698,132 @@ const totalNum = myNums.reduce( (acc, currval) =>
  const cart = shoppingCart.reduce( (acc, item) => { return acc + item.Price}, 0)
  console.log(cart);
  
-              
- 
- 
 
-    
-    
+//  const addnums = (num1, num2) => {
+//     //   console.log(num1 + num2);
+//     //  return num1 + num2
+//     const result = num1 + num2
+//     return result
+//  }
+
+//  const result = addnums(4, 3)
+//  console.log("result :", result);
+ 
+ let f = 0
+ while (f <= 10) {
+    console.log(f);
+    f++
+ }
+
+
+ let g = 11
+ do{
+    console.log(g);
+    g++
+ } while (g <= 10 )
+      
+ const myArr2 = ["Anjali", "Saroj", "Sam"]   
+ for(const arr of myArr2){
+     console.log(arr);
+     
+ }
+
+
+ const map1 = new Map()
+ map1.set('In', "India")
+ map1.set('Lo', "London")
+ map1.set('Pa', "Paris")
+
+//  console.log(map1);
+//  for(const [key, value] of map1){
+//      console.log(key, ":", value);
+     
+//  }
+
+ const myObject = {
+     "game1" : "Super Mario",
+     "game2" : "NFS"
+ }
+
+ for(const key in myObject){
+     console.log(myObject[key]);
+     
+ }
+ 
+ const coding2 = ["Java", "Javascript", "python", "ruby", "swift"]
+ coding2.forEach( (val) => {
+     console.log(val);
+     
+ })
+
+
+ function printMe (item) {
+     console.log(item);
+     
+ }
+
+ coding2.forEach(printMe)
+
+const mycoding = [
+    {
+        language : "javascript",
+        languageName : "js"
+    },
+
+    {
+        language : "java",
+        languageName : "java"
+    },
+
+    {
+        language : "python",
+        languageName : "py"
+    },
+
+    {
+        language : "swift",
+        languageName : "sw"
+    },
+
+    {
+        language : "ruby",
+        languageName : "rb"
+    }
+]
+
+mycoding.forEach( (item) => {
+     console.log(item.languageName);
+     
+})
+
+const myarr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const valueOne = myarr1.forEach( (item) => {
+     return item
+     
+})
+
+console.log(valueOne);
+
+// const valueTwo = myarr1.filter( (item) => 
+//      item > 4
+// )
+
+// console.log(valueTwo);
+
+const mynums = myarr1.map( (num) => {
+    return num + 10
+})
+
+console.log(mynums);
+
+const mynums1 = myarr1.map( (num) => num + 5)
+console.log(mynums1);
+
+
+
+
+
+
 
 
 

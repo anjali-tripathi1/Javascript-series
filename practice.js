@@ -73,21 +73,34 @@
 
 // console.log(checkSmallestNumber(3, 3, 1))
 
-function checkArea (length, width){
-    if (length === 0) {
-        throw("length should be greater than 0")
-       
-    } else if (width === 0) {
-         throw("width should be more than 0")    
+function checkOddEven (num) {
+    return num % 2 === 0 ? "even" : "odd"
+    // let remainder = num % 2
+    // if(remainder === 0){
+    //       return "even"
+    // }  else {
+    //      return "odd"
+    // }
+}
+
+console.log(checkOddEven(56));
+
+function calculateArea (length, width) {
+    if(length <= 0){
+         throw new Error ("Length should be a positive number")
     }
-     
-      return length * width
+
+    if (width <= 0) {
+         throw new Error ("width should be positive number")
+    }
+    console.log(length * width);
     
 }
 
-console.log(checkArea(7, 0));
- 
+calculateArea(4, -3)
 
+
+ 
 
 
 

@@ -16,11 +16,21 @@
 
     setTimeout(sayAnjali, 2000)
 
-    const changeName = function () {
+    const changeText = function () {
         document.querySelector('h1').innerHTML = "Best Js Series"
     }
 
-    setTimeout(changeName, 2000)
+    let stopMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+          clearTimeout(stopMe)
+          console.log("stopped");
+          
+    })
+    // clearTimeout(stopMe)
+    
+   
+    
     //  setTimeout(function () {
     //      console.log("Anjali");
          

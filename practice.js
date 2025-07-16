@@ -152,14 +152,14 @@
 // console.log(checkSmallestNumber ( 41, 40, 41));
 
 
- function addTwoNumbers (num1, num2) {
-      return num1 + num2
+//  function addTwoNumbers (num1, num2) {
+//       return num1 + num2
     
     
- }
+//  }
 
  
- console.log(addTwoNumbers(4, 9))
+//  console.log(addTwoNumbers(4, 9))
 
 //  function loginUserMessage (username) {
 //     // if(username === undefined) {
@@ -178,107 +178,289 @@
 // //  loginUserMessage("")
 // console.log(loginUserMessage());
 
-function showNum (val1, val2, ...num1) {
-     return num1
-}
+// function showNum (val1, val2, ...num1) {
+//      return num1
+// }
 
-console.log(showNum(100, 200, 300, 400, 500));
+// console.log(showNum(100, 200, 300, 400, 500));
 
-const myArray = [100, 200, 300, 400, 500]
+// const myArray = [100, 200, 300, 400, 500]
 
-function returnSecondValue(getArray) {
-      return getArray[1]
-}
+// function returnSecondValue(getArray) {
+//       return getArray[1]
+// }
 
-console.log(returnSecondValue(myArray));
-console.log(returnSecondValue([600, 800, 1000, 1200, 1400]));
+// console.log(returnSecondValue(myArray));
+// console.log(returnSecondValue([600, 800, 1000, 1200, 1400]));
 
-function one () {
-    const username = "Anjali"
+// function one () {
+//     const username = "Anjali"
 
-    function two(){
-         const website = "youtube"
-         console.log(username);
+//     function two(){
+//          const website = "youtube"
+//          console.log(username);
          
-    }
+//     }
 
-    // console.log(website);
+//     // console.log(website);
 
-    two()
+//     two()
     
-}
+// }
 
-one()
+// one()
 
-if (true) {
-   const username = "Anjali"
+// if (true) {
+//    const username = "Anjali"
 
-    if (username === "Anjali") {
-        const website = " youtube"
-          console.log(username + website);
+//     if (username === "Anjali") {
+//         const website = " youtube"
+//           console.log(username + website);
           
+//     }
+
+// }
+
+// function addone (num) {
+//     return num + 3
+// }
+
+// console.log(addone(5));
+
+// const user = {
+//     username : "Anjali",
+//     age  : 40,
+
+
+//     welcomeMessage : function () {
+//         console.log(`${this.username}, welcome to website`);
+//         console.log(this);
+        
+//     }
+// }
+
+// user.welcomeMessage("Anjali")
+// user.username = "Saroj"
+// user.welcomeMessage()
+
+// function chai () {
+//     let username = "Anjali"
+//     console.log(this.username);
+    
+//     // console.log(this);
+    
+// }
+  
+// chai()
+
+// const chai1 = function () {
+//     let username = "Saroj"
+//     console.log(this.username);
+    
+// }
+
+// chai1()
+ 
+// const chai2 = () => {
+//     let username = "Anjali"
+//     console.log(this.username);
+    
+// }
+
+// chai2()
+
+
+function calculateArea (length, width) {
+    if(length <= 0){
+         throw new Error("length should be positive number")
     }
 
+    if(width <= 0){
+        throw new Error("width should be positive number")
+    }
+     console.log(length*width);
+     
 }
 
-function addone (num) {
-    return num + 3
+calculateArea(9, 8)
+
+function checkOddEven (num){
+    return num % 2 === 0 ? "even" : "odd"
+    // const remainder = num % 2
+    // if(remainder === 0){
+    //     return "even"
+    // }  else {
+    //     return "odd"
+    // }
 }
 
-console.log(addone(5));
+console.log(checkOddEven(89));
 
-const user = {
-    username : "Anjali",
-    age  : 40,
+// function findSmallestNumber (a, b, c) {
+//     let smallestNumber = a;
+//     if (b < smallestNumber) {
+//           smallestNumber = b;
+//     } else if (c < smallestNumber) {
+//           smallestNumber = c;
+//     }
+
+//     return smallestNumber
+//     //  if (a < b && a < c) {
+//     //        return a;
+//     //  }  else if (b < a && b < c) {
+//     //        return b;
+//     //  }  else if (c < a && c < b) {
+//     //        return c;
+//     //  }
+//     //  return a;
+// }
+
+// console.log(findSmallestNumber(3, 3, 7));
+ 
+
+//  const array = [a, b, c].sort(a < b && a < c || b < c && b < a || c < a && c < b)
+
+// function reverseString (inputString) {
+//     let result = ""
+//     for(let i = inputString.length - 1; i >= 0; i-- ){
+//         result = result + inputString[i]
+//         // console.log(inputString[i]);
+//     }
+    
+//     return result
+// }
+
+// console.log(reverseString("Anjali"));
 
 
-    welcomeMessage : function () {
-        console.log(`${this.username}, welcome to website`);
-        console.log(this);
+
+// function reverseString (inputString){
+//     if (typeof inputString !== 'string') {
+//          throw new Error("only strings allowed");
+         
+//     }
+//     let result = ""
+//     for (let i = inputString.length -1; i >= 0; i--){
+//            result  = result + inputString[i]
+//         //    result += inputString
+//     }
+//     return result
+// }
+ 
+// console.log( reverseString("Anjali"));
+// console.log(reverseString("software Engenier"));
+// // console.log(reverseString(12345));
+
+// function reverseString2  (inputString) {
+//       const splitArray = inputString.split('')
+//       const reverse =   splitArray.reverse()
+//       const result = reverse.join('')
+//     //   console.log(result);
+//       return result      
+// }
+ 
+//  console.log(reverseString2("Anjali")    );
+ 
+// function factorial (inputNumber) {
+//     if(inputNumber < 0 ){
+//          throw new Error("factorial should be positive or greater than 0")
+//     }
+
+//     if (typeof inputNumber === 'string') {
+//          throw new Error("factorial should be a number")
+//     }
+//     let result = 1
+//     for(let i = 1; i <= inputNumber; i++){
+//         //   result = result * i 
+//           result *= i 
+//     }
+//     return result
+    
+// }
+
+// console.log(factorial(12));
+
+// function factorialUsingRecurtion(inputNumber){
+//     console.log("inputNumber is", inputNumber);
+    
+      
+//     if (inputNumber == 0 || inputNumber == 1) {
+//           return 1
+//     }
+
+//     return inputNumber * factorialUsingRecurtion(inputNumber-1)
+// }
+ 
+// console.log(factorialUsingRecurtion(5));
+
+// function isLeapYear(num){
+//     if(isNaN(num)){
+//          throw new Error("value should be a number")
+//     }
+//     return num % 4 === 0 ? "leap year true" : "leap year false"
+//     //  const year = num % 4 
+//     //  if (year === 0) {
+//     //      return "leap year true"
+//     //  }  else {
+//     //      return "leap year false"
+//     //  }
+// }
+
+// console.log(isLeapYear(2036));
+
+
+
+
+ 
+function reversestring (inputString) {
+    if(typeof inputString !== 'string') {
+        throw new Error("value should be string");
         
     }
-}
-
-user.welcomeMessage("Anjali")
-user.username = "Saroj"
-user.welcomeMessage()
-
-function chai () {
-    let username = "Anjali"
-    console.log(this.username);
-    
-    // console.log(this);
-    
-}
+     let result = ""
+     for(let i = inputString.length - 1; i >= 0; i--) {
+          result = result + inputString[i]
+     }
   
-chai()
-
-const chai1 = function () {
-    let username = "Saroj"
-    console.log(this.username);
-    
+     return result
 }
 
-chai1()
- 
-const chai2 = () => {
-    let username = "Anjali"
-    console.log(this.username);
-    
+console.log(reversestring("Saroj"));
+
+function reverseString2 (inputString) {
+     const splitArray = inputString.split('')
+     const reverse = splitArray.reverse()
+     const string = reverse.join('')
+     console.log(string);
+     
 }
 
-chai2()
+reverseString2("Anjali")
 
+function calculatefactorial(inputNumber){
+    if(typeof inputNumber === 'string'){
+        throw new Error("value should be in number");
+        
+    }
+    let result = 1
+    for(let i = 1; i <= inputNumber; i++){
+          result = result * i 
+    }
+    return result
+}
 
+console.log(calculatefactorial(6));
 
- 
-    
+function calculateFactorialUsingRecursion(inputNumber){
+     if (inputNumber == 0 || inputNumber == 1) {
+          return 1
+     }
 
+     return inputNumber * calculateFactorialUsingRecursion(inputNumber - 1)
+}
 
+console.log(calculateFactorialUsingRecursion(6));
 
-
-
- 
 
 
 

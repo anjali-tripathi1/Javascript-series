@@ -412,22 +412,71 @@ console.log(checkOddEven(89));
 
 
  
-function reversestring (inputString) {
-    if(typeof inputString !== 'string') {
-        throw new Error("value should be string");
+// function reversestring (inputString) {
+//     if(typeof inputString !== 'string') {
+//         throw new Error("value should be string");
         
-    }
-     let result = ""
-     for(let i = inputString.length - 1; i >= 0; i--) {
-          result = result + inputString[i]
-     }
+//     }
+//      let result = ""
+//      for(let i = inputString.length - 1; i >= 0; i--) {
+//           result = result + inputString[i]
+//      }
   
+//      return result
+// }
+
+// console.log(reversestring("Saroj"));
+
+// function reverseString2 (inputString) {
+//      const splitArray = inputString.split('')
+//      const reverse = splitArray.reverse()
+//      const string = reverse.join('')
+//      console.log(string);
+     
+// }
+
+// reverseString2("Anjali")
+
+// function calculatefactorial(inputNumber){
+//     if(typeof inputNumber === 'string'){
+//         throw new Error("value should be in number");
+        
+//     }
+//     let result = 1
+//     for(let i = 1; i <= inputNumber; i++){
+//           result = result * i 
+//     }
+//     return result
+// }
+
+// console.log(calculatefactorial(6));
+
+// function calculateFactorialUsingRecursion(inputNumber){
+//      if (inputNumber == 0 || inputNumber == 1) {
+//           return 1
+//      }
+
+//      return inputNumber * calculateFactorialUsingRecursion(inputNumber - 1)
+// }
+
+// console.log(calculateFactorialUsingRecursion(6));
+
+function reverseString (inputString) {
+    let result = ""
+    for(let i = inputString.length - 1; i >= 0; i--){
+        result = result + inputString[i]
+           
+    }
+     
      return result
 }
 
-console.log(reversestring("Saroj"));
+console.log( reverseString("Anjali"));
 
-function reverseString2 (inputString) {
+function reverseString2(inputString){
+    if(typeof inputString !== 'string'){
+          throw new Error('value should be in string')
+    }
      const splitArray = inputString.split('')
      const reverse = splitArray.reverse()
      const string = reverse.join('')
@@ -436,32 +485,102 @@ function reverseString2 (inputString) {
 }
 
 reverseString2("Anjali")
+reverseString2("software Engineer")
+reverseString2("Hagoo")
 
-function calculatefactorial(inputNumber){
+function calculatefactorial (inputNumber) {
     if(typeof inputNumber === 'string'){
-        throw new Error("value should be in number");
-        
+          throw new Error("value should be in number")
     }
     let result = 1
-    for(let i = 1; i <= inputNumber; i++){
-          result = result * i 
-    }
-    return result
+      for(let i = 1; i <= inputNumber; i++){
+            result = result * i 
+            
+            
+      }
+      return result
 }
 
 console.log(calculatefactorial(6));
+console.log(calculatefactorial(9));
 
 function calculateFactorialUsingRecursion(inputNumber){
-     if (inputNumber == 0 || inputNumber == 1) {
-          return 1
+     if(inputNumber == 0 | inputNumber == 1){
+           return 1
      }
 
      return inputNumber * calculateFactorialUsingRecursion(inputNumber - 1)
+               
+}               
+
+console.log(calculateFactorialUsingRecursion(5));
+
+
+function isLeapYear(num){
+     const year = num % 4
+     if (year === 0) {
+          return "true"
+     } else {
+        return "false"
+     }
+     
 }
 
-console.log(calculateFactorialUsingRecursion(6));
+ console.log("leap year is", isLeapYear(2025));
 
+ function findSmallestNumber (a, b, c){
+    let smallestNumber = a
+    if(b < smallestNumber){
+         smallestNumber = b
+    } 
 
+    if(c < smallestNumber) {
+         smallestNumber = c
+    }
+
+    return smallestNumber
+    //  if(a < b && a < c){
+    //      return a
+    //   } 
+    //  if(b < c && b < a) {
+    //      return b
+    //   }  
+    //   if(c < a && c < b){
+    //     return c
+    //   }
+
+    //   return a 
+ }
+
+ console.log(findSmallestNumber(9, 15, 14));
+
+ function checkOddEven (num) {
+    //  return num % 2 === 0 ? "even" : "odd"
+    const remainder = num % 2
+    if(remainder === 0){
+        return "even"
+    } else {
+        return "odd"
+    }
+ }
+
+console.log(checkOddEven(89));
+
+function calculateArea(length, width){
+    if(length <= 0){
+         throw new Error("length should be positive number")
+    }
+
+    if(width <= 0){
+         throw new Error("width should be positive number")
+    }
+     return length * width
+}
+
+console.log(calculateArea(7, 9));
+ 
+ 
+  
 
 
 

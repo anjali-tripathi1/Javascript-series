@@ -461,123 +461,268 @@ console.log(checkOddEven(89));
 
 // console.log(calculateFactorialUsingRecursion(6));
 
-function reverseString (inputString) {
-    let result = ""
-    for(let i = inputString.length - 1; i >= 0; i--){
-        result = result + inputString[i]
+// function reverseString (inputString) {
+//     let result = ""
+//     for(let i = inputString.length - 1; i >= 0; i--){
+//         result = result + inputString[i]
            
-    }
+//     }
      
-     return result
+//      return result
+// }
+
+// console.log( reverseString("Anjali"));
+
+// function reverseString2(inputString){
+//     if(typeof inputString !== 'string'){
+//           throw new Error('value should be in string')
+//     }
+//      const splitArray = inputString.split('')
+//      const reverse = splitArray.reverse()
+//      const string = reverse.join('')
+//      console.log(string);
+     
+// }
+
+// reverseString2("Anjali")
+// reverseString2("software Engineer")
+// reverseString2("Hagoo")
+
+// function calculatefactorial (inputNumber) {
+//     if(typeof inputNumber === 'string'){
+//           throw new Error("value should be in number")
+//     }
+//     let result = 1
+//       for(let i = 1; i <= inputNumber; i++){
+//             result = result * i 
+            
+            
+//       }
+//       return result
+// }
+
+// console.log(calculatefactorial(6));
+// console.log(calculatefactorial(9));
+
+// function calculateFactorialUsingRecursion(inputNumber){
+//      if(inputNumber == 0 | inputNumber == 1){
+//            return 1
+//      }
+
+//      return inputNumber * calculateFactorialUsingRecursion(inputNumber - 1)
+               
+// }               
+
+// console.log(calculateFactorialUsingRecursion(5));
+
+
+// function isLeapYear(num){
+//      const year = num % 4
+//      if (year === 0) {
+//           return "true"
+//      } else {
+//         return "false"
+//      }
+     
+// }
+
+//  console.log("leap year is", isLeapYear(2025));
+
+//  function findSmallestNumber (a, b, c){
+//     let smallestNumber = a
+//     if(b < smallestNumber){
+//          smallestNumber = b
+//     } 
+
+//     if(c < smallestNumber) {
+//          smallestNumber = c
+//     }
+
+//     return smallestNumber
+//     //  if(a < b && a < c){
+//     //      return a
+//     //   } 
+//     //  if(b < c && b < a) {
+//     //      return b
+//     //   }  
+//     //   if(c < a && c < b){
+//     //     return c
+//     //   }
+
+//     //   return a 
+//  }
+
+//  console.log(findSmallestNumber(9, 15, 14));
+
+//  function checkOddEven (num) {
+//     //  return num % 2 === 0 ? "even" : "odd"
+//     const remainder = num % 2
+//     if(remainder === 0){
+//         return "even"
+//     } else {
+//         return "odd"
+//     }
+//  }
+
+// console.log(checkOddEven(89));
+
+// function calculateArea(length, width){
+//     if(length <= 0){
+//          throw new Error("length should be positive number")
+//     }
+
+//     if(width <= 0){
+//          throw new Error("width should be positive number")
+//     }
+//      return length * width
+// }
+
+// console.log(calculateArea(7, 9));
+
+
+
+function checkOddEven (num) {
+     // return num % 2 === 0 ? 'even' : 'odd'
+     const remainder = num % 2
+     if(remainder === 0){
+         return "even"
+     } else{
+           return "odd"
+     }
 }
 
-console.log( reverseString("Anjali"));
+console.log(checkOddEven(78));
 
-function reverseString2(inputString){
-    if(typeof inputString !== 'string'){
-          throw new Error('value should be in string')
-    }
-     const splitArray = inputString.split('')
-     const reverse = splitArray.reverse()
-     const string = reverse.join('')
-     console.log(string);
+function calculateArea (length, width) {
+     if(length <= 0){
+          throw new Error("width")
+     }
+     return length * width
+}
+
+console.log(calculateArea(5, 6));
+
+
+function reverseString (inputString) {
+     let result = ''
+     for(let i = inputString.length - 1; i >= 0; i--){
+          result += inputString[i]
+     }
+     return result
+      
+}
+
+console.log(reverseString("Anjali"));
+
+function reverseString2 (inputString) {
+     const split = inputString.split('')
+     const reverse = split.reverse()
+     const sting = reverse.join('')
+     console.log(sting);
      
 }
 
 reverseString2("Anjali")
-reverseString2("software Engineer")
-reverseString2("Hagoo")
 
 function calculatefactorial (inputNumber) {
-    if(typeof inputNumber === 'string'){
-          throw new Error("value should be in number")
-    }
-    let result = 1
-      for(let i = 1; i <= inputNumber; i++){
-            result = result * i 
-            
-            
-      }
-      return result
+     let result = 1
+     for(let i = 1; i <= inputNumber; i++){
+           result *=   i 
+     }
+
+     return result
 }
 
 console.log(calculatefactorial(6));
-console.log(calculatefactorial(9));
 
-function calculateFactorialUsingRecursion(inputNumber){
-     if(inputNumber == 0 | inputNumber == 1){
+function calculateFactorialUsingRecursion(inputNumber) {
+      if(inputNumber == 0 | inputNumber ==1){
            return 1
-     }
+      } 
 
-     return inputNumber * calculateFactorialUsingRecursion(inputNumber - 1)
-               
-}               
-
-console.log(calculateFactorialUsingRecursion(5));
-
-
-function isLeapYear(num){
-     const year = num % 4
-     if (year === 0) {
-          return "true"
-     } else {
-        return "false"
-     }
-     
+      return inputNumber * calculateFactorialUsingRecursion(inputNumber - 1)
 }
 
- console.log("leap year is", isLeapYear(2025));
+console.log(calculateFactorialUsingRecursion(6));
 
- function findSmallestNumber (a, b, c){
-    let smallestNumber = a
-    if(b < smallestNumber){
-         smallestNumber = b
-    } 
-
-    if(c < smallestNumber) {
-         smallestNumber = c
-    }
-
-    return smallestNumber
-    //  if(a < b && a < c){
-    //      return a
-    //   } 
-    //  if(b < c && b < a) {
-    //      return b
-    //   }  
-    //   if(c < a && c < b){
-    //     return c
-    //   }
-
-    //   return a 
- }
-
- console.log(findSmallestNumber(9, 15, 14));
-
- function checkOddEven (num) {
-    //  return num % 2 === 0 ? "even" : "odd"
-    const remainder = num % 2
-    if(remainder === 0){
-        return "even"
-    } else {
-        return "odd"
-    }
- }
-
-console.log(checkOddEven(89));
-
-function calculateArea(length, width){
-    if(length <= 0){
-         throw new Error("length should be positive number")
-    }
-
-    if(width <= 0){
-         throw new Error("width should be positive number")
-    }
-     return length * width
+function isLeapYear (num) {
+      return num % 4 === 0 ? 'leap year true' : 'leap year false'
 }
 
-console.log(calculateArea(7, 9));
+console.log(isLeapYear(2026));
+
+function findSmallestNumber (a, b, c) {
+     let smallestNumber = a
+     if (b < smallestNumber) {
+          smallestNumber = b
+     }
+
+     if(c < smallestNumber) {
+          smallestNumber = c
+     }
+
+     return smallestNumber
+     // if (a < b && a < c) {
+     //       return a
+     //   }
+
+     //   if (b < a && b < c) {
+     //        return b
+     //   }
+
+     //   if(c < a && c < b) {
+     //        return c
+     //   }
+
+     //   return a
+          
+}
+
+console.log(findSmallestNumber(5, 5, 5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
   

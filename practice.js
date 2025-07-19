@@ -581,105 +581,39 @@ console.log(checkOddEven(89));
 
 
 
-function checkOddEven (num) {
-     // return num % 2 === 0 ? 'even' : 'odd'
-     const remainder = num % 2
-     if(remainder === 0){
-         return "even"
-     } else{
-           return "odd"
-     }
+function calculateSum(inputNumber){
+    if(inputNumber < 1){
+        throw new Error("not float values")
+    }
+    const string = inputNumber.toString()
+    const split = string.split('')
+    
+    let sum = 0
+    split.forEach( (num) => {
+        // console.log(parseInt(num));
+        sum = sum + parseInt(num)
+    })
+
+    return sum 
 }
 
-console.log(checkOddEven(78));
+console.log((calculateSum(96)));
 
-function calculateArea (length, width) {
-     if(length <= 0){
-          throw new Error("width")
-     }
-     return length * width
+
+function calculateSums (inputNumber) {
+   
+      let number = inputNumber
+      let sum = 0
+      while (number > 0) {
+          let lastDigit = number % 10
+          number = Math.floor(number / 10)
+          sum = sum + lastDigit
+      }
+
+      return sum 
 }
 
-console.log(calculateArea(5, 6));
-
-
-function reverseString (inputString) {
-     let result = ''
-     for(let i = inputString.length - 1; i >= 0; i--){
-          result += inputString[i]
-     }
-     return result
-      
-}
-
-console.log(reverseString("Anjali"));
-
-function reverseString2 (inputString) {
-     const split = inputString.split('')
-     const reverse = split.reverse()
-     const sting = reverse.join('')
-     console.log(sting);
-     
-}
-
-reverseString2("Anjali")
-
-function calculatefactorial (inputNumber) {
-     let result = 1
-     for(let i = 1; i <= inputNumber; i++){
-           result *=   i 
-     }
-
-     return result
-}
-
-console.log(calculatefactorial(6));
-
-function calculateFactorialUsingRecursion(inputNumber) {
-      if(inputNumber == 0 | inputNumber ==1){
-           return 1
-      } 
-
-      return inputNumber * calculateFactorialUsingRecursion(inputNumber - 1)
-}
-
-console.log(calculateFactorialUsingRecursion(6));
-
-function isLeapYear (num) {
-      return num % 4 === 0 ? 'leap year true' : 'leap year false'
-}
-
-console.log(isLeapYear(2026));
-
-function findSmallestNumber (a, b, c) {
-     let smallestNumber = a
-     if (b < smallestNumber) {
-          smallestNumber = b
-     }
-
-     if(c < smallestNumber) {
-          smallestNumber = c
-     }
-
-     return smallestNumber
-     // if (a < b && a < c) {
-     //       return a
-     //   }
-
-     //   if (b < a && b < c) {
-     //        return b
-     //   }
-
-     //   if(c < a && c < b) {
-     //        return c
-     //   }
-
-     //   return a
-          
-}
-
-console.log(findSmallestNumber(5, 5, 5));
-
+console.log(calculateSums(456));
 
 
 

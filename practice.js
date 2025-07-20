@@ -617,6 +617,30 @@ console.log(calculateSums(456));
 
 
 
+var name = "Anjali"
+name = "Saroj"
+console.log(name);
+
+var name = "Ramesh"
+
+let age = 32
+age = 45
+
+const city = "Jaipur"
+console.log(city);
+
+console.log(name);
+
+
+let name = "Anjali"
+console.log(typeof name);
+
+
+
+
+
+
+
 
 
 

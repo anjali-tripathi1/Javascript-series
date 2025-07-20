@@ -617,23 +617,75 @@ console.log(calculateSums(456));
 
 
 
-var name = "Anjali"
-name = "Saroj"
-console.log(name);
+// var name = "Anjali"
+// name = "Saroj"
+// console.log(name);
 
-var name = "Ramesh"
+// var name = "Ramesh"
 
-let age = 32
-age = 45
+// let age = 32
+// age = 45
 
-const city = "Jaipur"
-console.log(city);
+// const city = "Jaipur"
+// console.log(city);
 
-console.log(name);
+// console.log(name);
 
 
-let name = "Anjali"
-console.log(typeof name);
+// let name = "Anjali"
+// console.log(typeof name);
+
+// function calculateTables(a){
+//     if(typeof a== 'string'){
+//        throw new Error("value should be a number")
+//     }
+//      for(let i = 1; i <= 10; i++){
+//          console.log(`value of a ${a} and value of i ${i}  ${a * i}`);
+         
+//      }
+// }
+
+// calculateTables(13)
+
+// function calculateTables (tableof, tabletill){
+//     for(let i = tableof; i <= tableof * tabletill; i = i + tableof){
+//           console.log(i);
+          
+//     }
+// }
+
+// calculateTables(2, 10)
+
+
+function smallestNumber (a, b, c) {
+    // if (a < b && a < c){
+    //      return a
+    // }
+
+    // if(b < c && b < a){
+    //      return b
+    // }
+
+    // if(c < a && c < b){
+    //     return c
+    // }
+
+    // return a 
+
+    let smallestNumber = a
+    if(b < smallestNumber){
+        smallestNumber = b
+    }
+
+    if(c < smallestNumber){
+       smallestNumber = c
+    }
+
+    return smallestNumber
+}
+
+console.log(smallestNumber(2, 8, 7));
+
 
 
 

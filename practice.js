@@ -581,39 +581,39 @@ console.log(checkOddEven(89));
 
 
 
-function calculateSum(inputNumber){
-    if(inputNumber < 1){
-        throw new Error("not float values")
-    }
-    const string = inputNumber.toString()
-    const split = string.split('')
+// function calculateSum(inputNumber){
+//     if(inputNumber < 1){
+//         throw new Error("not float values")
+//     }
+//     const string = inputNumber.toString()
+//     const split = string.split('')
     
-    let sum = 0
-    split.forEach( (num) => {
-        // console.log(parseInt(num));
-        sum = sum + parseInt(num)
-    })
+//     let sum = 0
+//     split.forEach( (num) => {
+//         // console.log(parseInt(num));
+//         sum = sum + parseInt(num)
+//     })
 
-    return sum 
-}
+//     return sum 
+// }
 
-console.log((calculateSum(96)));
+// console.log((calculateSum(96)));
 
 
-function calculateSums (inputNumber) {
+// function calculateSums (inputNumber) {
    
-      let number = inputNumber
-      let sum = 0
-      while (number > 0) {
-          let lastDigit = number % 10
-          number = Math.floor(number / 10)
-          sum = sum + lastDigit
-      }
+//       let number = inputNumber
+//       let sum = 0
+//       while (number > 0) {
+//           let lastDigit = number % 10
+//           number = Math.floor(number / 10)
+//           sum = sum + lastDigit
+//       }
 
-      return sum 
-}
+//       return sum 
+// }
 
-console.log(calculateSums(456));
+// console.log(calculateSums(456));
 
 
 
@@ -657,38 +657,77 @@ console.log(calculateSums(456));
 // calculateTables(2, 10)
 
 
-function smallestNumber (a, b, c) {
-    // if (a < b && a < c){
-    //      return a
-    // }
-
-    // if(b < c && b < a){
-    //      return b
-    // }
-
-    // if(c < a && c < b){
-    //     return c
-    // }
-
-    // return a 
-
-    let smallestNumber = a
-    if(b < smallestNumber){
-        smallestNumber = b
+function calculatefactorial(inputNumber) {
+    let result = 1
+    for(let i = 1; i <= inputNumber; i++) {
+        result = result * i 
     }
 
-    if(c < smallestNumber){
-       smallestNumber = c
-    }
-
-    return smallestNumber
+    return result
 }
 
-console.log(smallestNumber(2, 8, 7));
+console.log(calculatefactorial(6));
+
+function calculateFactorialUsingRecursion (inputNumber) {
+     if(inputNumber == 0 || inputNumber == 1) {
+          return 1
+     }
+
+     return inputNumber * calculateFactorialUsingRecursion (inputNumber - 1) 
+}
+
+ 
+console.log(calculateFactorialUsingRecursion(6));
+
+function sum (num) {
+    let number = num
+    let sum = 0
+    while (number > 0) {
+        let lastDigit = number % 10
+        number = Math.floor(number / 10)
+        sum = sum + lastDigit
+    }
+    return sum
+}
+
+console.log(sum(64));
 
 
+function sums (inputNumber) {
+     let number = inputNumber
+     let sum = 0
+     while (number > 0) {
+          let lastDigit = number % 10
+          number = Math.floor(number / 10)
+          sum = sum + lastDigit
+     }
 
+     return sum
+    }
 
+    console.log(sums(357));
+    
+  function sums (num) {
+    for(let i = 1; i <= 10; i++){
+          console.log(num * i);
+          
+    }
+     
+      
+  }
+
+//   sums(4)
+
+  function calculateSum(tableof, tabletill){
+       for(let i = tableof; i <= tableof * tabletill; i = i + tableof){
+             console.log(i);
+             
+       }
+  }
+   
+  calculateSum(3, 10)
+   
+    
 
 
 

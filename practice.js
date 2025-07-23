@@ -728,6 +728,31 @@ function sums (inputNumber) {
   calculateSum(3, 10)
    
     
+function reverseString (inputString){
+    let result = ''
+   for(let i = inputString.length - 1; i >= 0; i--){
+       result = result + inputString[i]
+          
+   }
+
+   return result
+    
+}
+
+console.log(reverseString("Anjali"));
+ 
+
+function calculatefactorial (inputNumber) {
+    if(inputNumber == 0 || inputNumber == 1){
+          return 1
+    }
+
+    return 
+}
+
+console.log(calculatefactorial(5));
+
+
 
 
 

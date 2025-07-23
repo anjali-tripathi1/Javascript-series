@@ -13,15 +13,20 @@
 </body>
 <script>
     
-    const sayDate = (function () {
-         console.log("Anjali", Date.now());
+    const sayDate = function (str) {
+        console.log( Date.now(), str);
          
-    }, 1000)
+    }
 
-    const stopMe = setInterval(sayDate)
+    const stopMe = clearInterval(sayDate, 1000)
 
-    setInterval(stopMe)
+    document.querySelector('#start').addEventListener('click', function () {
+         setInterval(sayDate, 1000, 'Saroj')
+    })
 
+    document.querySelector('#stop').addEventListener('click', function () {
+         clearInterval(stopMe, 1000)
+    })
 
 </script>
 </html>

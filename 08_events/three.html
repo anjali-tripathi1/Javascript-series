@@ -18,12 +18,14 @@
          
     }
 
+    let clear;
+
     document.querySelector('#start').addEventListener('click', function () {
-          setInterval(sayDate, 1000, "Anjali")
+           clear =  setInterval(sayDate, 1000, "Anjali")
     })
 
-    const clear = setInterval(sayDate, 1000)
-
+    
+    
     document.querySelector('#stop').addEventListener('click', function () {
          clearInterval(clear, 1000)
     })

@@ -9,7 +9,7 @@
     
     <h1>Chai aur Javascript</h1>
     <button id="start">Start</button>
-    <button id="stop">Stop</button>
+    <button id="stop" class="stop">Stop</button>
 </body>
 <script>
     
@@ -18,15 +18,27 @@
          
     }
 
-    const stopMe = clearInterval(sayDate, 1000)
-
     document.querySelector('#start').addEventListener('click', function () {
-         setInterval(sayDate, 1000, 'Saroj')
+          setInterval(sayDate, 1000, "Anjali")
     })
+
+    const clear = setInterval(sayDate, 1000)
 
     document.querySelector('#stop').addEventListener('click', function () {
-         clearInterval(stopMe, 1000)
+         clearInterval(clear, 1000)
     })
+
+    
+    
+    
+    
+    // clearInterval(clear)
+
+    // document.querySelector('.stop').addEventListener('click', function () {
+    //     clearInterval(clear, 1000)
+    // })
+
+    
 
 </script>
 </html>

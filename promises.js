@@ -3,7 +3,12 @@
         // DB calls, cryptography, network
         setTimeout(function () {
               console.log("async task is completed")
+              resolve()
         }, 1000)
 
         
+    })
+
+    promiseOne.then(function () {
+         console.log("promise consumed")
     })

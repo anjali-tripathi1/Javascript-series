@@ -901,6 +901,45 @@ myObject.greetingTwo = function () {
 
 console.log(myObject.greetingTwo());
 
+// const tinderUser = new Object()
+const tinderUser = {}
+console.log(tinderUser);
+
+tinderUser.id = "123@.com"
+tinderUser.name = "Anjali"
+tinderUser.email = "anjali@.com"
+console.log(tinderUser);
+
+const regularUser = {
+      email : "anjali@.com",
+     fullname: {
+        userName : {
+            firstName : "Anjali",
+            lastName : "Tripathi"
+        }
+     } 
+}
+
+
+console.log(regularUser.fullname.userName.lastName);
+
+const obj1 = {1:"a", 2:"b"}
+const obj2 = {3:"c", 4:"d"}
+const obj3 = {5:"e", 6:"f"}
+
+const obj4 = {obj1, obj2, obj3}
+console.log(obj4);
+
+const obj5 = Object.assign({}, obj1, obj2, obj3)
+console.log(obj5);
+
+const obj6 = {...obj1, ...obj2, ...obj3}
+console.log(obj6);
+
+
+
+
+
 
 
 

@@ -804,8 +804,87 @@ console.log(Math.floor(date.getTime() / 1000));
 console.log(date.toLocaleString('default', {
       weekday : 'long',
       month : '2-digit',
-      year : '2-digit'
+      day : 'numeric',
+      year : 'numeric',
+      minute : '2-digit',
+      hour : 'numeric'
 }));
+
+
+const array = ["Anjali", "Saroj", "Aditya", 200, 300, true, {name: 'Sam', age: '20'}, ["superman", "Steve", "sameer"]]
+console.log(array[6].age);
+
+const myArray = new Array( 1, 2, 3, 4, 5)
+console.log(myArray.length);
+
+// myArray.push(8)
+// myArray.pop()
+// myArray.shift()
+// myArray.unshift(6)
+
+console.log(myArray);
+console.log(myArray.indexOf(19));
+
+const newArray = myArray.join('')
+console.log(newArray);
+
+const myArr1 = myArray.slice(1, 3)
+console.log(myArr1);
+
+const myArr2 = myArray.splice(1, 3)
+console.log(myArr2);
+
+const myHeroes = ["superman", "spiderman", "Ironman"]
+const dcHeroes = ["doga", "shaktiman", "nagraj"]
+// myHeroes.push(dcHeroes)
+// console.log(myHeroes[3][0]);
+
+// console.log(myHeroes.concat(dcHeroes));
+const myValues = myHeroes.concat(dcHeroes)
+console.log(myValues);
+
+const anotherArray = [...myHeroes, ...dcHeroes]
+console.log(anotherArray);
+
+const myNewArray = [1, 2, 3,[4, 5], [6, 7, 8,[3, 4, 5]]]
+console.log(myNewArray.flat(2));
+
+console.log(Array.isArray("Anjali"));
+console.log(Array.from("Anjali"));
+console.log(Array.from([123]));
+console.log(Array.from({name : 'Anjali'}));
+
+let score1 = 100
+let score2 = "Anjali"
+let score3 = true
+let score4 = ["Anjali", 100, true]
+let score5 = {name : "Saroj", age:20}
+let score6 = function (name) {
+    console.log(name);
+    
+}
+
+console.log(Array.of([score1, score2, score3, score4, score5, score6]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
 
 
 

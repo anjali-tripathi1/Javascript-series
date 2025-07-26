@@ -753,6 +753,33 @@ function calculatefactorial (inputNumber) {
 console.log(calculatefactorial(5));
 
 
+let userName =  new String("Anjali-Tripathi")
+
+console.log(userName.toUpperCase());
+console.log(userName.substring(0, 5));
+console.log(userName.slice(0, -8));
+
+const space = "   Anjali  "
+console.log(space.trimEnd());
+
+const url = "https://anjali%20Tripathi.com"
+console.log(url.replace('%20', '-'));
+console.log(url.includes('Anjali'));
+
+console.log(userName.split(' '));
+
+const value1 = "Hello"
+const value2 = "Anjali"
+console.log(value1.concat(", ", value2));
+
+
+
+
+
+
+
+
+
 
 
 

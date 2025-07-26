@@ -1275,19 +1275,108 @@ const month = 'april'
        
  }
 
- function calculateMultiply(nums){
+ function calculateMultiply(){
      
   for(let i = 1; i <= 10; i++){
-     console.log(nums * i);
-     
+     if(i === 5){
+         console.log("5 is the best number");
+         
+     }
+     console.log(i);
      
  }
  }
 
- calculateMultiply(3);
+calculateMultiply();
+
+function add(num){
+    for(let i = 1; i <=10; i++){
+    console.log(num * i);
+    
+}
+}
+
+add(5)
+
+ const myNewarray = ["superman", "spiderman", "batman"]
  
+ for(let i = 0; i < myNewarray.length; i++){
+       console.log(myNewarray[i]);
+       
+ }
+
+ for(let i = 1; i <= 20; i++){
+     if(i === 5){
+         console.log("Detected 5");
+         break
+     }
+      console.log(i);
+      
+ }
+
+ let index = 1;
+ while(index <= 10){
+    console.log(index)
+    index = index + 3
+//     index++
+ }
+
+ const myArr3 = ["Saroj", "Anjali", "Steve"]
+ let i = 0
+ while(i < myArr3.length){
+       console.log(myArr3[i]);
+       i++
+ }
+
+ let score10 = 10
+ do {
+    console.log(score10);
+    score10++
+ } while (score10 <= 10)
+
+ let score11 = 11
+ do{
+    console.log(score11);
+    score11++
+ }   while(score11 <= 10) 
 
 
+const myArray3 = [1, 2, 3, 4, 5 ] 
+for(const key of myArray3){
+     console.log(key );
+     
+}
+
+const greetings = "Hello Js User"
+for(const greet of greetings){
+     console.log(greet.trim());
+     
+}
+
+const map = new Map()
+.set('In', 'India')
+.set('Pa', 'Paris')
+.set('Lo', 'London')
+
+console.log(map);
+
+for(const [key, value] of map){
+    console.log(key, ":-", value);
+    
+}
+
+const myObjects = {
+     js : "javascript",
+     java : "java",
+     cpp : "c++",
+     rb : "ruby",
+     swift : "Swift"
+}
+
+for(const key in myObjects){
+     console.log(key, ":-", myObjects[key]);
+     
+}
 
 
 

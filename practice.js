@@ -795,6 +795,21 @@ const max = 10
 const min = 20
 console.log(Math.floor(Math.random() * (max - min + 1)) + min);
 
+let date = new Date()
+console.log(date.toLocaleString());
+
+console.log(Math.floor(Date.now() / 1000));
+console.log(Math.floor(date.getTime() / 1000));
+
+console.log(date.toLocaleString('default', {
+      weekday : 'long',
+      month : '2-digit',
+      year : '2-digit'
+}));
+
+
+
+
 
 
 

@@ -1047,6 +1047,249 @@ returnSecondValue(myArray1)
 
 console.log(returnSecondValue([500, 800, 700, 900, 1000]));
 
+var c = 100
+
+if(true){
+   let a = 10
+   const b = 20
+   console.log(a);
+   console.log(b);
+   
+}
+
+function one() {
+     const userName = "Anjali"
+     function two(){
+          const website = "youtube"
+          console.log(userName);
+          
+     } 
+
+     // console.log(website);
+     
+     two()
+}
+
+one()
+
+if(true){
+   const username = "Anjali"
+    if(username === "Anjali"){
+        const website = " youtube"
+        console.log(username + website);
+        
+    }
+//     console.log(website);
+    
+}
+
+console.log(addone(8));
+
+function addone (num) {
+    return num + 5
+}
+
+
+
+const addTwo = function (num) {
+    return num + 9
+}
+
+console.log(addTwo(1));
+
+const user1 = {
+     userName : "Anjali",
+     password : 123,
+     welcomeMessage : function () {
+          console.log(`${this.userName}, Welcome to website`);
+          console.log(this);
+          
+     }
+}
+
+user1.welcomeMessage()
+user1.userName = "Saroj"
+user1.welcomeMessage()
+
+console.log(this);
+
+// function chai () {
+//      let username = "Anjali"
+//      console.log(this.username);
+     
+//      // console.log(this);
+     
+// }
+
+// chai()
+
+const chai = function () {
+     let username = "Anjali"
+     console.log(this.username);
+     // console.log(this);
+     
+}
+
+chai()
+
+const addnumber = (num1, num2) => {
+     return num1 * num2
+}
+
+console.log(addnumber(7, 9));
+
+const addnum = (num1, num2) => num1 + num2
+console.log(addnum(3, 8) );
+
+const addnums = (num1, num2) => (num1 + num2)
+console.log(addnums(1, 2));
+
+const object = () => ({name: "Anjali", age : 20})
+console.log(object().name);
+
+(function newVariable ()  {
+     console.log("DB connected");
+     
+}) ();
+
+(function newVariable2 () {
+     console.log("DB connected 2");
+     
+}) ();
+
+((name) => {
+    console.log("DB connected Two", name);
+     
+}) ('Saroj')
+
+
+const username = false
+const temprature = 50
+
+if(username === true){
+    console.log("user is logged");
+} else {
+     console.log("user is not logged");
+     
+}  
+
+if(temprature === 50){
+   console.log("temprature is greater than 40");
+   
+} else {
+    console.log("temprature is less than 40"); 
+}
+    
+const score = 200
+if(score > 100){
+   const power = 'fly'
+   console.log(power);
+   
+}
+
+const balance = 1000
+if(balance > 500) console.log("Balance is 1000");  console.log(" test2");
+
+if(balance < 500){
+     console.log("500");
+     
+} else if(balance < 700) {
+     console.log("700");
+} else if(balance < 1000){
+     console.log("1000");
+} else {
+      console.log("1200");
+      
+}
+
+const userLoggedWithEmail = true
+const userLoggedwithGoogle = true
+
+if(userLoggedWithEmail && userLoggedwithGoogle){
+     console.log("user is logged");
+     
+}
+
+const userLoggedIn = true 
+const debitCard = false
+
+if(userLoggedIn || debitCard){
+    console.log("allow");
+    
+}
+
+let val1;
+val1 = 5 ?? 10
+val1 = null ?? 15
+val1 = null ?? 10 ?? 15
+console.log(val1);
+
+const IceTeaPrice = 100
+IceTeaPrice === 100 ? console.log('price is greater than 80') : console.log('price is less than 80');
+
+const month = 'april'
+ switch (month) {
+      case 'jan' :
+          console.log("Jan");
+       break;
+
+        case 'feb' :
+          console.log("Feb");
+       break;
+
+        case 'march' :
+          console.log("March");
+       break;
+
+        case 'april' :
+          console.log("April");
+       break;
+
+        case 'may' :
+          console.log("May");
+       break;
+
+      default:
+          console.log("No Match");
+          
+          break;    
+ }
+
+ const userEmail = "A@anjali.ai"
+ if(userEmail){
+     console.log("Got userEmail");
+     
+ } else {
+     console.log("Don't have userEmail");
+ }
+ 
+ const emptyArray = []
+ if(emptyArray.length === 0){
+      console.log("Array is empty");
+      
+ }
+
+ const emptyObject = {}
+ if(Object.keys(emptyObject).length === 0){
+       console.log("object is empty");
+       
+ }
+
+ function calculateMultiply(nums){
+     
+  for(let i = 1; i <= 10; i++){
+     console.log(nums * i);
+     
+     
+ }
+ }
+
+ calculateMultiply(3);
+ 
+
+
+
+
 
 
 

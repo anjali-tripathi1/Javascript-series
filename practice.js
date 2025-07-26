@@ -937,6 +937,131 @@ const obj6 = {...obj1, ...obj2, ...obj3}
 console.log(obj6);
 
 
+const user = [
+     {
+        id:1,
+        name : 'Sam',
+        email : 'sam@google.com'
+     },
+
+     {
+        id:2,
+        name : 'Samarth',
+        email : 'samarth@google.com'
+     },
+
+     {
+        id:3,
+        name : 'Steve',
+        email : 'steve@google.com'
+     },
+]
+
+console.log(user[2].id);
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+
+console.log(tinderUser.hasOwnProperty("isLogged"));
+
+const course = {
+     coursename : "Javascript",
+     courseInstructor : "Anjali"
+}
+
+ const {courseInstructor : Instructor} = course
+ console.log(Instructor);
+
+ function sayName() {
+     console.log(typeof "A");
+     console.log("n");
+     console.log("j");
+     console.log("a");
+     console.log("l");
+     console.log("i");
+     
+ }
+
+ sayName()
+ 
+ function addTwoNumbers(num1, num2) {
+    //  let result = num1 * num2
+    //  return result
+    return num1 + num2
+    //  console.log(result)
+ }
+
+ console.log(addTwoNumbers(8, 9));
+  
+ function loginUserMessage (userName) {
+    if(userName === undefined){
+         console.log("Pleaase enter username");
+         
+    }
+    if(!userName){
+         console.log("please enter again username");
+         
+    }
+     console.log(userName, "Welcome to here");
+     
+ }
+
+
+
+ loginUserMessage("Anjali")
+ loginUserMessage("")
+ loginUserMessage()
+     
+
+function calculateCartPrice (val1, val2, ...num1) {
+    return num1
+     
+}
+
+console.log(calculateCartPrice(200, 300, 400, 500));
+
+
+const myUser = {
+     username : "Anjali",
+     password : 123
+}
+
+function handleobject (object) {
+      console.log(`username is: ${object.username} and password is ${object.password} `);
+      
+}
+
+handleobject(myUser)
+handleobject({
+    username : "Saroj",
+    password : 532
+})
+
+const myArray1 = [100, 200, 300, 400, 500]
+function returnSecondValue(getArray){
+     console.log(getArray[2]);
+     
+}
+
+returnSecondValue(myArray1)
+
+console.log(returnSecondValue([500, 800, 700, 900, 1000]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

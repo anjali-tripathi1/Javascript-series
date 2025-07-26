@@ -772,6 +772,36 @@ const value1 = "Hello"
 const value2 = "Anjali"
 console.log(value1.concat(", ", value2));
 
+const number = new Number(2)
+console.log(number.toString().length);
+
+const myNumber = 25.887632
+console.log(myNumber.toPrecision(5));
+
+const hundreads = 200000000
+console.log(hundreads.toLocaleString('en-In'));
+
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+console.log(Number.MAX_SAFE_INTEGER);
+
+console.log(Math.abs(-8));
+console.log(Math.floor(4.9));
+console.log(Math.max(5, 8, 9, 3, 2));
+console.log(Math.min(5, 8, 9, 3, 2));
+console.log(Math.pow(8, 3));
+
+const max = 10
+const min = 20
+console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+
+
+
+
+
+
+
+
 
 
 

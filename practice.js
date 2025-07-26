@@ -866,6 +866,42 @@ let score6 = function (name) {
 
 console.log(Array.of([score1, score2, score3, score4, score5, score6]));
 
+const mySym = Symbol("key1")
+const myObject = {
+     name : "Anjali",
+     "full Name" : "Anjali Tripathi",
+     [mySym] : "myKey1",
+     age : 20,
+     email : 'anjali@.com',
+     lastLoginDays : ["Monday", "Sunday"],
+    
+     
+}
+
+console.log(myObject["full Name"]);
+console.log(myObject[mySym]);
+console.log(myObject);
+
+myObject.email = "saroj@.com"
+// Object.freeze(myObject)
+myObject.email = "saroj7398.com"
+console.log(myObject);
+
+myObject.greeting = function () {
+     console.log("Hello, JsUser");
+     
+}
+
+console.log(myObject.greeting());
+
+myObject.greetingTwo = function () {
+     console.log("Hello User", this.name);
+     
+}
+
+console.log(myObject.greetingTwo());
+
+
 
 
 

@@ -7,10 +7,29 @@
 </head>
 <body style="background-color: #212121; color: #fff;">
     
-    <h1 class="heading" id="title">This  is Dom Element <span style="display: none;">Test text</span></h1>
-    <h1>this is h2 Heading</h1>
-    <h1>this is h3 Heading</h1>
-    <h1>this is h4 Heading</h1>
-    <input type="password" name="pass" id="pas-word">
+     <div class="parent">
+          <div class="day">Monday</div>
+          <div class="day">Tuesday</div>
+          <div class="day">Wednesday</div>
+          <div class="day">Thursday</div>
+     </div>
 </body>
+<script>
+     const parent = document.querySelector('.parent')
+     console.log(parent.children[0].innerHTML);
+     for(let i = 0; i < parent.children.length; i++){
+            console.log(parent.children[i].innerHTML);
+            
+     }
+     parent.children[1].style.color = 'orange'
+     parent.children[1].style.backgroundColor = 'green'
+     console.log(parent.firstElementChild);
+     console.log(parent.lastElementChild);
+
+     const dayOne = document.querySelector('.day')
+     console.log(dayOne.parentElement);
+     console.log(dayOne.nextElementSibling);
+      
+     
+</script>
 </html>

@@ -1480,8 +1480,34 @@ book.filter( (bk) => bk.publish >= 2000)
 console.log(book);
 
 const myArr5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const maps = myArr5.map( (key) => key)
+const maps = myArr5.map( (key) => key - 1)
 console.log(maps);
+
+const forEach = []
+ myArr5.forEach( (num) => {
+    return forEach.push(num + 2)
+})
+
+console.log(forEach);
+
+const myNewNums = myArr5
+                 .map( (num) => { return num + 30 })
+                 .map( (num) => num * 2)
+                 .filter( (num) => num >= 70)
+
+console.log(myNewNums);
+
+
+const reduce = myArr5.reduce( (acc, currval) => {
+
+       console.log(`value of acc : ${acc} and value of currval : ${currval} and add is : ${acc + currval}`);
+       console.log(acc + currval);
+       
+       return acc + currval
+}, 0)
+
+
+
 
 
 

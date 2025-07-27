@@ -1366,11 +1366,11 @@ for(const [key, value] of map){
 }
 
 const myObjects = {
-     js : "javascript",
-     java : "java",
-     cpp : "c++",
-     rb : "ruby",
-     swift : "Swift"
+     "js" : "javascript",
+     "java" : "java",
+     "cpp" : "c++",
+     "rb" : "ruby",
+     "swift" : "Swift"
 }
 
 for(const key in myObjects){
@@ -1378,8 +1378,63 @@ for(const key in myObjects){
      
 }
 
+const myNewArray1 = ["js", "java", "rb", "swift", "cpp"]
+for(const key in myNewArray1){
+     console.log(myNewArray1[key]);
+     
+}
+
+const myArr4 = ["Aman", "Anjali", "Aditya"]
+myArr4.forEach( (val) => {
+     console.log(val);
+     
+})
+
+function printMe (item) {
+     console.log(item);
+     
+}
+
+myArr4.forEach(printMe)
 
 
+myArr4.forEach((item, index, arr)  => {
+      console.log(item, index, arr);
+      
+})
+
+
+const myList = [
+     {
+          language : "Javascript",
+          price : 999
+     },
+
+     {
+          language : "Java",
+          price : 599
+     },
+
+     {
+          language : "Data Scieence",
+          price : 12999
+     },
+
+     {
+          language : "Mobile Development",
+          price : 5999
+     },
+
+     {
+          language : "Swift",
+          price : 9999
+     },
+]
+
+myList.forEach( (item) => {
+     console.log(`Language is : ${item.language} and Price is: ${item.price}`);
+     
+})
 
 
 

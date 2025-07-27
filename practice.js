@@ -1459,7 +1459,30 @@ console.log(myval);
   newEmptyArray.push(num))
 
  console.log(newEmptyArray);
+
+ const books = [
+     { title: 'Book One', genre: 'History', publish: 1968, edition: 2009  },
+     { title: 'Book Two', genre: 'Science', publish: 1928, edition: 2013  },
+     { title: 'Book Three', genre: 'Non-Fiction', publish: 1998, edition: 2010  },
+     { title: 'Book Four', genre: 'Fiction', publish: 1988, edition: 1934  },
+     { title: 'Book Five', genre: 'History', publish: 2011, edition: 2014  },
+     { title: 'Book Six', genre: 'Fiction', publish: 1944, edition: 1984  },
+     { title: 'Book Seven', genre: 'Non-Fiction', publish: 2018, edition: 2008  },
+     { title: 'Book Eight', genre: 'Science', publish: 1938, edition: 2006 },
+     { title: 'Book Nine', genre: 'History', publish: 2005, edition: 1954  },       
+     { title: 'Book Ten', genre: 'Fiction', publish: 2008, edition: 1995  }       
+]
+
+let book = books.filter( (bk) => 
+   bk.genre === 'History' && bk.publish >= 2000 ,)
+book.filter( (bk) => bk.publish >= 2000)
  
+console.log(book);
+
+const myArr5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const maps = myArr5.map( (key) => key)
+console.log(maps);
+
 
 
 

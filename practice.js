@@ -1436,8 +1436,30 @@ myList.forEach( (item) => {
      
 })
 
+const addPrice = myList.reduce((acc, item) => acc + item.price, 0)
+console.log(addPrice);
 
+ const myArrays = ["naagraj", "goga", "shaktiman"] 
+ const myValue = myArrays.forEach( (item) => {
+     return item
+     
+ })
 
+ 
+ console.log(myValue);
+
+ const myArray4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const myval = myArray4.filter( (item) => item > 4)
+
+console.log(myval);
+
+ const newEmptyArray = []
+ myArray4.forEach( (num) => 
+  newEmptyArray.push(num))
+
+ console.log(newEmptyArray);
+ 
 
 
 

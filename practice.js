@@ -1507,6 +1507,37 @@ const reduce = myArr5.reduce( (acc, currval) => {
 }, 0)
 
 
+const items = [
+     {
+          item : 'Clothing',
+          price : 899 
+     },
+
+     {
+          item : 'Clothing',
+          price : 599 
+     },
+
+     {
+          item : 'Clothing',
+          price : 999 
+     },
+
+     {
+          item : 'Clothing',
+          price : 1599 
+     },
+]
+
+const maps1 =  items.map( (item) => item.price)
+console.log(maps1);
+
+const reduce1 = items.reduce( (acc, item) => { return acc + item.price}, 0)
+console.log(reduce1);
+
+
+
+
 
 
 

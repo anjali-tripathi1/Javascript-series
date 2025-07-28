@@ -69,16 +69,38 @@
     //       alert("owl clicked")
     //   }
 
-      document.getElementById('owl').addEventListener('click', function (e) {
-          alert("owl clicked again")
-        //   console.log(e);
+    //   document.getElementById('owl').addEventListener('click', function (e) {
+    //       alert("owl clicked again")
+    //       console.log(e);
           
-      }, false)
+    //   }, false)
 
       document.getElementById('images').addEventListener('click', (e) => {
            console.log("clicked inside the ul");
            
            
       }, false)
+
+      document.getElementById('owl').addEventListener('click', function (e) {
+            console.log("owl clicked");
+            e.stopPropagation()
+            
+      }, false)
+
+      document.getElementById('google').addEventListener('click', function (e) {
+           console.log("google clicked");
+           e.preventDefault()
+           e.stopPropagation()
+      }, false)
+
+      document.getElementById('images').addEventListener('click', function (e) {
+           console.log(e.target.tagName);
+           if(e.target.tagName === 'IMG'){
+
+           }
+           let remove = e.target.parentNode
+           remove.remove()
+          
+      })
  </script>
  </html>

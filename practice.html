@@ -58,6 +58,21 @@
 </body>
 <script>
     
-  
+    const user = function () {
+        console.log(Date.now());
+        
+    }
+
+     let clear;
+
+    document.querySelector('#start').addEventListener('click', function () {
+          clear = setInterval(user, 1000)
+    })
+
+
+    document.querySelector('#stop').addEventListener('click', function () {
+             
+            clearInterval(clear)
+    })
 </script>
 </html>

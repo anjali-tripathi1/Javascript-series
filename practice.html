@@ -44,63 +44,20 @@
 </html> -->
 
 <!DOCTYPE html>
- <html lang="en">
- <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Events</title>
- </head>
- <body style="background-color: #414141; color: aliceblue;">
+    <title>Document</title>
+</head>
+<body>
     
-    <h2>Amazing image</h2>
-    <div>
-        <ul id="images">
-            <li><img width="200px" id="photoshop" src="./img/pexels-chaitaastic-1796736.jpg" alt="photoshop"></li>
-            <li><img width="200px" id="japan" src="./img/pexels-diego-f-parra-33199-15127306.jpg" alt=""></li>
-            <li><img width="200px" id="river" src="./img/pexels-dominikagregus-672532.jpg" alt=""></li>
-            <li><img width="200px" id="owl" src="./img/pexels-elina-sazonova-1850619.jpg" alt=""></li>
-            <li><img width="200px" id="prayer" src="./img/pexels-manualman32-726484.jpg" alt="" onclick="alert('owl')"></li>
-            <li><a style="color: aliceblue;" href="https://google.com" id="google" title="go to google">Google</a></li>
-        </ul>
-    </div>
- </body>
- <script>
-    //   document.getElementById('owl').onclick = function () {
-    //       alert("owl clicked")
-    //   }
-
-    //   document.getElementById('owl').addEventListener('click', function (e) {
-    //       alert("owl clicked again")
-    //       console.log(e);
-          
-    //   }, false)
-
-      document.getElementById('images').addEventListener('click', (e) => {
-           console.log("clicked inside the ul");
-           
-           
-      }, false)
-
-      document.getElementById('owl').addEventListener('click', function (e) {
-            console.log("owl clicked");
-            e.stopPropagation()
-            
-      }, false)
-
-      document.getElementById('google').addEventListener('click', function (e) {
-           console.log("google clicked");
-           e.preventDefault()
-           e.stopPropagation()
-      }, false)
-
-      document.getElementById('images').addEventListener('click', function (e) {
-           console.log(e.target.tagName);
-           if(e.target.tagName === 'IMG'){
-
-           }
-           let remove = e.target.parentNode
-           remove.remove()
-          
-      })
- </script>
- </html>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    
+  
+</script>
+</html>

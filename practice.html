@@ -52,27 +52,42 @@
 </head>
 <body>
     
-    <h1>Chai aur Javascript</h1>
+    <!-- <h1>Chai aur Javascript</h1>
     <button id="start">Start</button>
-    <button id="stop">Stop</button>
+    <button id="stop">Stop</button> -->
 </body>
 <script>
     
-    const user = function () {
-        console.log(Date.now());
+    // const user = function () {
+    //     console.log(Date.now());
         
-    }
+    // }
 
-     let clear;
+    //  let clear;
 
-    document.querySelector('#start').addEventListener('click', function () {
-          clear = setInterval(user, 1000)
-    })
+    // document.querySelector('#start').addEventListener('click', function () {
+    //       clear = setInterval(user, 1000)
+    // })
 
 
-    document.querySelector('#stop').addEventListener('click', function () {
+    // document.querySelector('#stop').addEventListener('click', function () {
              
-            clearInterval(clear)
-    })
+    //         clearInterval(clear)
+    // })
+     const div = document.createElement('div')
+     console.log(div);
+     div.className = 'main-heading'
+     div.id = (Math.round(Math.random() * 10) + 1)
+     div.setAttribute('title', 'genrated title')
+     div.style.width = '200px'
+     div.style.height = '200px'
+     div.style.backgroundColor = '#cdcdcd'
+     div.style.border = '8px solid black'
+     div.style.textAlign = 'center'
+     
+    //  div.innerHTML = 'This is my Div'
+     const myText = document.createTextNode("This is my Div Project")
+     div.appendChild(myText)  
+     document.body.appendChild(div)
 </script>
 </html>

@@ -1571,7 +1571,14 @@ promiseThree.then( (user) => {
 
 
 
+function addnums (num) {
+       for(let i = 1; i <= 10; i++) {
+             console.log(num * i);
+             
+       }
+}
 
+addnums(5)
 
 
 

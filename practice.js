@@ -1586,6 +1586,10 @@ function addnumbers (num1, num2) {
 }
 
 addnumbers( 5, 8)
+
+const array = [100, 200, 300, 400, 500]
+console.log(array[3]);
+
  
 
 

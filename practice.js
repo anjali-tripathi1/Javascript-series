@@ -1,56 +1,3 @@
-
-
-
-// // function checkSmallestNumber (a, b, c) {
-// //     //  if (a < b && a < c ) {
-// //     //        return a;
-// //     //  } else if (b < c && b < a) {
-// //     //        return b;
-// //     //  }  else if (c < a && c < b) {
-// //     //        return c;
-// //     //  }
-
-// //     // return a;
-
-// //     let smallestNumber = a;
-// //     if (b < smallestNumber) {
-// //          smallestNumber = b;
-// //     }
-// //     if (c < smallestNumber) {
-// //           smallestNumber = c;
-// //     }
-
-// //     return smallestNumber;
-// // }
-
-// // console.log(checkSmallestNumber(3, 3, 1));
-
-
-// // function checkSmallestNumber (a, b, c) {
-// //     // if (a < b && a < c) {
-// //     //      return a;
-// //     // } else if (b < c && b < a) {
-// //     //      return b;
-// //     // } else if (c < a && c < b) {
-// //     //      return c;
-// //     // }
-
-// //     // return a;
-
-// //     let smallestNumber = a;
-// //     if (b < smallestNumber) {
-// //          smallestNumber = b;
-// //     } 
-
-// //     if (c < smallestNumber) {
-// //          smallestNumber = c;
-// //     }
-
-// //     return smallestNumber;
-// // }
-
-// // console.log(checkSmallestNumber(3, 3, 1))
-
 // // function checkOddEven (num) {
 // //     return num % 2 === 0 ? "even" : "odd"
 // //     // let remainder = num % 2
@@ -1593,6 +1540,55 @@ console.log(array[3]);
 console.log(checkOddEven());
 
 
+function checkSmallestNumber (a, b, c) {
+     if (a < b && a < c ) {
+           return a;
+     } else if (b < c && b < a) {
+           return b;
+     }  else if (c < a && c < b) {
+           return c;
+     }
+
+    return a;
+
+// //     let smallestNumber = a;
+// //     if (b < smallestNumber) {
+// //          smallestNumber = b;
+// //     }
+// //     if (c < smallestNumber) {
+// //           smallestNumber = c;
+// //     }
+
+// //     return smallestNumber;
+// // }
+
+// // console.log(checkSmallestNumber(3, 3, 1));
+
+
+// // function checkSmallestNumber (a, b, c) {
+// //     // if (a < b && a < c) {
+// //     //      return a;
+// //     // } else if (b < c && b < a) {
+// //     //      return b;
+// //     // } else if (c < a && c < b) {
+// //     //      return c;
+// //     // }
+
+// //     // return a;
+
+// //     let smallestNumber = a;
+// //     if (b < smallestNumber) {
+// //          smallestNumber = b;
+// //     } 
+
+// //     if (c < smallestNumber) {
+// //          smallestNumber = c;
+// //     }
+
+// //     return smallestNumber;
+}
+
+console.log(checkSmallestNumber(3, 3, 1))
 
 
 

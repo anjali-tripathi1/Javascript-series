@@ -1,26 +1,4 @@
-// // function checkOddEven (num) {
-// //     // return num % 2 === 0 ? "even" : "odd"
-// // //    const remainder = num % 2
 
-// // //    if (remainder === 0) {
-// // //        return "even"
-// // //    } else {
-// // //         return "odd"
-// // //    }
-
-// //  switch (num % 2) {
-// //        case 0 :
-// //           return "even"
-// //          break;
-
-// //        default :
-// //            return "odd"
-           
-// //          break;  
-// //  }
-// // }
-
-// // console.log(checkOddEven());
 
 
 // // function checkSmallestNumber (a, b, c) {
@@ -1590,7 +1568,29 @@ addnumbers( 5, 8)
 const array = [100, 200, 300, 400, 500]
 console.log(array[3]);
 
- 
+ function checkOddEven (num) {
+    return num % 2 === 0 ? "even" : "odd"
+   const remainder = num % 2
+
+//    if (remainder === 0) {
+//        return "even"
+//    } else {
+//         return "odd"
+//    }
+
+//  switch (num % 2) {
+//        case 0 :
+//           return "even"
+//          break;
+
+//        default :
+//            return "odd"
+           
+//          break;  
+//  }
+}
+
+console.log(checkOddEven());
 
 
 

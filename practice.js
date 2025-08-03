@@ -1560,32 +1560,32 @@ function checkSmallestNumber (a, b, c) {
 // //     }
 
 // //     return smallestNumber;
-// // }
+}
 
-// // console.log(checkSmallestNumber(3, 3, 1));
+console.log(checkSmallestNumber(3, 3, 1));
 
 
-// // function checkSmallestNumber (a, b, c) {
-// //     // if (a < b && a < c) {
-// //     //      return a;
-// //     // } else if (b < c && b < a) {
-// //     //      return b;
-// //     // } else if (c < a && c < b) {
-// //     //      return c;
-// //     // }
+function checkSmallestNumber (a, b, c) {
+    if (a < b && a < c) {
+         return a;
+    } else if (b < c && b < a) {
+         return b;
+    } else if (c < a && c < b) {
+         return c;
+    }
 
-// //     // return a;
+    return a;
 
-// //     let smallestNumber = a;
-// //     if (b < smallestNumber) {
-// //          smallestNumber = b;
-// //     } 
+//     let smallestNumber = a;
+//     if (b < smallestNumber) {
+//          smallestNumber = b;
+//     } 
 
-// //     if (c < smallestNumber) {
-// //          smallestNumber = c;
-// //     }
+//     if (c < smallestNumber) {
+//          smallestNumber = c;
+//     }
 
-// //     return smallestNumber;
+//     return smallestNumber;
 }
 
 console.log(checkSmallestNumber(3, 3, 1))

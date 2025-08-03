@@ -1267,17 +1267,6 @@
      
 // }
 
-// const map = new Map()
-// .set('In', 'India')
-// .set('Pa', 'Paris')
-// .set('Lo', 'London')
-
-// console.log(map);
-
-// for(const [key, value] of map){
-//     console.log(key, ":-", value);
-    
-// }
 
 // const myObjects = {
 //      "js" : "javascript",
@@ -1590,7 +1579,17 @@ function calculatefactorial (inputNumber) {
 console.log(calculatefactorial(5));
 
 
+const map = new Map()
+.set('In', 'India')
+.set('Pa', 'Paris')
+.set('Lo', 'London')
 
+console.log(map);
+
+for(const [key, value] of map){
+    console.log(key, ":-", value);
+    
+}
 
 
 

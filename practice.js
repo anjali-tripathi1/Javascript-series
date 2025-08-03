@@ -667,17 +667,6 @@
 // console.log(reverseString("Anjali"));
  
 
-// function calculatefactorial (inputNumber) {
-//     if(inputNumber == 0 || inputNumber == 1){
-//           return 1
-//     }
-
-//     return 
-// }
-
-// console.log(calculatefactorial(5));
-
-
 // let userName =  new String("Anjali-Tripathi")
 
 // console.log(userName.toUpperCase());
@@ -1590,6 +1579,15 @@ function checkSmallestNumber (a, b, c) {
 
 console.log(checkSmallestNumber(3, 3, 1))
 
+function calculatefactorial (inputNumber) {
+    if(inputNumber == 0 || inputNumber == 1){
+          return 1
+    }
+
+    return 
+}
+
+console.log(calculatefactorial(5));
 
 
 

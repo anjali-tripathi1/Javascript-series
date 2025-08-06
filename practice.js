@@ -1595,6 +1595,7 @@ for(const [key, value] of map){
 const newArray = [1, 2, 3, 4, 5]
 newArray.push(5)
 newArray.unshift(5)
+newArray.shift()
 console.log(newArray);
 
 

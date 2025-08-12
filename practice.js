@@ -1661,15 +1661,54 @@ console.log(newArray);
 
 
 
+let a = 5
+let p = '123'
+console.log('123'+123);
+console.log(Number(p));
+
+let mysym = Symbol('key1')
+console.log([mysym]);
+
+let object = {
+       name:'Anjali',
+       [mysym] : 'Aman'
+}
+
+console.log( object);
+
+isNaN(undefined)
+isNaN("hello")
 
 
+let value = 33;
+let negValue = -value;
+console.log(`Negation of value is ${negValue}`);
 
-
-
-
-
-
-
+console.log(5+2);
+console.log(5+(-2));
+console.log(5-2);
+console.log(5*2);
+console.log(5**2);
+console.log(5/2);
+console.log(5%2);
+console.log(5/0);
+console.log(`Line::103---> ${5*true} and ${5*(-true)}`);
+console.log(`Line::104---> ${5*false} and ${5*(-false)}`);
+console.log(`Line::105---> ${5+true} and ${5+(-true)}`);
+console.log(`Line::106---> ${5+false} and ${5+(-false)}`);
+console.log(`Line::107---> ${5-true} and ${5-(-true)}`);
+console.log(`Line::108---> ${5-false} and ${5-(-false)}`);
+console.log(`Line::109---> ${"1" + 5} and ${"1" + (-5)}`);
+console.log(`Line::110---> ${"1" - 5} and ${"1" - (-5)}`);
+console.log(`Line::111---> ${"1" - 5 + 2} and ${"1" - (-5) + 2}`);
+console.log(`Line::112---> ${"1" + 5 + 5} and ${"1" + (-5) + 5}`);
+console.log(`Line::113--- ${1 + 5 + "5"} and ${1 + (-5) + "5"}`);
+console.log(`Line::114--- ${+true}`);
+console.log(`Line::115--- ${+false}`);
+console.log(`Line::116--- ${-true}`);
+console.log(`Line::117--- ${-false}`);
+console.log(`Line::118--- ${1+""} and ${typeof (1+"")}`);
+console.log(`Line::118--- ${1+""} and ${typeof (1+"")}`);
 
 
 

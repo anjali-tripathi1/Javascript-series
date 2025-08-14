@@ -1711,9 +1711,30 @@ console.log(`Line::118--- ${1+""} and ${typeof (1+"")}`);
 console.log(`Line::118--- ${1+""} and ${typeof (1+"")}`);
 
 
+const string1 = "Anjali"
+const string2 = " Tripathi"
+console.log(string1.concat(string2));
+
+console.log(Math.floor(4.9 )); 
+
+const max = 30
+const min = 20
+console.log(Math.floor(Math.random() * (max - min + 1) + min));
 
 
+console.log(Math.floor(Date.now()/1000));
 
+const mysym1 = Symbol('123')
+const mysym2 = Symbol('123')
+ 
+console.log(mysym1 === mysym2);
+
+const myname = function (){
+       console.log("hello");
+       
+}
+myname()
+ 
 
 
 

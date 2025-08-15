@@ -1737,7 +1737,74 @@ myname()
  
 
 
+ let userData = {
+        name: 'Mahesh',
+        age: 32,
+    }
 
+    userData.greeting = function(){
+        return `Hello ${this.name}`;
+    };
+    userData.greetingTwo = function(){
+        return `${this.name}'s age is ${this.age}`;
+    };
+
+    console.log("Line::9----> ",userData.greeting);
+    console.log(`Line::10----> ${userData.greeting()}`);
+    console.log("Line::11----> ",userData.greetingTwo);
+    console.log(`Line::12----> ${userData.greetingTwo()}`); 
+
+    const obj = new Object()
+    obj.name = 'Anjali'
+
+    console.log(obj);
+    
+    const address = {
+    cityName: 'Lucknow',
+    country: 'India',
+    pincode:'383923',
+    touristPlace: {
+        hazratganj: {
+            place1: 'Rumi Darwaza',
+            pace2: 'Bara Imambara'
+        },
+    },
+};
+
+console.log(address.touristPlace.hazratganj.pace2);
+
+const obj1 = {
+    key1: 'value1',
+    key2: 'value2',
+};
+
+const obj2 = {
+    key3: 'value3',
+    key4: 'value4',
+};
+
+const obj3 = {
+    key5: 'value5',
+    key6: 'value6',
+};
+
+let obj4 = {obj1, obj2, obj3}
+console.log(obj4);
+
+let newUser = Object.assign({}, obj1, obj2, obj3)
+// console.log(newUser);
+
+let spread = {...obj1, ...obj2, ...obj3}
+console.log(spread);
+
+const myObject = {
+    name:'Rahul',
+    email:'rahul@gmail.com',
+    courseInstructur:'Ravi'
+};
+
+const {name:n} = myObject
+console.log(n);
 
 
 

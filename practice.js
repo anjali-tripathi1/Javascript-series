@@ -51,7 +51,23 @@ let arr2 = [6,7,8,9,10];
  console.log(arrayInsideArray.flat(3)); 
  
   
+ (function chai() {
+   console.log("DB connected.");
    
+ })();  
+
+ ((name) => {
+     console.log(`DB Connected 2 ${name}`);
+     
+ })('Anjali')
+
+ function myName (num1, num2) {
+    console.log(num1 + num2);
+    
+ }
+
+ myName(5, 8)
+
 
 
 

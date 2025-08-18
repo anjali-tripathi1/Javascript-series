@@ -106,17 +106,104 @@
 
  details.age(20)
 
+ var a = 100
 
+ if(true){
+    // var a = 10
+    let b = 20
+    const c = 30
 
+    console.log(c);
+    
+ }
 
-
-
-
-
-
-
-
-
-
-
+ console.log(a);
+//  console.log(b);
+//  console.log(c);
  
+ function one() {
+     const username = 'Anjali'
+     function two () {
+          const website = ' youtube'
+          console.log(username + website);
+          
+     }
+
+     
+     
+
+     two()
+ }
+
+ one()
+
+
+if(true){
+    const username = ' saroj'
+    if(true){
+        const msg = 'Hello'
+        console.log(msg + username);
+        
+    }
+
+    
+    
+}
+
+let userOne = {
+     name : 'Anjali',
+     age: 20,
+     display : function () {
+         console.log(`name is : ${this.name} and age is: ${this.age}`);
+         
+     }
+}
+
+userOne.display()
+
+// function print () {
+//      console.log(this);
+     
+// }
+
+// print()
+
+const print2 = () => {
+     console.log(this);
+     
+}
+
+print2()
+
+ function print () {
+     let username = 'Anjali'
+     console.log(this.username);
+     
+} 
+
+print()
+
+const addone = (a, b) => {
+     console.log(a+b);
+     
+}
+
+addone(5, 8)
+
+const addTwo = (a, b) => console.log(a+b);
+addTwo(4, 3)
+ 
+const addnumber = () => ({username:'Anjali'});
+console.log(addnumber());
+
+(function add () {
+     console.log("DB Connected");
+     
+}) ();
+
+((name) => {
+    console.log(`DB Connected 2 ${name}` );
+    
+}) ('Anjali')
+
+

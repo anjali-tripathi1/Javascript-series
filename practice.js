@@ -193,17 +193,63 @@ addone(5, 8)
 const addTwo = (a, b) => console.log(a+b);
 addTwo(4, 3)
  
-const addnumber = () => ({username:'Anjali'});
-console.log(addnumber());
+// const addnumber = () => ({username:'Anjali'});
+// console.log(addnumber());
 
-(function add () {
-     console.log("DB Connected");
+// (function add () {
+//      console.log("DB Connected");
      
-}) ();
+// }) ();
 
-((name) => {
-    console.log(`DB Connected 2 ${name}` );
+// ((name) => {
+//     console.log(`DB Connected 2 ${name}` );
     
-}) ('Anjali')
+// }) ('Anjali')
 
+const promiseOne = new Promise((resolve, reject) => {
+     setTimeout(() => {
+         console.log("async task is completed.");
+         resolve()
+     }, 2000)
+})
 
+promiseOne.then(function () {
+     console.log("promiseOne consumed");
+     
+})
+
+new Promise((resolve, reject) => {
+     setTimeout(() => {
+         console.log("async2 called");
+         resolve()
+     }, 2000)
+}).then(() => {
+     console.log("promise consumed");
+     
+})
+
+const promiseThree = new Promise((resolve, reject) => {
+     setTimeout(() => {
+         resolve({username:'Anjali', email:'anjali@.com'})
+     }, 1000)
+})
+
+promiseThree.then(function (user) {
+     console.log(user)
+})
+
+const promiseFour = new Promise(function (resolve, reject) {
+     setTimeout(() => {
+        let error = true
+        if(!error){
+            resolve({username:'Anjali', })
+        } else{
+             
+            reject('ERROR: something went wrong.')
+        }
+     }, 1000)
+})
+
+promiseFour.then( (user) => {
+
+})

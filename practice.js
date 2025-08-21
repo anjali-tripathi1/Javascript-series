@@ -206,50 +206,66 @@ addTwo(4, 3)
     
 // }) ('Anjali')
 
-const promiseOne = new Promise((resolve, reject) => {
-     setTimeout(() => {
-         console.log("async task is completed.");
-         resolve()
-     }, 2000)
-})
+// const promiseOne = new Promise((resolve, reject) => {
+//      setTimeout(() => {
+//          console.log("async task is completed.");
+//          resolve()
+//      }, 2000)
+// })
 
-promiseOne.then(function () {
-     console.log("promiseOne consumed");
+// promiseOne.then(function () {
+//      console.log("promiseOne consumed");
      
-})
+// })
 
-new Promise((resolve, reject) => {
-     setTimeout(() => {
-         console.log("async2 called");
-         resolve()
-     }, 2000)
-}).then(() => {
-     console.log("promise consumed");
+// new Promise((resolve, reject) => {
+//      setTimeout(() => {
+//          console.log("async2 called");
+//          resolve()
+//      }, 2000)
+// }).then(() => {
+//      console.log("promise consumed");
      
-})
+// })
 
-const promiseThree = new Promise((resolve, reject) => {
-     setTimeout(() => {
-         resolve({username:'Anjali', email:'anjali@.com'})
-     }, 1000)
-})
+// const promiseThree = new Promise((resolve, reject) => {
+//      setTimeout(() => {
+//          resolve({username:'Anjali', email:'anjali@.com'})
+//      }, 1000)
+// })
 
-promiseThree.then(function (user) {
-     console.log(user)
-})
+// promiseThree.then(function (user) {
+//      console.log(user)
+// })
 
-const promiseFour = new Promise(function (resolve, reject) {
-     setTimeout(() => {
-        let error = true
-        if(!error){
-            resolve({username:'Anjali', })
-        } else{
+// const promiseFour = new Promise(function (resolve, reject) {
+//      setTimeout(() => {
+//         let error = true
+//         if(!error){
+//             resolve({username:'Anjali', })
+//         } else{
              
-            reject('ERROR: something went wrong.')
-        }
-     }, 1000)
-})
+//             reject('ERROR: something went wrong.')
+//         }
+//      }, 1000)
+// })
 
-promiseFour.then( (user) => {
+// promiseFour.then( (user) => {
 
-})
+// })
+
+let user1 = {
+     name: 'Anjali'
+}
+
+let user2 = user1
+user2.name = 'Saroj'
+console.log(user1);
+console.log(user2);
+
+let name1 = 'Anjali'
+let anotherName = name1
+anotherName = 'Sam'
+console.log(name1);
+console.log(anotherName);
+

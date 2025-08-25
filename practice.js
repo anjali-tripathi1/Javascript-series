@@ -269,3 +269,168 @@ anotherName = 'Sam'
 console.log(name1);
 console.log(anotherName);
 
+let array = ['anjali', 'sam', 'steve']
+
+for(let i = 1; i <= 10; i++){
+    if(i == 5){
+       console.log("5 is best.");
+       continue
+    }
+      let element = i
+      console.log(i);
+      
+}
+
+let myArray = ['Anjali', 'sam']
+let arr = 0
+while ( arr < myArray.length) {
+    console.log(myArray[arr]);
+    arr++
+}
+
+let i = 12
+do{
+   console.log(i);
+   i++
+} while(i <= 10)
+
+const array1 = [1, 2, 3, 4, 5]
+for(const key of array1){
+    console.log(key);
+    
+}    
+
+const map = new Map()
+map.set('In', 'India' )
+map.set('Ln', 'London' )
+map.set('Pa', 'Paris' )
+
+// console.log(map);
+for(const key in map){
+     console.log(key);
+     
+}
+
+// let myObject = {
+//      'name': 'Anjali',
+//      age: 20
+// }
+
+// for(const key in myObject){
+//     console.log(myObject[key]);
+    
+     
+// }
+
+// const coding = ['Anjali', 'Aman', 'Aditya']
+// coding.forEach((val) => {
+//     //  console.log(val);
+     
+// } )
+
+// coding.forEach((item, index, arr) => {
+//      console.log(item, index, arr);
+     
+// } )
+
+// const myList = [
+//      {
+//         course: 'Java',
+//         courseInstructor: 'Anjali'
+//      },
+
+//      {
+//         course: 'Ruby',
+//         courseInstructor: 'Aditya'
+//      },
+
+//      {
+//         course: 'JavaScript',
+//         courseInstructor: 'Aman'
+//      },
+// ]
+
+// myList.forEach((item) => {
+//      console.log(item.courseInstructor);
+     
+// })
+
+const code = ["java", 'js', 'ruby']
+const newCode = code.forEach((item) => {
+     return item
+    //  console.log(item);
+     
+}) 
+
+console.log(newCode);
+
+const nums = [1, 2, 3, 4, 5]
+const newNums = nums.filter((num) =>  num > 3)
+console.log(newNums);
+
+const arra = [10, 20, 30, 40, 50, ]
+const empty = []
+arra.forEach((num) => {
+     if(num > 10){
+         empty.push(num)
+     }
+})
+
+console.log(empty);
+
+const books = [
+     { title: 'Book One', genre: 'History', publish: 1968, edition: 2009  },
+     { title: 'Book Two', genre: 'Science', publish: 1928, edition: 2013  },
+     { title: 'Book Three', genre: 'Non-Fiction', publish: 1998, edition: 2010  },
+     { title: 'Book Four', genre: 'Fiction', publish: 1988, edition: 1934  },
+     { title: 'Book Five', genre: 'History', publish: 2011, edition: 2014  },
+     { title: 'Book Six', genre: 'Fiction', publish: 1944, edition: 1984  },
+     { title: 'Book Seven', genre: 'Non-Fiction', publish: 2018, edition: 2008  },
+     { title: 'Book Eight', genre: 'Science', publish: 1938, edition: 2006 },
+     { title: 'Book Nine', genre: 'History', publish: 2005, edition: 1954  },       
+     { title: 'Book Ten', genre: 'Fiction', publish: 2008, edition: 1995  }       
+]
+
+let book = books.filter((bk) => {return bk.genre === 'History'})
+console.log(book);
+
+const myNumber = [11, 12, 13, 14, 15]
+const mynum = myNumber.map((num) => {return num + 20})
+console.log(mynum);
+
+const new1 = myNumber.map((num) => num + 2  )
+                     .filter((num) => {return num > 15})
+                     .map((num) => num * 2)
+ console.log(new1);
+                    
+const myNums = [1, 2, 3, 5, 8]
+const myTotal = myNums.reduce((acc, currval) => {return acc+currval})
+console.log(myTotal);
+
+const price = [
+    {
+        price:2999,
+        lang:'java'
+    },
+
+    {
+        price:5999,
+        lang: 'js'
+    },
+
+    {
+        price:2999,
+        lang: 'ruby'
+    },
+]
+
+const pay = price.reduce((acc, currval) => { return acc + currval.price}, 0)
+console.log(pay);
+
+
+function AddTwoNumber (num1, num2) {
+      console.log(num1 + num2);
+      
+}
+
+AddTwoNumber(5, 8)

@@ -428,9 +428,32 @@ const pay = price.reduce((acc, currval) => { return acc + currval.price}, 0)
 console.log(pay);
 
 
-function AddTwoNumber (num1, num2) {
-      console.log(num1 + num2);
-      
+function calculateArea (l, w) {
+    const area = l*w
+    if(l <= 0 ){
+        throw Error('Length should be positive number. ')
+    } 
+     if (w <= 0) {
+       throw Error('width should be positive number.')
+    } 
+
+    return area
+
+    
+     
 }
 
-AddTwoNumber(5, 8)
+console.log(calculateArea(2.5, 8));
+
+function showOddOrEven(num){
+    //  const remainder = num % 2
+     if(num % 2 ){
+        console.log("Even");
+        
+     } else {
+         console.log("odd");
+         
+     }
+}
+
+showOddOrEven(8)

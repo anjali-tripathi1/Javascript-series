@@ -445,75 +445,104 @@ function calculateArea (l, w) {
 
 console.log(calculateArea(2.5, 8));
 
-function checkIfEvenOrOdd (num) {
-   return num % 2 === 0 ? `${num} is Even` : `${num} is odd.`
+// function checkIfEvenOrOdd (num) {
+//    return num % 2 === 0 ? `${num} is Even` : `${num} is odd.`
     
-}
+// }
 
-console.log(checkIfEvenOrOdd(22.4));
+// console.log(checkIfEvenOrOdd(22.4));
+
+// function findSmallestNumber (a, b, c) {
+//     let smallestNumber = a
+//     if(smallestNumber > b){
+//         smallestNumber = b
+//     } if (smallestNumber > c) {
+//          smallestNumber = c
+//     }
+
+//     return `${smallestNumber} is smallestNumber`
+ 
+//     }
+
+// console.log(findSmallestNumber(1000, 9999, ));
+
+
+
+// const smallestNumber = (a, b, c) => {
+//     if((typeof a) ===  "string" | (typeof b) !== "number" | (typeof c) !== "number"  ){
+//          throw Error('Please Enter a Number')
+//     } else {
+//          if(a <= 0 | b <= 0 | c <= 0){
+//         throw Error('Num should be positive.')
+//     } else {
+//        let small = a < b ? (a < c ? a : c) : (b < c ? b : c)
+//      return `${small} is smallest number`
+//     }
+//     }
+   
+     
+// }
+
+// console.log(smallestNumber(1, 2, 1));
+
+
+// const fruits = ['Apple', 'Banana', 'Guava']
+// fruits.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+// console.log(fruits);
+
+
+// let num = [1, 35, 8, 5, 96]
+// num.sort((a, b) => { return a - b})
+// console.log(num);
+
+// let user = [
+//     {name : 'Anjali', age:20},
+//     {name : 'Aditya', age:17},
+//     {name : 'Aman', age:21},
+     
+     
+// ]
+// user.sort((a, b) => {return a.age - b.age})
+// console.log(user[0]);
+
+
+
+    
+
+// function getSmall (a, b, c) {
+//      let arr = [a, b, c]
+//      arr.sort((a, b) => a - b)
+//      return `${arr[0]} is smallest number`
+// }
+
+// console.log(getSmall(225, 85, 65));
 
 function findSmallestNumber (a, b, c) {
-    let smallestNumber = a
-    if(smallestNumber > b){
-        smallestNumber = b
-    } if (smallestNumber > c) {
-         smallestNumber = c
-    }
-
-    return `${smallestNumber} is smallestNumber`
- 
-    }
-
-console.log(findSmallestNumber(1000, 9999, ));
-
-
-
-const smallestNumber = (a, b, c) => {
-    if((typeof a) ===  "string" | (typeof b) !== "number" | (typeof c) !== "number"  ){
+    if((typeof a) === "string" | (typeof b) !== "number" | (typeof c) === "string" ){
          throw Error('Please Enter a Number')
     } else {
-         if(a <= 0 | b <= 0 | c <= 0){
-        throw Error('Num should be positive.')
+               if(a <= 0 | b <= 0 | c <= 0){
+         throw Error('Number should be positive.')
     } else {
-       let small = a < b ? (a < c ? a : c) : (b < c ? b : c)
-     return `${small} is smallest number`
+            let smallestNumber = a
+
+        if(smallestNumber > b){
+             smallestNumber = b
+        } 
+
+        if(smallestNumber > c){
+             smallestNumber = c
+        }
+
+        return `${smallestNumber} is smallest number.`
     }
     }
    
-     
-}
+       
+    }
 
-console.log(smallestNumber(1, 2, 1));
-
-
-const fruits = ['Apple', 'Banana', 'Guava']
-fruits.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
-console.log(fruits);
-
-
-let num = [1, 35, 8, 5, 96]
-num.sort((a, b) => { return a - b})
-console.log(num);
-
-let user = [
-    {name : 'Anjali', age:20},
-    {name : 'Aditya', age:17},
-    {name : 'Aman', age:21},
-     
-     
-]
-user.sort((a, b) => {return a.age - b.age})
-console.log(user[0]);
-
-
-
+   console.log(findSmallestNumber(9, 7, 5));
     
+   console.log(Math.min(5, 8, 2, 83, 24, 1 ));
 
-function getSmall (a, b, c) {
-     let arr = [a, b, c]
-     arr.sort((a, b) => a - b)
-     return `${arr[0]} is smallest number`
-}
-
-console.log(getSmall(225, 85, 65));
-
+   

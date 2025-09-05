@@ -545,4 +545,5 @@ function findSmallestNumber (a, b, c) {
     
    console.log(Math.min(5, 8, 2, 83, 24, 1 ));
 
-   
+  
+

@@ -517,33 +517,38 @@ console.log(calculateArea(2.5, 8));
 
 // console.log(getSmall(225, 85, 65));
 
-function findSmallestNumber (a, b, c) {
-    if((typeof a) === "string" | (typeof b) !== "number" | (typeof c) === "string" ){
-         throw Error('Please Enter a Number')
-    } else {
-               if(a <= 0 | b <= 0 | c <= 0){
-         throw Error('Number should be positive.')
-    } else {
-            let smallestNumber = a
+// function findSmallestNumber (a, b, c) {
+//     if((typeof a) === "string" | (typeof b) !== "number" | (typeof c) === "string" ){
+//          throw Error('Please Enter a Number')
+//     } else {
+//                if(a <= 0 | b <= 0 | c <= 0){
+//          throw Error('Number should be positive.')
+//     } else {
+//             let smallestNumber = a
 
-        if(smallestNumber > b){
-             smallestNumber = b
-        } 
+//         if(smallestNumber > b){
+//              smallestNumber = b
+//         } 
 
-        if(smallestNumber > c){
-             smallestNumber = c
-        }
+//         if(smallestNumber > c){
+//              smallestNumber = c
+//         }
 
-        return `${smallestNumber} is smallest number.`
-    }
-    }
+//         return `${smallestNumber} is smallest number.`
+//     }
+//     }
    
        
-    }
+//     }
 
-   console.log(findSmallestNumber(9, 7, 5));
+//    console.log(findSmallestNumber(9, 7, 5));
     
-   console.log(Math.min(5, 8, 2, 83, 24, 1 ));
+//    console.log(Math.min(5, 8, 2, 83, 24, 1 ));
 
   
 
+function calculateFactorial(num){
+    return [...Array(num).keys()].map((i) => {return i+1}).reduce((acc, val) => acc*val, 1)
+}
+
+console.log(calculateFactorial(5));

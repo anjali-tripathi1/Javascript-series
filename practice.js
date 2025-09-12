@@ -586,15 +586,9 @@ const max = 20
 console.log(Math.floor(Math.random() * (max - min + 1)) + min);
 
 
-let date = new Date()
-// console.log(date);
-
-
-
-
-
-
-
+let hello = 'Anjali123'
+let hello2 = 'Welcome'
+console.log(hello2.concat(" ", hello));
 
 
 

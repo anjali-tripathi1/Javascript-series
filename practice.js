@@ -552,3 +552,56 @@ function calculateFactorial(num){
 }
 
 console.log(calculateFactorial(5));
+
+
+let name3 = 'Anjali Tripathi'
+let repo3 = '15'
+console.log(`name is ${name3} and repo is ${repo3}`);
+
+console.log(name3.length);
+
+let extra = '    Saroj    '
+console.log( extra.trimEnd());
+
+let url = 'https://anjali%20Tripathi'
+console.log(url.replace('%20', '-'));
+
+console.log(name3.split('-'));
+
+let val1 = 'Hello'
+let val2 = 'World'
+console.log(val2.concat(' ', val1));
+
+let num = new Number(200)
+
+let num2 = 113.656
+console.log(num2.toPrecision(4));
+
+const hundread = 10000
+console.log(hundread.toLocaleString('en-In'));
+
+
+const min = 10
+const max = 20
+console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+
+
+let date = new Date()
+// console.log(date);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

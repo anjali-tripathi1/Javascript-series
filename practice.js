@@ -590,6 +590,11 @@ let hello = 'Anjali123'
 let hello2 = 'Welcome'
 console.log(hello2.concat(" ", hello));
 
+let isLogged = true
+let myValue1 = 10
+let myValue2 = 10
+// console.log(isLogged);
+
 
 
 

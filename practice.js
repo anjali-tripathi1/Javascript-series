@@ -595,8 +595,27 @@ let myValue1 = 10
 let myValue2 = 10
 // console.log(isLogged);
 
+var one = 100
+// let b = 60
+function test () {
+    //  var one = 20
+    //  let b = 30
+    if(true){
+        // var one = 50
+        let b =  30 
 
+        
+        
+    }
+     
+     console.log(one);  
+     console.log("Inside", b);
+}
 
+ 
+//  console.log(b);
+
+test()
 
 
 

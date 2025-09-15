@@ -581,45 +581,56 @@ const hundread = 10000
 console.log(hundread.toLocaleString('en-In'));
 
 
-const min = 10
-const max = 20
+
+
+let max = 20
+let min = 10
 console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+  
+let date = new Date()
+console.log(date.toLocaleString('default', {
+      weekday:'long',
+      month:'long',
+      day:'2-digit',
+      year:'2-digit',
+      hour:'2-digit',
+      minute:'2-digit'
+}));
 
 
-let hello = 'Anjali123'
-let hello2 = 'Welcome'
-console.log(hello2.concat(" ", hello));
+// Write a program that checks if a number is even or odd 
 
-let isLogged = true
-let myValue1 = 10
-let myValue2 = 10
-// console.log(isLogged);
+// Ask the user for their age. If they are 18 or older, log "You can vote", otherwise "You cannot vote".
 
-var one = 100
-// let b = 60
-function test () {
-    //  var one = 20
-    //  let b = 30
-    if(true){
-        // var one = 50
-        let b =  30 
 
-        
-        
+function checkEvenOdd (num) {
+    const remainder = num % 2
+    
+    if(remainder === 0){
+         console.log(`${num} is Even`);
+         
+    } else {
+         console.log(`${num} is Odd`);
+         
     }
-     
-     console.log(one);  
-     console.log("Inside", b);
+
+    for(let i = 1; i <= 10; i++){
+          console.log(num * i);
+          
+    }
 }
 
- 
-//  console.log(b);
-
-test()
+checkEvenOdd(5)
 
 
+function canVote (age) {
+     if(age >= 18){
+        console.log(`you can Vote, your age is ${age}`);
+        
+     } else {
+          console.log(`you can't Vote, your age is ${age}`);
+     }
+}
 
-
-
-
-
+canVote(35)
+canVote(17)

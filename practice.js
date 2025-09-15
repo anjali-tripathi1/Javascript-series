@@ -634,3 +634,12 @@ function canVote (age) {
 
 canVote(35)
 canVote(17)
+
+
+function returnReverseString (string) {
+    
+   
+}
+
+console.log(returnReverseString('madam'));
+ 

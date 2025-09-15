@@ -636,10 +636,13 @@ canVote(35)
 canVote(17)
 
 
-function returnReverseString (string) {
-    
-   
+function calculateFactorial (num) {
+     for(let i = 1; i <= num){}
 }
 
-console.log(returnReverseString('madam'));
- 
+console.log(calculateFactorial(6));
+
+
+
+
+

@@ -637,7 +637,7 @@ canVote(17)
 
 
 function calculateFactorial (num) {
-     for(let i = 1; i <= num){}
+      
 }
 
 console.log(calculateFactorial(6));

@@ -637,20 +637,12 @@ canVote(17)
 
 
 function returnString (string) {
-    let result = ''
-    for(let i = string.length - 1; i >= 0; i--) {
-           if(string[i] !== string[string.length - 1 - i]){
-               return `${string} is false`
-           }
-           
-
-    }
-
-    return `${string} is true`
+    return string.split('').reduce((acc, ) => )
 }
 
  console.log(returnString('Anjali'));
  console.log(returnString('madam'));
  console.log(returnString('level'));
+ console.log(returnString('saroj'));
   
 

@@ -636,22 +636,21 @@ canVote(35)
 canVote(17)
 
 
-function isPalindrome (string) {
-    string = string.toLowerCase()
-     const split = string.split('')
-     const reverse = split.reverse() 
-     const join = reverse.join('')
-     console.log(join);
-     if(string === join){
-         return `${string} converts into ${join} and it's palindrome`
-     }  else {
-         return `${string} converts into ${join} and it's not palindrome`
-     }
-     
+function returnString (string) {
+    let result = ''
+    for(let i = string.length - 1; i >= 0; i--) {
+           if(string[i] !== string[string.length - 1 - i]){
+               return `${string} is false`
+           }
+           
+
+    }
+
+    return `${string} is true`
 }
 
-console.log(isPalindrome('Anjali'));
-console.log(isPalindrome('madam'));
-console.log(isPalindrome('saroj'));
-console.log(isPalindrome('level'));
-console.log(isPalindrome('Level'));
+ console.log(returnString('Anjali'));
+ console.log(returnString('madam'));
+ console.log(returnString('level'));
+  
+

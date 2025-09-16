@@ -637,7 +637,7 @@ canVote(17)
 
 
 function returnString (string) {
-    return string.split('').reduce((acc, ) => )
+    return string.split('').reduce((acc, reduce) =>  reduce + acc)
 }
 
  console.log(returnString('Anjali'));

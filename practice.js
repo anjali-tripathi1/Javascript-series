@@ -636,13 +636,12 @@ canVote(35)
 canVote(17)
 
 
-function calculateFactorial (num) {
-      
+function sumOfDigits (num) {
+     let number = num
+     let sum = 0
+   
+    
 }
 
-console.log(calculateFactorial(6));
-
-
-
-
-
+console.log(sumOfDigits(789));
+ 

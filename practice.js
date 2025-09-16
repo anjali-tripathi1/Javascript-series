@@ -636,12 +636,22 @@ canVote(35)
 canVote(17)
 
 
-function sumOfDigits (num) {
-     let number = num
-     let sum = 0
-   
-    
+function isPalindrome (string) {
+    string = string.toLowerCase()
+     const split = string.split('')
+     const reverse = split.reverse() 
+     const join = reverse.join('')
+     console.log(join);
+     if(string === join){
+         return `${string} converts into ${join} and it's palindrome`
+     }  else {
+         return `${string} converts into ${join} and it's not palindrome`
+     }
+     
 }
 
-console.log(sumOfDigits(789));
- 
+console.log(isPalindrome('Anjali'));
+console.log(isPalindrome('madam'));
+console.log(isPalindrome('saroj'));
+console.log(isPalindrome('level'));
+console.log(isPalindrome('Level'));

@@ -636,13 +636,16 @@ canVote(35)
 canVote(17)
 
 
-function returnString (string) {
-    return string.split('').reduce((acc, reduce) =>  reduce + acc)
+function calAvg (array) {
+     let sum = 0
+     for(let i = 0; i < array.length; i++){
+         sum = sum + array[i]
+     }
+
+     let result = sum / array.length 
+     return `${sum} and avg is: ${result}`
 }
 
- console.log(returnString('Anjali'));
- console.log(returnString('madam'));
- console.log(returnString('level'));
- console.log(returnString('saroj'));
-  
+console.log(calAvg([45, 76, 23]));
 
+ 

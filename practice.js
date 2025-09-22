@@ -649,3 +649,7 @@ function calAvg (array) {
 console.log(calAvg([45, 76, 23]));
 
  
+// let show2 = ['Anjali', 100, true, {name:'Saroj', age:20}]
+// console.log(show2.some('Anjali'));
+
+

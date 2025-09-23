@@ -652,4 +652,20 @@ console.log(calAvg([45, 76, 23]));
 // let show2 = ['Anjali', 100, true, {name:'Saroj', age:20}]
 // console.log(show2.some('Anjali'));
 
+function isEven (nums) {
+     return nums % 2 === 0
+}
 
+function filter (number) {
+     let result = []
+     for(const nums of number){
+        if(isEven(nums)){
+            result.push(nums)
+        }
+          
+     }
+
+     return result
+}
+
+console.log(filter([4, 8, 5, 6, 19]));

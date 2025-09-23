@@ -669,3 +669,12 @@ function filter (number) {
 }
 
 console.log(filter([4, 8, 5, 6, 19]));
+
+let array2 = ['India', 'Calcuta', 'Japan', 'Mumbai']
+const add = array2.indexOf('Calcuta')
+if(add !== -1){
+    array2.splice(add + 1, 0, 'America')
+}
+
+console.log(array2);
+

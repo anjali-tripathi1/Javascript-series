@@ -52,42 +52,86 @@
 </head>
 <body>
     
-    <!-- <h1>Chai aur Javascript</h1>
-    <button id="start">Start</button>
-    <button id="stop">Stop</button> -->
-</body>
-<script src="practice.js">
+    <h1 id="heading">DOM Elements Example</h1>
+    <div id="so"></div> 
     
-    // const user = function () {
-    //     console.log(Date.now());
-        
-    // }
+    <script>
+        //  const p = document.querySelector('#heading')
+        //  p.innerHTML = 'Hello World'
+        //  p.style.backgroundColor = 'red'
+        //  p.style.color = 'white'
+        //  p.className = 'title'
+        //  console.log("idName : ", p.getAttribute('id'))
+        //  console.log("className : ", p.getAttribute('class'))
+        //  const id = p.id
+        //  console.log("id : ", id);
+        //  const className = p.className
+        //  console.log("class : ", className)
+        //  const set = p.setAttribute('id', 'heading test2')
+        //  const set2 = p.setAttribute('class', 'title title2')
+         const form = document.createElement('form')
+         const label = document.createElement('label')
+         label.innerHTML = 'Enter your Name : '
+         const element = document.createElement('input')
+         element.type = 'text'
+         element.validationMessage = 'Password Should be in number'
+         element.name = 'enter name'
+         element.required = 'true'
+         element.placeholder = 'Enter your Name'
+         element.style.width = '250px'
+         element.style.height = '50px'
+         
+         document.getElementById('so').appendChild(element)
+          
+         const h1 = document.createElement('h1')
+         h1.innerHTML = 'This is the new Project'
+          
+         const btn = document.createElement('button')
+         btn.innerHTML = 'Submit'
+         
+         form.appendChild(element)
+         form.appendChild(btn)
 
-    //  let clear;
+         function btnShow () {
+             alert(`your Name is : ${element.value}`)
+         }
+       
 
-    // document.querySelector('#start').addEventListener('click', function () {
-    //       clear = setInterval(user, 1000)
-    // })
+    
+         
+        // btn.addEventListener('click', () => {
+        //      alert(`you Entered : ${element.value}`)
+        // })
 
+        // btn.addEventListener('click', () => {
+        //      if(!form.checkValidity()){
+        //         //  event.preventDefault()
+        //          element.reportValidity()
+        //      } else {
+        //          alert(` You Entered : ${element.value}`)
+        //         //  event.preventDefault()
+        //      }
+        // })
 
-    // document.querySelector('#stop').addEventListener('click', function () {
+        element.addEventListener('invalid', function () {
+              this.setCustomValidity('Please Enter letter value')
+        })
+
+        element.addEventListener('input', function () {
+             this.setCustomValidity('')
+        })
+
+        form.addEventListener('click', () => {
+            if(!form.checkValidity()){
+                element.reportValidity()
+            } else{
+                 alert(`you Entered : ${element.value}`)
+            }
              
-    //         clearInterval(clear)
-    // })
-     const div = document.createElement('div')
-     console.log(div);
-     div.className = 'main-heading'
-     div.id = (Math.round(Math.random() * 10) + 1)
-     div.setAttribute('title', 'genrated title')
-     div.style.width = '200px'
-     div.style.height = '200px'
-     div.style.backgroundColor = '#cdcdcd'
-     div.style.border = '8px solid black'
-     div.style.textAlign = 'center'
-     
-    //  div.innerHTML = 'This is my Div'
-     const myText = document.createTextNode("This is my Div Project")
-     div.appendChild(myText)  
-     document.body.appendChild(div)
-</script>
+        })
+
+        const toggleCheckbox = ''
+        document.body.appendChild(form)
+    </script>
+</body>
 </html>

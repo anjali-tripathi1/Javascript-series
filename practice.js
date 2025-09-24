@@ -678,3 +678,40 @@ if(add !== -1){
 
 console.log(array2);
 
+function outer () {
+    let count = 0;
+    return function () {
+        count++;
+        return count;
+    }
+}
+
+// const fn = outer()
+// console.log(fn());
+// console.log(fn());
+// console.log(outer()());
+
+
+ function outer (name) {
+        return function () {
+             console.log(name);
+        }
+
+      
+ } 
+
+// const show2 = outer('Sara');
+// console.log(show2());
+const show2 = outer('Anjali');
+show2();
+ 
+function Person (name) {
+     this.name = name 
+}
+
+Person.prototype.greet = function () {
+     return "Hello " + this.name
+}
+
+const p = new Person("Sam")
+console.log(p.greet());

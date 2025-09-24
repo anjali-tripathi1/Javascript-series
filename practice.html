@@ -49,11 +49,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+         .error{
+             display: none;
+             font-size: 25px;
+             color: red;
+         }
+    </style>
 </head>
 <body>
     
     <h1 id="heading">DOM Elements Example</h1>
     <div id="so"></div> 
+      
+    
+    <input type="radio" name="gender" id="male" value="Male">
+    <label for="male">Male</label>
+
+    
+    <input type="radio" name="gender" id="female" value="Female">
+    <label for="female">Female</label>
+
+    
+    <input type="radio" name="gender" id="other" value="Other">
+    <label for="other">Other</label>
+
+    <div id="output"></div>
     
     <script>
         //  const p = document.querySelector('#heading')
@@ -69,32 +91,32 @@
         //  console.log("class : ", className)
         //  const set = p.setAttribute('id', 'heading test2')
         //  const set2 = p.setAttribute('class', 'title title2')
-         const form = document.createElement('form')
-         const label = document.createElement('label')
-         label.innerHTML = 'Enter your Name : '
-         const element = document.createElement('input')
-         element.type = 'text'
-         element.validationMessage = 'Password Should be in number'
-         element.name = 'enter name'
-         element.required = 'true'
-         element.placeholder = 'Enter your Name'
-         element.style.width = '250px'
-         element.style.height = '50px'
+        //  const form = document.createElement('form')
+        //  const label = document.createElement('label')
+        //  label.innerHTML = 'Enter your Name : '
+        //  const element = document.createElement('input')
+        //  element.type = 'text'
+        //  element.validationMessage = 'Password Should be in number'
+        //  element.name = 'enter name'
+        //  element.required = 'true'
+        //  element.placeholder = 'Enter your Name'
+        //  element.style.width = '250px'
+        //  element.style.height = '50px'
          
-         document.getElementById('so').appendChild(element)
+        //  document.getElementById('so').appendChild(element)
           
-         const h1 = document.createElement('h1')
-         h1.innerHTML = 'This is the new Project'
+        //  const h1 = document.createElement('h1')
+        //  h1.innerHTML = 'This is the new Project'
           
-         const btn = document.createElement('button')
-         btn.innerHTML = 'Submit'
+        //  const btn = document.createElement('button')
+        //  btn.innerHTML = 'Submit'
          
-         form.appendChild(element)
-         form.appendChild(btn)
+        //  form.appendChild(element)
+        //  form.appendChild(btn)
 
-         function btnShow () {
-             alert(`your Name is : ${element.value}`)
-         }
+        //  function btnShow () {
+        //      alert(`your Name is : ${element.value}`)
+        //  }
        
 
     
@@ -113,25 +135,85 @@
         //      }
         // })
 
-        element.addEventListener('invalid', function () {
-              this.setCustomValidity('Please Enter letter value')
-        })
+        // element.addEventListener('invalid', function () {
+        //       this.setCustomValidity('Please Enter letter value')
+        // })
 
-        element.addEventListener('input', function () {
-             this.setCustomValidity('')
-        })
+        // element.addEventListener('input', function () {
+        //      this.setCustomValidity('')
+        // })
 
-        form.addEventListener('click', () => {
-            if(!form.checkValidity()){
-                element.reportValidity()
-            } else{
-                 alert(`you Entered : ${element.value}`)
-            }
+        // form.addEventListener('click', () => {
+        //     if(!form.checkValidity()){
+        //         element.reportValidity()
+        //     } else{
+        //          alert(`you Entered : ${element.value}`)
+        //     }
              
-        })
+        // })
 
-        const toggleCheckbox = ''
-        document.body.appendChild(form)
+        // const toggleCheckbox = ' '
+        // document.body.appendChild(form)
+
+        const form = document.createElement('form')
+        const h1 = document.getElementById('heading')
+        h1.innerHTML = 'Hello World'
+        h1.style.backgroundColor = 'green'
+       const div = document.createElement('div')
+       div.id = 'container'
+       div.className = 'show-1'
+       div.style.width = '100px'
+       div.style.height = '100px'
+       div.style.backgroundColor = '#555'
+       div.style.marginTop = '5px'
+       document.body.appendChild(div)
+       const input = document.createElement('input')
+       input.type = 'text'
+       input.name = 'text'
+       input.id = 'text'
+       input.placeholder = 'Enter your Name'
+       input.required = true
+
+       const btn = document.createElement('button')
+       btn.innerHTML = 'Submit'
+
+       const errmsg = document.createElement('span')
+       errmsg.className = 'error'
+       errmsg.textContent = 'Name'
+
+       
+      
+       input.addEventListener('input', () => {
+           input.setCustomValidity('')
+       })
+       
+       
+       btn.addEventListener('click', () => {
+           if(!form.checkValidity()){
+               input.reportValidity()
+           } else {
+               alert(`You Entered: ${input.value}`)
+           }
+           
+       })
+       form.appendChild(input)
+       form.appendChild(btn)
+       form.appendChild(errmsg)
+       document.getElementById('so').appendChild(form)
+
+       const radios = document.querySelectorAll('input[name="gender"]')
+       const output = document.getElementById('output')
+
+       radios.forEach(() => {
+           radios.addEventListener('change', () => {
+               if(radios.checked){
+                   output.textContent = `you selected : ${radios.value}`
+               }
+           })
+       })
+       
     </script>
+
+    
 </body>
 </html>

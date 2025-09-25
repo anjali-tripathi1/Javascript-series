@@ -57,9 +57,15 @@ console.log(gameName.indexOf("l"));
 const newString = gameName.substring(0, 5)
 console.log(newString);
 
+// The .substring() method is used to extract a portion of a string between two specified indices
+
+
 //  in slice method we can also give negative value.
 const anotherString = gameName.slice(-8, 6)
 console.log(anotherString);
+
+// The .slice() method is used to extract a portion of a string without modifying the original string.
+
 
 // one more method that we use in string that trim or replace.
 

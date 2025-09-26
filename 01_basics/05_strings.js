@@ -82,6 +82,9 @@ const url = "https://anjali.com/anjali%20tripathi"
 // the problem is that browser doesn't understand spaces like someone add space in webpage so browser directly convert this space in %20 in url coding so in this situation we want to remove this %20 so for this we have some method.
 
 // so in replace we have to write what we want to search and with which replace.
+
+// replace() method is used to replace part of a string with another value and returns a new string.
+
 console.log(url.replace('%20', '-' ));
 console.log(url.replace('%20', ' ' ));
 console.log(url.replace('%20', '@#' ));

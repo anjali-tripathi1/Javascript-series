@@ -35,6 +35,23 @@
     // attach event => early times with internet exploral
     // jQuery => .onEventListner
 
+//  Event propagation => Event propagation is how events travel through the DOM (Document Object Model) in a web page. When an event occurs (like a click), it doesn't just affect the element that was clicked — it also affects its ancestors, unless you tell it not to.
+
+//  1. Capturing phase – the event starts at the top (document) and moves down to the target element.
+//  2.  Target phase – the event reaches the target element.
+//  3.  Bubbling phase – the event bubbles back up from the target to the top.
+
+// event.stopPropagation()
+// This method stops the event from bubbling up (or capturing down) any further. In other words, it prevents the event from reaching other elements.
+
+// What happens when you click the button:
+// Only "Child clicked!" shows.
+// "Parent clicked!" is not shown because stopPropagation() prevents it.
+
+// event.preventDefault() is used to stop the default behavior of an element when an event occurs.
+// It doesn't stop the event from propagating (bubbling or capturing), but it prevents the browser's default action associated with that event.
+
+
     document.getElementById('images').addEventListener('click', function (e) {
           console.log("Clicked inside the ul");
           
@@ -51,6 +68,7 @@
         e.stopPropagation()
     }, false)
 
+    //  event delegation
     document.querySelector('#images').addEventListener('click', function (e) {
          console.log(e.target.tagName);
          if (e.target.tagName === 'IMG') {

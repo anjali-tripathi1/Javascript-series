@@ -20,10 +20,10 @@
         document.querySelector('h1').innerHTML = "Best Js Series"
     }
 
-    const stop = setTimeout(changeText, 2000)
+    const change = setTimeout(changeText, 2000)
 
     document.querySelector('#stop').addEventListener('click', function () {
-          clearTimeout(stop)
+          clearTimeout(change);
           console.log("Stopped");
           
     })
